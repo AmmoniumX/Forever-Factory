@@ -11,7 +11,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Forever Factory",
-  "version": "a0.0.4.2",
+  "version": "a0.4.3",
   "author": "",
   "files": [
     {
@@ -220,6 +220,11 @@
       "required": true
     },
     {
+      "projectID": 663477,
+      "fileID": 3949688,
+      "required": true
+    },
+    {
       "projectID": 499980,
       "fileID": 4983974,
       "required": true
@@ -257,6 +262,11 @@
     {
       "projectID": 317716,
       "fileID": 5417799,
+      "required": true
+    },
+    {
+      "projectID": 230111,
+      "fileID": 5452527,
       "required": true
     },
     {
@@ -482,6 +492,11 @@
     {
       "projectID": 328085,
       "fileID": 4835190,
+      "required": true
+    },
+    {
+      "projectID": 233019,
+      "fileID": 4019127,
       "required": true
     },
     {
@@ -897,6 +912,11 @@
     {
       "projectID": 237307,
       "fileID": 4016732,
+      "required": true
+    },
+    {
+      "projectID": 665658,
+      "fileID": 5089969,
       "required": true
     },
     {
