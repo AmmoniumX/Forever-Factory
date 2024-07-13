@@ -1,0 +1,26 @@
+{
+  "values": [
+    "emendatusenigmatica:nickel_block",
+    "emendatusenigmatica:raw_nickel_block",
+    "emendatusenigmatica:compressed_iron_block",
+    "emendatusenigmatica:titanium_block",
+    "emendatusenigmatica:osmium_block",
+    "emendatusenigmatica:raw_osmium_block",
+    "emendatusenigmatica:aluminum_block",
+    "emendatusenigmatica:raw_aluminum_block",
+    "emendatusenigmatica:lead_block",
+    "emendatusenigmatica:raw_lead_block",
+    "emendatusenigmatica:gold_block",
+    "emendatusenigmatica:raw_gold_block",
+    "emendatusenigmatica:tin_block",
+    "emendatusenigmatica:raw_tin_block",
+    "emendatusenigmatica:silver_block",
+    "emendatusenigmatica:raw_silver_block",
+    "emendatusenigmatica:uranium_block",
+    "emendatusenigmatica:raw_uranium_block",
+    "emendatusenigmatica:zinc_block",
+    "emendatusenigmatica:raw_zinc_block",
+    "emendatusenigmatica:rutile_block",
+    "emendatusenigmatica:raw_rutile_block"
+  ]
+}

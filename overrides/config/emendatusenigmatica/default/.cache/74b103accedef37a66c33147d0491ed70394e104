@@ -1,0 +1,5 @@
+// 1.19.2	2023-09-13T19:43:38.4149754	Emendatus Enigmatica Features
+7d137f0719afca68ac7e15ea578d0690a2d5bf0e data/emendatusenigmatica/forge/biome_modifier/remove_default_copper_ore.json
+4b2946a65020313da7be998c6199b4ebd5c57d9a data/emendatusenigmatica/forge/biome_modifier/remove_default_gold_ore.json
+04fc98448874bdd0bf931ec0a1a9ed8c9c61baa2 data/emendatusenigmatica/forge/biome_modifier/remove_default_iron_ore.json
+c6eea3747503f4be39e88339a479a2b63e47a5b6 data/emendatusenigmatica/forge/biome_modifier/remove_default_nether_gold_ore.json

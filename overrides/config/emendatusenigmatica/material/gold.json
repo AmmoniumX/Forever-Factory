@@ -1,0 +1,38 @@
+{
+  "id": "gold",
+  "source": "vanilla",
+  "localizedName": "Gold",
+  "disableDefaultOre": true,
+  "processedTypes": [
+    "ore",
+    "storage_block",
+    "ingot",
+    "nugget",
+    "raw",
+    "dust",
+    "plate",
+    "gear",
+    "rod",
+    "fluid",
+    "slurry",
+    "crystal",
+    "shard",
+    "clump",
+    "dirty_dust",
+    "crushed_ore"
+  ],
+  "properties": {
+    "materialType": "metal",
+    "harvestLevel": 2
+  },
+  "oreDrop": {
+    "drop": "minecraft:raw_gold",
+    "min": 1,
+    "max": 1
+  },
+  "colors": {
+    "materialColor": "dc9613",
+    "fluidColor": "dc9613",
+    "gasColor": "dc9613"
+  }
+}

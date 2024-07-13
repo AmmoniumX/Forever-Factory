@@ -1,0 +1,24 @@
+{
+  "id": "compressed_iron",
+  "source": "modded",
+  "localizedName": "Compressed Iron",
+  "processedTypes": [
+    "ore",
+    "storage_block",
+    "ingot",
+    "nugget",
+    "dust",
+    "plate",
+    "gear",
+    "rod",
+    "fluid"
+  ],
+  "properties": {
+    "materialType": "metal",
+    "harvestLevel": 2
+  },
+  "colors": {
+    "fluidColor": "414141",
+    "materialColor": "414141"
+  }
+}

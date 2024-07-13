@@ -1,0 +1,17 @@
+{
+  "values": [
+    "#forge:rods/nickel",
+    "#forge:rods/compressed_iron",
+    "#forge:rods/titanium",
+    "#forge:rods/osmium",
+    "#forge:rods/aluminum",
+    "#forge:rods/lead",
+    "#forge:rods/gold",
+    "#forge:rods/tin",
+    "#forge:rods/iron",
+    "#forge:rods/copper",
+    "#forge:rods/silver",
+    "#forge:rods/uranium",
+    "#forge:rods/zinc"
+  ]
+}

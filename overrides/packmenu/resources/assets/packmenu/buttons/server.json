@@ -1,0 +1,9 @@
+{
+	"x": 2,
+	"y": 72,
+	"width": 98,
+	"height": 20,
+	"langKey": "packmenu.server",
+	"action": "OPEN_URL",
+	"data": "https://scalacube.com/p/_hosting_server_minecraft/2240319"
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "emendatusenigmatica",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/raw_lead"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "emendatusenigmatica:raw_lead"
+  }
+}

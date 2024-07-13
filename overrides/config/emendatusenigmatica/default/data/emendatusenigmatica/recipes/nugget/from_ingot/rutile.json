@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "emendatusenigmatica",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/rutile"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "emendatusenigmatica:rutile_nugget"
+  }
+}

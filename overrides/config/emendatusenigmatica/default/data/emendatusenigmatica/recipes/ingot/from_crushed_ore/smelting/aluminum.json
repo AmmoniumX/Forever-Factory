@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "tag": "create:crushed_ores/aluminum"
+  },
+  "result": "emendatusenigmatica:aluminum_ingot"
+}

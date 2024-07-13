@@ -1,0 +1,21 @@
+{
+  "type": "create:crushing",
+  "group": "emendatusenigmatica:compat_recipe",
+  "ingredients": [
+    {
+      "item": "emendatusenigmatica:raw_zinc_block"
+    }
+  ],
+  "processingTime": 400,
+  "results": [
+    {
+      "count": 9,
+      "item": "emendatusenigmatica:crushed_zinc_ore"
+    },
+    {
+      "chance": 0.75,
+      "count": 9,
+      "item": "create:experience_nugget"
+    }
+  ]
+}

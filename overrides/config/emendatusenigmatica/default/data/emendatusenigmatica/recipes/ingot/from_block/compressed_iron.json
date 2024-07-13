@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "emendatusenigmatica",
+  "ingredients": [
+    {
+      "tag": "forge:storage_blocks/compressed_iron"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "emendatusenigmatica:compressed_iron_ingot"
+  }
+}

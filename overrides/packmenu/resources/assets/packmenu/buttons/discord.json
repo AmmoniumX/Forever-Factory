@@ -1,0 +1,9 @@
+{
+	"x": -100,
+	"y": 72,
+	"width": 98,
+	"height": 20,
+	"langKey": "packmenu.discord",
+	"action": "OPEN_URL",
+	"data": "https://discord.gg/hEaS5EVCH7"
+}

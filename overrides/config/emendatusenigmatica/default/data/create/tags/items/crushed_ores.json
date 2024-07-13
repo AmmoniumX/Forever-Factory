@@ -1,0 +1,16 @@
+{
+  "values": [
+    "#create:crushed_ores/nickel",
+    "#create:crushed_ores/osmium",
+    "#create:crushed_ores/aluminum",
+    "#create:crushed_ores/lead",
+    "#create:crushed_ores/gold",
+    "#create:crushed_ores/tin",
+    "#create:crushed_ores/iron",
+    "#create:crushed_ores/copper",
+    "#create:crushed_ores/silver",
+    "#create:crushed_ores/uranium",
+    "#create:crushed_ores/zinc",
+    "#create:crushed_ores/rutile"
+  ]
+}

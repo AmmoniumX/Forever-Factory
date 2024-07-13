@@ -1,0 +1,9 @@
+{
+  "type": "forge:remove_features",
+  "biomes": "#minecraft:is_nether",
+  "features": [
+    "minecraft:ore_gold_nether",
+    "minecraft:ore_gold_deltas"
+  ],
+  "step": "underground_ores"
+}

@@ -1,0 +1,18 @@
+{
+  "values": [
+    "#forge:buckets/nickel",
+    "#forge:buckets/compressed_iron",
+    "#forge:buckets/titanium",
+    "#forge:buckets/osmium",
+    "#forge:buckets/aluminum",
+    "#forge:buckets/lead",
+    "#forge:buckets/gold",
+    "#forge:buckets/tin",
+    "#forge:buckets/iron",
+    "#forge:buckets/copper",
+    "#forge:buckets/silver",
+    "#forge:buckets/uranium",
+    "#forge:buckets/zinc",
+    "#forge:buckets/rutile"
+  ]
+}

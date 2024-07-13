@@ -1,0 +1,23 @@
+{
+  "id": "titanium",
+  "source": "modded",
+  "localizedName": "Titanium",
+  "processedTypes": [
+    "storage_block",
+    "ingot",
+    "nugget",
+    "dust",
+    "plate",
+    "gear",
+    "rod",
+    "fluid"
+  ],
+  "properties": {
+    "materialType": "metal",
+    "harvestLevel": 2
+  },
+  "colors": {
+    "fluidColor": "ba87cb",
+    "materialColor": "ba87cb"
+  }
+}

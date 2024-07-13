@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "ingredient": {
+      "tag": "mekanism:clumps/tin"
+    }
+  },
+  "output": {
+    "item": "emendatusenigmatica:tin_dirty_dust"
+  }
+}

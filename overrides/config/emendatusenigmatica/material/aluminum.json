@@ -1,0 +1,35 @@
+{
+  "id": "aluminum",
+  "source": "modded",
+  "localizedName": "Aluminum",
+  "processedTypes": [
+    "ore",
+    "storage_block",
+    "ingot",
+    "nugget",
+    "raw",
+    "dust",
+    "plate",
+    "gear",
+    "rod",
+    "fluid",
+    "slurry",
+    "crystal",
+    "shard",
+    "clump",
+    "dirty_dust",
+    "crushed_ore"
+  ],
+  "properties": {
+    "materialType": "metal",
+    "harvestLevel": 2,
+    "isBurnable": false,
+    "isEmissive": true,
+    "hasOxidization": false
+  },
+  "colors": {
+    "fluidColor": "c5dbed",
+    "materialColor": "c5dbed",
+    "gasColor": "c5dbed"
+  }
+}

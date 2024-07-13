@@ -1,0 +1,17 @@
+{
+  "type": "thermal:press",
+  "energy": 400,
+  "group": "emendatusenigmatica:compat_recipe",
+  "ingredients": [
+    {
+      "count": 9,
+      "item": "emendatusenigmatica:silver_nugget"
+    },
+    {
+      "item": "thermal:press_packing_3x3_die"
+    }
+  ],
+  "results": {
+    "item": "emendatusenigmatica:silver_ingot"
+  }
+}

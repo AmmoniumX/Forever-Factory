@@ -1,0 +1,29 @@
+{
+  "id": "rutile",
+  "source": "modded",
+  "localizedName": "Rutile",
+  "processedTypes": [
+    "ore",
+    "storage_block",
+    "ingot",
+    "nugget",
+    "raw",
+    "dust",
+    "fluid",
+    "slurry",
+    "crystal",
+    "shard",
+    "clump",
+    "dirty_dust",
+    "crushed_ore"
+  ],
+  "properties": {
+    "materialType": "metal",
+    "harvestLevel": 2
+  },
+  "colors": {
+    "materialColor": "ff5ebf",
+    "fluidColor": "ff5ebf",
+    "gasColor": "ff5ebf"
+  }
+}

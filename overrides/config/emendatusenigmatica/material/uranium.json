@@ -1,0 +1,35 @@
+{
+  "id": "uranium",
+  "source": "modded",
+  "localizedName": "Uranium",
+  "processedTypes": [
+    "ore",
+    "storage_block",
+    "ingot",
+    "nugget",
+    "raw",
+    "dust",
+    "plate",
+    "gear",
+    "rod",
+    "fluid",
+    "slurry",
+    "crystal",
+    "shard",
+    "clump",
+    "dirty_dust",
+    "crushed_ore"
+  ],
+  "properties": {
+    "materialType": "metal",
+    "harvestLevel": 2,
+    "isBurnable": false,
+    "isEmissive": true,
+    "hasOxidization": false
+  },
+  "colors": {
+    "fluidColor": "a4f3a2",
+    "materialColor": "a4f3a2",
+    "gasColor": "a4f3a2"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "values": [
+    "#forge:nuggets/nickel",
+    "#forge:nuggets/compressed_iron",
+    "#forge:nuggets/titanium",
+    "#forge:nuggets/osmium",
+    "#forge:nuggets/aluminum",
+    "#forge:nuggets/lead",
+    "#forge:nuggets/gold",
+    "#forge:nuggets/tin",
+    "#forge:nuggets/iron",
+    "#forge:nuggets/copper",
+    "#forge:nuggets/silver",
+    "#forge:nuggets/uranium",
+    "#forge:nuggets/zinc",
+    "#forge:nuggets/rutile"
+  ]
+}

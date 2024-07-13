@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "ingredient": {
+    "tag": "create:crushed_ores/silver"
+  },
+  "result": "emendatusenigmatica:silver_ingot"
+}

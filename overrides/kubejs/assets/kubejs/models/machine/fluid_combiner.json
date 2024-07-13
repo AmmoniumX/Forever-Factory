@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "kubejs:block/machine_sides",
+    "down": "kubejs:block/machine_sides",
+    "up": "kubejs:block/machine_sides",
+    "north": "kubejs:block/fluid_combiner_front",
+    "south": "kubejs:block/machine_back",
+    "east": "kubejs:block/machine_sides",
+    "west": "kubejs:block/machine_sides"
+  }
+}

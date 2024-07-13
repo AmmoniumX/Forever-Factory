@@ -1,0 +1,14 @@
+// 1.19.2	2024-06-13T20:34:56.9426527	EE Create Addon Item Tags
+54547d7b698c140bad0ee5c039dceeca58da9300 data/create/tags/items/crushed_ores.json
+76ebd2bd8d203f6f945a44db55a901e03377075f data/create/tags/items/crushed_ores/aluminum.json
+13a687050fbe94297186bad9ad58cde1474682e9 data/create/tags/items/crushed_ores/copper.json
+3fce353d6026e612c8320226bba4b4ecf5f445ea data/create/tags/items/crushed_ores/gold.json
+b0de3d1904771593be97ec09168847f73a81db34 data/create/tags/items/crushed_ores/iron.json
+4a8c95b9d4e018b4f547fdc5e84c576f94d089f8 data/create/tags/items/crushed_ores/lead.json
+99446ae5c67e96b38abcb96fe41783b61efc5865 data/create/tags/items/crushed_ores/nickel.json
+65589eec10faea76c2f5aae64560f057c234e3b7 data/create/tags/items/crushed_ores/osmium.json
+8b1f529f4545c0de179efeea792460c9b9e5dd08 data/create/tags/items/crushed_ores/rutile.json
+d3409132c64510215e1db2dcc145fc0f5e7adb2f data/create/tags/items/crushed_ores/silver.json
+a665ef865ce4ba8cfcaa31815ce1a47353396929 data/create/tags/items/crushed_ores/tin.json
+79b527d2a4c5fab610b8f6879cce5d1432e17721 data/create/tags/items/crushed_ores/uranium.json
+e5dbe1352e878ba64dce821524ca317fbf4cf5c5 data/create/tags/items/crushed_ores/zinc.json

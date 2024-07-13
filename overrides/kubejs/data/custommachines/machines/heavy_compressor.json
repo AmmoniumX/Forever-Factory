@@ -1,0 +1,62 @@
+{
+    "name": "Heavy Compressor",
+    "appearance": {
+		"block": "kubejs:machine/heavy_compressor",
+		"running": {
+			"block": "kubejs:machine/heavy_compressor_on"
+		}
+	},
+    "components": [
+        {
+            "type": "custommachinery:energy",
+			"capacity": 100000
+        }, 
+        {
+            "type": "custommachinery:item",
+			"id": "input",
+			"mode": "input"
+        },
+		{
+            "type": "custommachinery:item",
+			"id": "output",
+			"mode": "output"
+        }
+    ],
+	"gui": [
+		{
+			"type": "custommachinery:texture",
+			"x": 0,
+			"y": 0,
+			"texture": "custommachinery:textures/gui/base_background.png"
+		},
+		{
+			"type": "custommachinery:text",
+			"x": 20,
+			"y": 10,
+			"text": "Heavy Compressor"
+		},
+		{
+			"type": "custommachinery:energy",
+			"x": 20,
+			"y": 50,
+			"width": 4
+		},
+		{
+			"type": "custommachinery:slot",
+			"x": 26,
+			"y": 60,
+			"id": "input"
+		},
+		{
+			"type": "custommachinery:progress",
+			"x": 46,
+			"y": 60
+		},
+		{
+			"type": "custommachinery:slot",
+			"x": 76,
+			"y": 60,
+			"id": "output"
+		}
+	]
+}

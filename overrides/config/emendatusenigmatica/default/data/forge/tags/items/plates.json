@@ -1,0 +1,17 @@
+{
+  "values": [
+    "#forge:plates/nickel",
+    "#forge:plates/compressed_iron",
+    "#forge:plates/titanium",
+    "#forge:plates/osmium",
+    "#forge:plates/aluminum",
+    "#forge:plates/lead",
+    "#forge:plates/gold",
+    "#forge:plates/tin",
+    "#forge:plates/iron",
+    "#forge:plates/copper",
+    "#forge:plates/silver",
+    "#forge:plates/uranium",
+    "#forge:plates/zinc"
+  ]
+}

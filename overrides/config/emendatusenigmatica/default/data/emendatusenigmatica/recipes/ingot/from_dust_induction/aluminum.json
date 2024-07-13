@@ -1,0 +1,12 @@
+{
+  "type": "thermal:smelter",
+  "energy_mod": 0.5,
+  "group": "emendatusenigmatica:compat_recipe",
+  "ingredients": {
+    "tag": "forge:dusts/aluminum"
+  },
+  "results": {
+    "count": 1,
+    "item": "emendatusenigmatica:aluminum_ingot"
+  }
+}

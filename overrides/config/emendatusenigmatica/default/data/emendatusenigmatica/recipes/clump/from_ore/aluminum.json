@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:purifying",
+  "chemicalInput": {
+    "amount": 1,
+    "gas": "mekanism:oxygen"
+  },
+  "itemInput": {
+    "ingredient": {
+      "tag": "forge:ores/aluminum"
+    }
+  },
+  "output": {
+    "count": 3,
+    "item": "emendatusenigmatica:aluminum_clump"
+  }
+}

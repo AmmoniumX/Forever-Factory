@@ -1,0 +1,35 @@
+{
+  "id": "tin",
+  "source": "modded",
+  "localizedName": "Tin",
+  "processedTypes": [
+    "ore",
+    "storage_block",
+    "ingot",
+    "nugget",
+    "raw",
+    "dust",
+    "plate",
+    "gear",
+    "rod",
+    "fluid",
+    "slurry",
+    "crystal",
+    "shard",
+    "clump",
+    "dirty_dust",
+    "crushed_ore"
+  ],
+  "properties": {
+    "materialType": "metal",
+    "harvestLevel": 2,
+    "isBurnable": false,
+    "isEmissive": true,
+    "hasOxidization": false
+  },
+  "colors": {
+    "fluidColor": "9fc4c0",
+    "materialColor": "9fc4c0",
+    "gasColor": "9fc4c0"
+  }
+}

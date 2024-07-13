@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:purifying",
+  "chemicalInput": {
+    "amount": 1,
+    "gas": "mekanism:oxygen"
+  },
+  "itemInput": {
+    "ingredient": {
+      "tag": "forge:raw_materials/zinc"
+    }
+  },
+  "output": {
+    "count": 2,
+    "item": "emendatusenigmatica:zinc_clump"
+  }
+}

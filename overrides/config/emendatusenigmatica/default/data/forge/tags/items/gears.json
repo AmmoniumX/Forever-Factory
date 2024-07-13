@@ -1,0 +1,17 @@
+{
+  "values": [
+    "#forge:gears/nickel",
+    "#forge:gears/compressed_iron",
+    "#forge:gears/titanium",
+    "#forge:gears/osmium",
+    "#forge:gears/aluminum",
+    "#forge:gears/lead",
+    "#forge:gears/gold",
+    "#forge:gears/tin",
+    "#forge:gears/iron",
+    "#forge:gears/copper",
+    "#forge:gears/silver",
+    "#forge:gears/uranium",
+    "#forge:gears/zinc"
+  ]
+}

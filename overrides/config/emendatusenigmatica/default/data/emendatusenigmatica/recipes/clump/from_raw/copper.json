@@ -1,0 +1,16 @@
+{
+  "type": "mekanism:purifying",
+  "chemicalInput": {
+    "amount": 1,
+    "gas": "mekanism:oxygen"
+  },
+  "itemInput": {
+    "ingredient": {
+      "tag": "forge:raw_materials/copper"
+    }
+  },
+  "output": {
+    "count": 2,
+    "item": "emendatusenigmatica:copper_clump"
+  }
+}

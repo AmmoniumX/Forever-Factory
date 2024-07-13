@@ -1,0 +1,17 @@
+{
+  "type": "thermal:press",
+  "energy": 400,
+  "group": "emendatusenigmatica:compat_recipe",
+  "ingredients": [
+    {
+      "item": "emendatusenigmatica:compressed_iron_ingot"
+    },
+    {
+      "item": "thermal:press_unpacking_die"
+    }
+  ],
+  "results": {
+    "count": 9,
+    "item": "emendatusenigmatica:compressed_iron_nugget"
+  }
+}

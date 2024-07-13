@@ -1,0 +1,15 @@
+{
+  "type": "mekanism:purifying",
+  "chemicalInput": {
+    "amount": 1,
+    "gas": "mekanism:oxygen"
+  },
+  "itemInput": {
+    "ingredient": {
+      "tag": "mekanism:shards/aluminum"
+    }
+  },
+  "output": {
+    "item": "emendatusenigmatica:aluminum_clump"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "ingredient": {
+      "tag": "mekanism:clumps/rutile"
+    }
+  },
+  "output": {
+    "item": "emendatusenigmatica:rutile_dirty_dust"
+  }
+}
