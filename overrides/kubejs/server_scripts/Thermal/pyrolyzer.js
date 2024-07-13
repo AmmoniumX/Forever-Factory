@@ -22,11 +22,11 @@ ServerEvents.recipes(e => {
       e.custom({
         "type": "thermal:pyrolyzer",
         "ingredient": {
-          "item": "ars_nouveau:red_archwood_log"
+          "item": "kubejs:juiced_log"
         },
         "result": [
           {
-            "item": "minecraft:charcoal"
+            "item": "mekanism:dust_charcoal"
           },
           {
             "fluid": "immersiveengineering:creosote",

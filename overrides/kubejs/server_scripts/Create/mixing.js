@@ -26,5 +26,6 @@ ServerEvents.recipes(e => {
     e.recipes.create.mixing('kubejs:prismatic_primordial_stone', [Fluid.of('kubejs:liquid_ghosts', 250), 'kubejs:primordial_stone', 'botania:dragonstone']).superheated()
     e.recipes.create.mixing('createchromaticreturn:shadow_steel', [Fluid.of('kubejs:shadow_essence', 250), '16x createchromaticreturn:chromatic_compound']).superheated()
     e.recipes.create.mixing('createchromaticreturn:refined_radiance', [Fluid.of('kubejs:refined_mixture', 250), '16x createchromaticreturn:chromatic_compound']).superheated()
+    e.recipes.create.mixing('kubejs:juiced_log', ['#minecraft:logs', Fluid.of('thermal:resin', 125)]).heated()
 
 })

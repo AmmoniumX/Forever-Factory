@@ -85,8 +85,8 @@ ServerEvents.recipes(e => {
     e.custom({
       "type":"immersiveengineering:coke_oven",
       "creosote":375,
-      "input":{"item":"ars_nouveau:red_archwood_log"},
-      "result":{"item":"minecraft:charcoal"},
+      "input":{"item":"kubejs:juiced_log"},
+      "result":{"item":"mekanism:dust_charcoal"},
       "time":450}
     )
 })
