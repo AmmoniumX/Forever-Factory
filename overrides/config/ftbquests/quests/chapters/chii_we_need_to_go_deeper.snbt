@@ -1,0 +1,707 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chii_we_need_to_go_deeper"
+	group: "07EF82DE5E014AA9"
+	id: "2600DEA2B1565C51"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["12EE8381F4E5D054"]
+			description: [
+				"To progress further, you are going to need some \"pyrotechnics\"."
+				"You could buy them on the shop, but the government doesn't necessarily give explosives to any random person."
+				"In order to be able to buy some explosives, you'll need an explosives permit."
+				"How do you get one? The application process is extermely boring so I'll fill it out for you, you just need some basic mechanisms to prove you're competent, add a small bribe in, and you should have an explosives permit! Now, just shift-click your permit while inside the Shop, and you should be allowed to buy Tiny TNT now!"
+				""
+				"PS: You can scroll on the Shop to see more offers, or search using the search bar"
+				"PS2: Get used to the Shop, permits are how a lot of items are gated behind"
+			]
+			id: "6CDB99BBE0125820"
+			subtitle: "Introduction to Trade Permits"
+			tasks: [
+				{
+					id: "4684682211B02A70"
+					item: {
+						Count: 1b
+						id: "adminshop:permit"
+						tag: {
+							display: {
+								Lore: ["{\"text\":\"Buy: Tiny TNT\"}"]
+								Name: "{\"text\":\"[T1] Explosives Permit\",\"italic\":false}"
+							}
+							key: 1
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "4F773FC710010EDA"
+					item: "ae2:tiny_tnt"
+					type: "item"
+				}
+			]
+			title: "[T1] Explosives Permit"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6CDB99BBE0125820"]
+			description: ["Now that you have explosives, simply drop some iron ingots or blocks and cause a (controlled*) explosion, and you will get &osome&r compressed iron back. In the future, you will be able to craft better machines that will get you 100% of the iron back as compressed."]
+			id: "4DA249326B5D4A37"
+			rewards: [{
+				count: 16
+				id: "59AAE23BF6A1BEF1"
+				item: "emendatusenigmatica:compressed_iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "765BC5825F7660AC"
+				item: "emendatusenigmatica:compressed_iron_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["30EEAD30A3988D6B"]
+			description: ["Now that you've got functional item and fluid logistics available, you can get started on the next step of your journey. Let's hope you have enough basic mechanisms for it, as you will need quite a few"]
+			id: "12EE8381F4E5D054"
+			tasks: [{
+				id: "1365D78046FC62B5"
+				item: "kubejs:basic_mech"
+				type: "item"
+			}]
+			title: "What now?"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12EE8381F4E5D054"]
+			description: [
+				"You're going to need to craft a few allows moving on, but how? The induction smelter is quite far away, and in order to craft alloys with create, you need a blaze burner which requires... brass."
+				"It seems the only option for now is to create an alloy kiln. Craft 8 kiln bricks, make a 2x2x2 cube and right click with an engineer's hammer."
+			]
+			id: "193A09B556435837"
+			tasks: [
+				{
+					count: 8L
+					id: "3A4FDD535DBCB6B2"
+					item: "immersiveengineering:alloybrick"
+					type: "item"
+				}
+				{
+					id: "52DD89CF0E1247E3"
+					item: "create:brass_ingot"
+					type: "item"
+				}
+			]
+			title: "Alloys"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["193A09B556435837"]
+			description: ["Deployers can both perform actions such as right-clicking in the real world, and make sequenced assembly recipes, which is an important step for your automation."]
+			id: "46876AA83560040F"
+			tasks: [{
+				id: "59E49985ADC064DC"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "Deployers"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"46876AA83560040F"
+				"4DA249326B5D4A37"
+			]
+			description: ["Get your old basic mechanisms, add some extra parts, and finally fill it with lava, now you have a much sturdier mechanism!"]
+			id: "362EBC86C94B16E5"
+			shape: "gear"
+			subtitle: "Sellable for Profit!"
+			tasks: [{
+				id: "5DCF152B1CB7AABF"
+				item: "kubejs:compressed_mech"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["362EBC86C94B16E5"]
+			description: ["So you need lava to automate compressed mechanisms, but JEI isn't showing you ways that you can automate it at this stage in the game, so how do you get it?"]
+			id: "7AEBD7F34B4740C7"
+			tasks: [{
+				id: "13E3061787F34E0B"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			title: "Wait, lava?"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7AEBD7F34B4740C7"]
+			description: [
+				"The solution: drain the nether!"
+				"Create hose pulleys can drain an &oinfinite&r amount of fluids when plugged to a large enough body of fluid. Guess where you can find a large body of lava? That's right, the nether lava oceans!"
+				"Therefore, travel to the nether, set up a hose pulley connected to the lava ocean, and you have lava for days ;)"
+			]
+			id: "6D6F5FC5AB3E7816"
+			tasks: [{
+				advancement: "minecraft:story/enter_the_nether"
+				criterion: ""
+				id: "37C1C1BE07D4C9CA"
+				type: "advancement"
+			}]
+			title: "We need to go deeper!"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D6F5FC5AB3E7816"]
+			description: ["Good job! Now you have an infinite source of lava. There's just &oone&r problem, though. You have infinite lava in the nether, but your factory is most likely in the overworld. Ender tanks aren't a thing here, and the nearest equivalent (quantum entangloporters) are quite far away. What now?"]
+			id: "42E4F869819AA248"
+			tasks: [{
+				advancement: "create:hose_pulley_lava"
+				criterion: ""
+				id: "057565A608B5323E"
+				type: "advancement"
+			}]
+			title: "Tapping the Mantle"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42E4F869819AA248"]
+			description: [
+				"The solution: Trains!"
+				"Trains can travel through nether portals, as long as the portal is big enough. There's a guide on this by using \"ponder\" on train tracks."
+				"Make a train with some fluid tanks, make train stations on both the nether and the overworld, and now you have infinite lava on the overworld"
+			]
+			id: "23708BF72F0E7506"
+			tasks: [
+				{
+					advancement: "create:train"
+					criterion: ""
+					id: "182DC26ABE2F9FA2"
+					type: "advancement"
+				}
+				{
+					id: "4187973F96F38713"
+					item: "create:railway_casing"
+					type: "item"
+				}
+				{
+					id: "1918B0A3640FF4AF"
+					item: "create:portable_fluid_interface"
+					type: "item"
+				}
+				{
+					id: "7D7914F95A94B2CE"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "33DC97669E44DB74"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+			]
+			title: "Trains!"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23708BF72F0E7506"]
+			description: ["Congratulations! Now you have an interdimensional train network, you can use it for transporting other stuff across dimensions in the future"]
+			id: "5575DF3D80CA700E"
+			shape: "gear"
+			tasks: [{
+				advancement: "create:train_portal"
+				criterion: ""
+				id: "1699FE48ED52D0FA"
+				type: "advancement"
+			}]
+			title: "Dimensional Commuter"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["362EBC86C94B16E5"]
+			description: [
+				"Now we can get started into the next tech mod: Pneumaticcraft!"
+				"Pneumaticcraft is entirely based around compressed air as a power source, so you will want to begin with a way to make compressed air."
+				"The cheapes compressor is the rotational compressor, which works based off Create rotational energy, but you can also craft solid/liquid fuel compressors if you want."
+			]
+			id: "5F6F17E2CD81D4AC"
+			tasks: [
+				{
+					id: "06151FA689786343"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Beginner Compressors\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "compressedcreativity:rotational_compressor"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:liquid_compressor"
+								}
+								{
+									Count: 1b
+									id: "pneumaticcraft:air_compressor"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E4726C1D35412F8"
+					item: "pneumaticcraft:pressure_tube"
+					type: "item"
+				}
+			]
+			title: "Compressed Air"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5F6F17E2CD81D4AC"]
+			description: ["By using a Pressure chamber, you can get 100% of your iron converted into compressed iron!"]
+			id: "6835BFCC2DAB1B74"
+			rewards: [{
+				count: 32
+				id: "3DA3CA234F9C1927"
+				item: "emendatusenigmatica:compressed_iron_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					advancement: "pneumaticcraft:pressure_chamber"
+					criterion: ""
+					id: "47D508FBF7C66896"
+					type: "advancement"
+				}
+				{
+					id: "657534349C9672C2"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					type: "item"
+				}
+				{
+					id: "734C50C259419BC7"
+					item: "pneumaticcraft:pressure_chamber_valve"
+					type: "item"
+				}
+				{
+					id: "75035A2372EE17A2"
+					item: "pneumaticcraft:pressure_chamber_interface"
+					type: "item"
+				}
+			]
+			title: "Pressure Chamber"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5F6F17E2CD81D4AC"]
+			description: [
+				"Alright, next step is getting oil."
+				"Oil is very sparse in this world though, it would probably be smart to buy some from the Shop."
+				"I can buy the raw oil in liquid form, although buying it in clump form and liquifying it myself may be cheaper long-term"
+				"Getting an oil contract isn't so difficult, the problem is that oil is very expensive, so I will need to ration it and carefully monitor how much I am consuming..."
+			]
+			id: "2D109209A90AD9EB"
+			tasks: [{
+				id: "7A62F8CC4ACBAE38"
+				item: {
+					Count: 1b
+					id: "adminshop:permit"
+					tag: {
+						display: {
+							Lore: ["{\"text\":\"Buy: Crude Oil, Oil Clump\"}"]
+							Name: "{\"text\":\"[T2] Oil Contract\",\"italic\":false}"
+						}
+						key: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["193A09B556435837"]
+			description: ["Blaze burners unlock access to \"heated\" mixing recipes. To do this, you need to feed the blaze burner with fuel"]
+			id: "3070E58DF97C7272"
+			rewards: [{
+				count: 16
+				id: "57FF6757EF15FDD9"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "36E475CD3087F06F"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"3070E58DF97C7272"
+				"2D109209A90AD9EB"
+			]
+			description: ["Finally, after all that effort, some crude oil. Now you can go onto refining it into usable byproducts"]
+			id: "0774D88E324D06A5"
+			tasks: [{
+				id: "1D52683E6DD10E9B"
+				item: "pneumaticcraft:oil_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0774D88E324D06A5"]
+			description: [
+				"Build a refinery to process crude oil into refined liquids."
+				"NOTE: You will need a heat source for this. There are many ways to achieve this, from lava or other heat/generating blocks/fluids and heat pipes, to vortex tubes."
+				"JEI Can tell you every block that generates heat"
+			]
+			id: "487B4C082C5FCE6F"
+			rewards: [
+				{
+					id: "4BC5C3AC2E646CFE"
+					item: "pneumaticcraft:diesel_bucket"
+					type: "item"
+				}
+				{
+					id: "611E52CE0D7ED52C"
+					item: "pneumaticcraft:kerosene_bucket"
+					type: "item"
+				}
+				{
+					id: "3AA228E1B90673AB"
+					item: "pneumaticcraft:gasoline_bucket"
+					type: "item"
+				}
+				{
+					id: "4A84876C44DA3B72"
+					item: "pneumaticcraft:lpg_bucket"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "013DD92FD970E778"
+					item: "pneumaticcraft:refinery"
+					type: "item"
+				}
+				{
+					id: "386F803C517D1E23"
+					item: "pneumaticcraft:refinery_output"
+					type: "item"
+				}
+			]
+			title: "Oil Refinery"
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["487B4C082C5FCE6F"]
+			description: ["Now that you have some LPG, you can process this into plastic using the TPP"]
+			id: "152D02F6E11E11E2"
+			tasks: [
+				{
+					id: "580B27F490BFD360"
+					item: "pneumaticcraft:thermopneumatic_processing_plant"
+					type: "item"
+				}
+				{
+					id: "18536B433B33CACF"
+					item: "pneumaticcraft:plastic_bucket"
+					type: "item"
+				}
+			]
+			title: "Molten Plastic"
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["152D02F6E11E11E2"]
+			description: ["Finally, plastic sheets! An important crafting component"]
+			id: "20B0D301D43950B4"
+			shape: "gear"
+			tasks: [{
+				id: "4F92176E1E4DF584"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["152D02F6E11E11E2"]
+			description: [
+				"Heat frames can be applied to storage blocks such as chests and barrels, and will either heat or cool down the items they contain."
+				"To make plastic sheets with heat frames, insert molten iron buckets to the container, and cool it with vortex tubes or cold blocks and heat pipes."
+				"JEI Can tell you every block that cools down stuff"
+			]
+			id: "1100660AF78DEB48"
+			tasks: [{
+				id: "23936B7CD95568AA"
+				item: "pneumaticcraft:heat_frame"
+				type: "item"
+			}]
+			title: "Heat Frame Cooling"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3070E58DF97C7272"]
+			description: [
+				"The straw lets you pipe fluids into the blaze burner instead of items. Quite useful"
+				""
+				"There are &omany&r ways to fuel your burners. Don't worry too much about which is most efficient, just choose one you find fun!"
+			]
+			id: "2D1DAB6F363463C6"
+			optional: true
+			rewards: [{
+				id: "064D5E2FF32F9D20"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "31087675AFB1A653"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["362EBC86C94B16E5"]
+			description: ["Useful quality of life item, allows you to temporarily speed up machines. Must be \"charged\" by letting it accumulate time in your inventory"]
+			id: "527CC05E2BA3434A"
+			optional: true
+			tasks: [{
+				id: "3EC8AE77B0A003B6"
+				item: {
+					Count: 1b
+					id: "tiab:time_in_a_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["362EBC86C94B16E5"]
+			description: ["An early-game alternative to AE2/RS systems"]
+			id: "624ACCCC1EA14D84"
+			optional: true
+			rewards: [
+				{
+					id: "6795E85D9AA8DDB6"
+					item: "prettypipes:pressurizer"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5913C136AC209692"
+					item: "prettypipes:pipe"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3110AB3B03F825CF"
+				item: "prettypipes:crafting_terminal"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["362EBC86C94B16E5"]
+			description: ["Want a cheap(ish) way to move Create stress units wirelessly? This got you covered."]
+			id: "141375D55C59BF43"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "2D46010C497A0341"
+				item: "createendertransmission:energy_transmitter"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "69195EDE6ECB6031"
+				item: "createendertransmission:energy_transmitter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["362EBC86C94B16E5"]
+			description: [
+				"Soul Overclockers are a brand-new mod made by yours truly, which is debuting on this modpack."
+				""
+				"The mod is quite simple, it only adds one block: the &doverclocker&r. It accelerates whatever machine is placed &labove&r it. However, it requires two different power sources: regular &aForge Energy (FE)&r, and &dSoul Power (φ)&r."
+				""
+				"Soul power is bound directly to whichever player placed the overclocker. This means that a player can only place so many overclockers and accelerate so many machines. Use the &dSoul Attuner&r to configurate the potency of the overclocker."
+				""
+				"If your base soul power isn't enough for you, you can craft accessories, that, when worn, will &dincrease your max soul power&r. However, you only have so many fingers and so many necks to put rings and necklaces on, so you can't expand infinitely."
+				""
+				"All values are configurable on the config file, so if you're a server admin and feel the default values are too limiting (or not enough), feel free to change them!"
+			]
+			id: "04669A2F124973A9"
+			optional: true
+			rewards: [{
+				id: "54919EBAF6F599E5"
+				item: {
+					Count: 1b
+					id: "souloverclockers:ring"
+					tag: {
+						SoulPower: 16
+					}
+				}
+				type: "item"
+			}]
+			shape: "heart"
+			subtitle: "Balanced tick acceleration? Impossible!"
+			tasks: [
+				{
+					id: "78508F84523BAF54"
+					item: "souloverclockers:overclocker"
+					type: "item"
+				}
+				{
+					id: "647CEB0170437ABE"
+					item: "souloverclockers:attuner"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["362EBC86C94B16E5"]
+			description: [
+				"Build a Create pumpjack on an \"oil chunk\" to extract a steady yet unlimited supply of oil."
+				""
+				"Use the oil detector to locate an oil chunk."
+			]
+			id: "5BE7616F738E22B6"
+			optional: true
+			rewards: [{
+				id: "5EEAE7F7C51A2EDD"
+				item: "createdieselgenerators:oil_scanner"
+				type: "item"
+			}]
+			subtitle: "Infinite, renewable Oil!"
+			tasks: [{
+				id: "1C05C09E9096046E"
+				item: "createdieselgenerators:pumpjack_bearing"
+				type: "item"
+			}]
+			title: "Pumpjacks!"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["193A09B556435837"]
+			description: [
+				"You heard that right, by unlocking alloys, you can already make your first jetpack!"
+				""
+				"You need a create (netherite) jetpack to make an electric (netherite) jetpack."
+				""
+				"Alternatively, you could also make angel rings for the &otrue&r creative flight experience. If you want to fight two withers, that is."
+			]
+			id: "3CE3BF0A46D258B3"
+			optional: true
+			tasks: [{
+				id: "1F75D58A2FB95FEA"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Flight Gear\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create_jetpack:jetpack"
+								tag: {
+									Air: 900
+								}
+							}
+							{
+								Count: 1b
+								id: "create_jetpack:netherite_jetpack"
+								tag: {
+									Air: 900
+								}
+							}
+							{
+								Count: 1b
+								id: "ironjetpacks:jetpack"
+								tag: {
+									Id: "ironjetpacks:netherite"
+									Throttle: 1.0d
+								}
+							}
+							{
+								Count: 1b
+								id: "angelring:angel_ring"
+							}
+							{
+								Count: 1b
+								id: "angelring:energetic_angel_ring"
+							}
+							{
+								Count: 1b
+								id: "angelring:leadstone_angel_ring"
+							}
+							{
+								Count: 1b
+								id: "angelring:hardened_angel_ring"
+							}
+							{
+								Count: 1b
+								id: "angelring:reinforced_angel_ring"
+							}
+							{
+								Count: 1b
+								id: "angelring:resonant_angel_ring"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Flying!"
+			x: -1.5d
+			y: -2.0d
+		}
+	]
+	title: "Ch.II: Pneumatic Age"
+}

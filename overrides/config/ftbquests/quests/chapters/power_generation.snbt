@@ -1,0 +1,849 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "power_generation"
+	group: "1A13CCEB71BED4A8"
+	id: "1F0B281F0C109FF2"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Create's energy unit"]
+			icon: "create:cogwheel"
+			id: "42AEFFA5696CBC1E"
+			shape: "square"
+			tasks: [{
+				id: "2B21ADC1FFF260F3"
+				title: "Create Stress Units"
+				type: "checkmark"
+			}]
+			x: -9.5d
+			y: 0.5d
+		}
+		{
+			description: ["Do not consider this chapter as a \"quest\" chapter, it's more of an \"information\" chapter. You don't need to \"complete\" every quest in this chapter"]
+			id: "2084A0F551D7FCB3"
+			shape: "rsquare"
+			tasks: [{
+				id: "379EEC5A11E9998F"
+				title: "Small note"
+				type: "checkmark"
+			}]
+			x: -13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["42AEFFA5696CBC1E"]
+			description: ["Turn running water into SU"]
+			id: "619FD663908BFE00"
+			subtitle: "Passive"
+			tasks: [{
+				id: "0066D320BC00513F"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Water Wheels\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create:water_wheel"
+							}
+							{
+								Count: 1b
+								id: "create:large_water_wheel"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["42AEFFA5696CBC1E"]
+			description: ["Turn wind currents into SU"]
+			id: "66E5B9BBD29A3938"
+			subtitle: "Passive"
+			tasks: [{
+				id: "7D31B53A8598B33B"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["42AEFFA5696CBC1E"]
+			description: ["Steam into SU"]
+			id: "1FF703B9C6367F79"
+			subtitle: "Water+Heating"
+			tasks: [{
+				id: "17288B064662265B"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -3.0d
+		}
+		{
+			description: ["Pneumaticcraft's energy unit"]
+			icon: "pneumaticcraft:air_compressor"
+			id: "321A0605D0E40407"
+			shape: "square"
+			tasks: [{
+				id: "29A66253DBDA3241"
+				title: "Pneumaticcraft"
+				type: "checkmark"
+			}]
+			title: "Pneumaticcraft Compressed Air"
+			x: -6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["42AEFFA5696CBC1E"]
+			description: ["Create SU into Pneumaticcraft Compressed Air"]
+			id: "3F323DC3A4E739A6"
+			subtitle: "Create->Pneumaticcraft"
+			tasks: [{
+				id: "7974A9E9381A0B25"
+				item: "compressedcreativity:rotational_compressor"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["321A0605D0E40407"]
+			description: ["Compressed air into Create SU"]
+			id: "64622A1D9A302FD5"
+			subtitle: "Pneumaticcraft->Create"
+			tasks: [{
+				id: "1D1F38B37F6D8E5D"
+				item: "compressedcreativity:compressed_air_engine"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["321A0605D0E40407"]
+			description: ["Turns burnable solid fuels into compressed air"]
+			id: "0D0F3EE06639650B"
+			subtitle: "Solid Fuel"
+			tasks: [{
+				id: "3B880CC68321FBAF"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Air Compressors\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "pneumaticcraft:air_compressor"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:advanced_air_compressor"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["321A0605D0E40407"]
+			description: ["Turns liquid fuels into compressed air"]
+			id: "11156A58101C327E"
+			subtitle: "Liquid Fuel"
+			tasks: [{
+				id: "7EE67E1FCD137757"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Liquid Compressors\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "pneumaticcraft:liquid_compressor"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:advanced_liquid_compressor"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["321A0605D0E40407"]
+			description: ["Converts sunlight into compressed air. Heat increases efficiency, but if it gets too hot it needs to be repaired"]
+			id: "6848FE7CC49186FD"
+			subtitle: "Passive*"
+			tasks: [{
+				id: "78229EEA2A9ADF2A"
+				item: "pneumaticcraft:solar_compressor"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["321A0605D0E40407"]
+			description: ["Converts differences in block temperatures into compressed air. Blocks with temperatures are shown on JEI"]
+			id: "5520ECD7AE70BA65"
+			subtitle: "Requires temperature difference"
+			tasks: [{
+				id: "5A0F549EA3404A80"
+				item: "pneumaticcraft:thermal_compressor"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["321A0605D0E40407"]
+			description: ["Produces high amounts of compressed air from lightning. Difficult to sustain reliably, not recommended unless you know what you're doing"]
+			id: "18BC1A998D6B86AF"
+			subtitle: "Passive**"
+			tasks: [{
+				id: "0EAFC7B6F0CBE23C"
+				item: "pneumaticcraft:electrostatic_compressor"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -5.5d
+		}
+		{
+			description: [
+				"Unified electrical energy units among many mods"
+				"There are &ltoo many&r FE generators, these are just a few of them"
+			]
+			icon: "mekanism:basic_energy_cube"
+			id: "476F3884D256DE28"
+			shape: "square"
+			tasks: [{
+				id: "0FF97A0CC56847C6"
+				title: "Forge Energy"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: ["Converts Forge Energy into compressed air. Generates heat, must be cooled down"]
+			id: "5F9E5E52C79FAAEA"
+			subtitle: "FE->Pneumaticcraft"
+			tasks: [{
+				id: "243F0B4E77E58D6F"
+				item: "pneumaticcraft:flux_compressor"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["321A0605D0E40407"]
+			description: ["Converts compressed air into Forge Energy. Generates heat, must be cooled down"]
+			id: "35735EA533B77963"
+			subtitle: "Pneumaticcraft->FE"
+			tasks: [{
+				id: "35213F174527996F"
+				item: "pneumaticcraft:pneumatic_dynamo"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42AEFFA5696CBC1E"]
+			description: ["Converts Stress Units into Forge Energy"]
+			id: "73F51E20DD191DF7"
+			subtitle: "Create->FE"
+			tasks: [{
+				id: "2265D1EF28074FEA"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: ["Converts Forge Energy into Stress Units"]
+			id: "604038DE72255C7B"
+			subtitle: "FE->Create"
+			tasks: [{
+				id: "1EF7BBC4DB17F517"
+				item: "createaddition:electric_motor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: ["Connect a windmill or water wheel to a kinetic dynamo, generating FE passively"]
+			id: "665A1196D2CC650F"
+			subtitle: "Passive"
+			tasks: [
+				{
+					id: "41724D070B2FB737"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+				{
+					id: "7674E10A831BD652"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Kinetic Generators\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "immersiveengineering:watermill"
+								}
+								{
+									Count: 1b
+									id: "immersiveengineering:windmill"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Kinetic Dynamos"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: [
+				"Generates FE from temperature differences"
+				"NOT THE SAME as Pneumaticcraft's temperatures, check the engineer's manual for blocks with temperatures"
+			]
+			id: "5819E1F09C4635B5"
+			subtitle: "Passive"
+			tasks: [{
+				id: "34221AE5317751D1"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: [
+				"Converts lightning into FE."
+				"Difficult to sustain reliably, not recommended unless you know what you're doing"
+			]
+			icon: "immersiveengineering:lightning_rod"
+			id: "0280CA3E47C3F781"
+			subtitle: "Passive**"
+			tasks: [{
+				icon: "immersiveengineering:lightning_rod"
+				id: "44D21C0A7FFE3FA0"
+				observe_type: 0
+				timer: 0L
+				title: "Stare at: Lightning Rod"
+				to_observe: "immersiveengineering:lightning_rod"
+				type: "observation"
+			}]
+			title: "Lightning Rod"
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: ["Dynamos from Thermal Expansion generate FE from fuel. Fuel depends on dynamo type. Can be augmented for speed and/or efficiency"]
+			id: "02C7B53B6B216D63"
+			tasks: [{
+				id: "07B8762AFD97A600"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Thermal Dynamos\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "thermal:dynamo_stirling"
+							}
+							{
+								Count: 1b
+								id: "thermal:dynamo_compression"
+							}
+							{
+								Count: 1b
+								id: "thermal:dynamo_magmatic"
+							}
+							{
+								Count: 1b
+								id: "thermal:dynamo_numismatic"
+							}
+							{
+								Count: 1b
+								id: "thermal:dynamo_lapidary"
+							}
+							{
+								Count: 1b
+								id: "thermal:dynamo_disenchantment"
+							}
+							{
+								Count: 1b
+								id: "thermal:dynamo_gourmand"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: ["Mekanism generators generate FE either passively or by consuming fuels."]
+			id: "6AB2A6AB2D0C74E4"
+			tasks: [{
+				id: "3EDF5371C8310FCB"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Mekanism Generators\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "mekanismgenerators:heat_generator"
+							}
+							{
+								Count: 1b
+								id: "mekanismgenerators:wind_generator"
+							}
+							{
+								Count: 1b
+								id: "mekanismgenerators:solar_generator"
+							}
+							{
+								Count: 1b
+								id: "mekanismgenerators:gas_burning_generator"
+							}
+							{
+								Count: 1b
+								id: "mekanismgenerators:bio_generator"
+							}
+							{
+								Count: 1b
+								id: "mekanismgenerators:advanced_solar_generator"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: [
+				"Mekanism multiblock reactors that can produce extremely high amounts of FE per tick."
+				"Multiblocks must be assembled manually, look up a guide on how to"
+			]
+			id: "5038BBFE68A808D7"
+			subtitle: "Endgame Power Gen"
+			tasks: [{
+				id: "523C9B04478D9AF0"
+				item: "mekanismgenerators:fusion_reactor_controller"
+				type: "item"
+			}]
+			title: "Mekanism Reactors"
+			x: -3.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: [
+				"Extreme reactors are large, highly configurable reactor multiblocks that can generate very large amounts of FE per tick"
+				"More information on The Extreme Book"
+			]
+			id: "2DDA461B6FE46708"
+			tasks: [
+				{
+					id: "35061AEA0EB28C31"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Extreme Reactors\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "bigreactors:basic_reactorcontroller"
+								}
+								{
+									Count: 1b
+									id: "bigreactors:reinforced_reactorcontroller"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A3A026016D81AF9"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Extreme Turbines\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "bigreactors:basic_turbinecontroller"
+								}
+								{
+									Count: 1b
+									id: "bigreactors:reinforced_turbinecontroller"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: ["Iron Generators is a simple mod that adds tiered furnace-like generators. Good to start off with"]
+			id: "281C5ABC3E8E2A7C"
+			subtitle: "Solid Fuel"
+			tasks: [{
+				id: "073D4B1687E8D581"
+				item: "irongenerators:iron_generator"
+				type: "item"
+			}]
+			title: "Iron Generators"
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			description: ["Botania's energy unit"]
+			icon: {
+				Count: 1b
+				id: "botania:mana_tablet"
+				tag: {
+					creative: 1b
+					mana: 500000
+				}
+			}
+			id: "74EB8311687A2224"
+			shape: "square"
+			tasks: [{
+				id: "0706CCBF5751933D"
+				title: "Botania Mana"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["74EB8311687A2224"]
+			description: ["Botania Mana is generated through generating flowers. Consult the Lexica Botania for information on the individual flowers"]
+			id: "5C5D8D2712D85F94"
+			tasks: [{
+				id: "05FE642CE252D1D1"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:generating_special_flowers"
+					}
+				}
+				type: "item"
+			}]
+			title: "Generating Flowers"
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["74EB8311687A2224"]
+			description: [
+				"Mana into FE."
+				"Is this efficient? Not really. Can you still do it? Of course"
+			]
+			id: "04276A2745F13926"
+			subtitle: "Mana->FE"
+			tasks: [{
+				id: "1829D347303E3DD6"
+				item: "botania:mana_fluxfield"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: ["You *can* use this to generate mana in this modpack, it just makes you boring"]
+			id: "5546291CDDACAB8A"
+			subtitle: "FE->Mana"
+			tasks: [{
+				id: "157EE87548C29B1C"
+				item: "botanicadds:flowers/energizera"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			description: ["Nature's Aura's energy unit"]
+			icon: "naturesaura:eye"
+			id: "4F9C737A36E4B79B"
+			shape: "square"
+			tasks: [{
+				id: "16EE7BCBFFC39376"
+				title: "Nature's Aura"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4F9C737A36E4B79B"]
+			description: ["There are multiple ways to generate Aura, refer to the Book of Natural Aura for more information on the individual generators"]
+			id: "5E669D8E02DBD846"
+			tasks: [{
+				id: "0744672B2B3253E3"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Aura Creating Devices\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "naturesaura:oak_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:animal_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:firework_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:flower_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:slime_split_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:chorus_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:potion_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:end_flower"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:projectile_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:moss_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:ancient_sapling"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5E669D8E02DBD846"]
+			description: ["The creational catalyst, when placed below a creational device, can bypass their built-in limits, allowing them to go past the normal aura limit. See the Book of Natural Aura for more information"]
+			id: "24C71AB64ED665FC"
+			tasks: [{
+				id: "1108DE40CD08CDF3"
+				item: "naturesaura:generator_limit_remover"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 6.5d
+		}
+		{
+			description: ["Ars Nouveau's energy unit"]
+			icon: "ars_nouveau:source_gem"
+			id: "271FC4B56C22BBC0"
+			shape: "square"
+			tasks: [{
+				id: "62EFA6DB1BB7DC8F"
+				title: "Ars' Source"
+				type: "checkmark"
+			}]
+			title: "Ars Source"
+			x: -9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["271FC4B56C22BBC0"]
+			description: ["Sourcelinks gather source from various sources and deposit it into nearby source jars. See the worn notebook for more information."]
+			id: "67F0F8E807E260D6"
+			tasks: [
+				{
+					id: "1E94F577BAE672CF"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Sourcelink\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:agronomic_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:volcanic_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:alchemical_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:vitalic_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:mycelial_sourcelink"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "08AD7330C03F2C52"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+			]
+			title: "Sourcelinks"
+			x: -9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4F9C737A36E4B79B"]
+			description: ["Converts aura into FE"]
+			id: "2614D58CB417BD6E"
+			subtitle: "Aura->FE"
+			tasks: [{
+				id: "24B2174D99647C52"
+				item: "naturesaura:rf_converter"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1FF703B9C6367F79"]
+			description: ["Pipe diesel in, get rotational force out."]
+			id: "232C2B6155D8D999"
+			subtitle: "You guessed it... Diesel"
+			tasks: [{
+				id: "351BA4815DA79968"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Create Diesel Engine\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "createdieselgenerators:diesel_engine"
+							}
+							{
+								Count: 1b
+								id: "createdieselgenerators:large_diesel_engine"
+							}
+							{
+								Count: 1b
+								id: "createdieselgenerators:huge_diesel_engine"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Create Diesel Engines"
+			x: -9.5d
+			y: -4.0d
+		}
+	]
+	subtitle: ["Generators for Forge Energy as well as other Tech and Magic mods"]
+	title: "Energy Generation"
+}

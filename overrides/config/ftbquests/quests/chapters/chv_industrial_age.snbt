@@ -1,0 +1,706 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chv_industrial_age"
+	group: "07EF82DE5E014AA9"
+	id: "253E3B1A50A1C5D1"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6472B37DE3727D2C"]
+			id: "2CDB9A133EA2889D"
+			shape: "gear"
+			tasks: [{
+				id: "5F7036D30AB78631"
+				item: "kubejs:sbc"
+				type: "item"
+			}]
+			title: "Mekanism"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2CDB9A133EA2889D"]
+			description: [
+				"Machine casings for Mekanism machines."
+				""
+				"Mekanism is used for a lot of industrial processes, it also introduces gases, which are required for a lot of recipes."
+				"Additionally, Mekanism machines can be heavily upgraded to allow for more speed and even parallel processing."
+			]
+			id: "32D2CFE67C81C1F4"
+			rewards: [{
+				count: 4
+				id: "3B262F7542B8D725"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "50F9BF2ECF71E83F"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["22D3F1AAB42D49FE"]
+			description: ["Tier installers allow you to upgrade &lsome&r machines into their \"factory\" variants. Factory machines can perform multiple recipes at once, at the cost of consuming as much energy needed for each unique recipe."]
+			id: "7E267FF4CDBD3367"
+			rewards: [{
+				id: "018DFECC0377F95A"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "155942D19D24A3FF"
+				item: "mekanism:basic_tier_installer"
+				type: "item"
+			}]
+			title: "Tier installers"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["22D3F1AAB42D49FE"]
+			description: ["Mekanism upgrades can be inserted into machines to provide a direct boost to either processing speed (at the cost of energy efficiency), or energy efficiency and capacity. In order to maintain optimal energy efficiency, it is recommended to only insert as many speed upgrades as the energy upgrades you have (e.g., if you want 4 speed upgrades, insert at least 4 energy upgrades). The maximum for each machine is 8."]
+			id: "6AC6B767C0D79300"
+			rewards: [
+				{
+					count: 8
+					id: "07C102BBA9FC59F7"
+					item: "mekanism:upgrade_speed"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "08E2E33A2F87B238"
+					item: "mekanism:upgrade_energy"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "2C4F1C000CBA1BB3"
+					item: "mekanism:upgrade_speed"
+					type: "item"
+				}
+				{
+					id: "27B95D86CC482E34"
+					item: "mekanism:upgrade_energy"
+					type: "item"
+				}
+			]
+			title: "Mekanism Upgrades"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["32D2CFE67C81C1F4"]
+			description: [
+				"The metallurgic infuser can be used to &oinfuse&r certain metals and materials with \"infuse types\" to turn them into useful materials."
+				""
+				"However, base infuse types such as redstone/coal need to be enriched first before they can be converted into infuse types. For this, you need elemental powders as a catalyst."
+				""
+				"Tip: Since infuse types are more expensive, having dedicated infusers and filling them up completely for each of them may be too wasteful for you. For this, did you know you can encode infuse type in AE2 patterns? This way, you will only craft and use as much infuse as you need!"
+			]
+			id: "22D3F1AAB42D49FE"
+			tasks: [
+				{
+					id: "6EF724FBB35115FB"
+					item: "mekanism:metallurgic_infuser"
+					type: "item"
+				}
+				{
+					id: "6F34FCEF4813CF3E"
+					item: "mekanism:enriched_carbon"
+					type: "item"
+				}
+				{
+					id: "23284A6DF528F334"
+					item: "mekanism:enriched_redstone"
+					type: "item"
+				}
+			]
+			title: "Metallurgic Infuser...?"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["22D3F1AAB42D49FE"]
+			description: ["Get yourself some of these before progressing further, you will need a lot of them."]
+			id: "358D493F0789690E"
+			rewards: [
+				{
+					count: 8
+					id: "27CF535C6D61CFF6"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "15ED9483C478B942"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "48462A6BD78C41A1"
+					item: "mekanism:enriched_redstone"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "72ED414EDE303E43"
+					item: "mekanism:alloy_infused"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "50317FC3CFFBE299"
+					item: "mekanism:basic_control_circuit"
+					type: "item"
+				}
+			]
+			title: "Mekanism Alloys and Circuit Boards"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["22D3F1AAB42D49FE"]
+			description: ["Advanced thermal alloys must be crafted via metallurgic infusion."]
+			id: "787BC86D8DC67BC5"
+			rewards: [
+				{
+					count: 8
+					id: "478B714B08040868"
+					item: "thermal:signalum_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0B71D8611704CC81"
+					item: "thermal:lumium_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "0E9FFCE4A4B8AC7E"
+					item: "thermal:enderium_ingot"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "7E32A37AC5796BB1"
+					item: "thermal:signalum_ingot"
+					type: "item"
+				}
+				{
+					id: "685A9A4B5FA5A618"
+					item: "thermal:lumium_ingot"
+					type: "item"
+				}
+				{
+					id: "1E9E1BEE5A21725A"
+					item: "thermal:enderium_ingot"
+					type: "item"
+				}
+			]
+			title: "Advanced Thermal Alloys"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"799E58AD4CF491FC"
+				"666C0CBCE9887424"
+			]
+			description: [
+				"Core ingredient for Powah machines."
+				"Notice the mixing recipe for it, as it is much more efficient than the crafting one! You can't use it quite yet, though."
+			]
+			id: "54712545A4E0BDBE"
+			rewards: [{
+				count: 32
+				id: "208C974A92794DD3"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				count: 16L
+				id: "2249D1E4082B0510"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			title: "Dielectric Paste"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["799E58AD4CF491FC"]
+			description: ["Obtained from Ch. IV-B"]
+			id: "666C0CBCE9887424"
+			shape: "square"
+			tasks: [{
+				id: "4793C33E12E4C6CF"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			title: "Powah"
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["54712545A4E0BDBE"]
+			description: ["The energizing orb requires RF to be provided via nearby energizing rods. For faster crafting, add more and higher tier rods."]
+			id: "565E99B0A6A97644"
+			rewards: [{
+				id: "7071DBB44E5DFB61"
+				item: "powah:energizing_rod_starter"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5EADD4F72F5B834D"
+					item: "powah:energizing_orb"
+					type: "item"
+				}
+				{
+					id: "067D77E90F93C6AC"
+					item: "powah:energizing_rod_starter"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["565E99B0A6A97644"]
+			description: ["Energize blizz powder to get cryotheum crystals. Like blazing crystals and blaze powder, energizing the powder is more efficient than the rod/cube directly"]
+			id: "5336A824B9223461"
+			rewards: [{
+				count: 4
+				id: "75AB466FE2E5C7CE"
+				item: "kubejs:cryotheum_crystal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "64938C6258F6B1B8"
+				item: "kubejs:cryotheum_crystal"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5336A824B9223461"]
+			description: ["Extremely potent coolant"]
+			id: "6BD28B5699712263"
+			tasks: [{
+				id: "3FE581484E78E803"
+				item: "kubejs:gelid_cryotheum_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["565E99B0A6A97644"]
+			description: ["Blazing pyrotheum can be used as a more efficient source of dielectric paste"]
+			id: "1F7403756D3CBEC5"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "1D80910EA89AD8FB"
+				item: "kubejs:blazing_pyrotheum_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["787BC86D8DC67BC5"]
+			id: "19BFAF1D818A32A2"
+			tasks: [{
+				id: "17C2EE998542D5F4"
+				item: "kubejs:subzero_cell"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6BD28B5699712263"
+				"19BFAF1D818A32A2"
+			]
+			id: "7B6F263685813507"
+			tasks: [{
+				id: "174B31678D4D0418"
+				item: "kubejs:cryotheum_cell"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["358D493F0789690E"]
+			id: "29C3180D421C39B2"
+			rewards: [{
+				count: 4
+				id: "083A96CA14612927"
+				item: "mekanism:enriched_diamond"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "389E705B97102462"
+					item: "mekanism:alloy_reinforced"
+					type: "item"
+				}
+				{
+					id: "7FA4422691EADA12"
+					item: "mekanism:elite_control_circuit"
+					type: "item"
+				}
+			]
+			title: "Elite Tier"
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"429E3B156C2859C4"
+				"53C38FDA995A7E35"
+			]
+			description: ["The mana pool can both work as a mana storage device and as a device to infuse items with mana."]
+			id: "3EA1316EE78F6CC9"
+			tasks: [{
+				id: "78ABE584A5669CD3"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.0d
+		}
+		{
+			description: [
+				"To progress further, you will need a way to generate mana. Mana is generated through specialized flora, you can see them here on this quest."
+				"If you are new to Botania and don't know where to start, the endoflame is a good starter mana gen."
+				""
+				"When in doubt, consult the Lexica Botania!"
+			]
+			id: "429E3B156C2859C4"
+			rewards: [{
+				id: "3571F51A51993F2C"
+				item: "botania:blacker_lotus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "35522773E7BFCF10"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:generating_special_flowers"
+					}
+				}
+				type: "item"
+			}]
+			title: "Generating Flowers"
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["76362FD44C7AB720"]
+			description: ["Obtained from Ch. IV-B"]
+			id: "53C38FDA995A7E35"
+			shape: "square"
+			tasks: [{
+				id: "35FA1691021B18E7"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			title: "Botania"
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3EA1316EE78F6CC9"]
+			description: ["Just drop an iron ingot/diamond on top of a mana pool with some mana in it, and you have mana infused items!"]
+			id: "4C8A7795445DC383"
+			rewards: [
+				{
+					count: 8
+					id: "081AC0D8A26C71FF"
+					item: "botania:manasteel_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2716FA7FBE519345"
+					item: "botania:mana_diamond"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3511178B80E36017"
+					item: "botania:manasteel_ingot"
+					type: "item"
+				}
+				{
+					id: "629E185E494066E7"
+					item: "botania:mana_diamond"
+					type: "item"
+				}
+			]
+			title: "Basic Mana Items"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4C8A7795445DC383"]
+			description: [
+				"Drop the recipe's ingredients on top of it, infuse it with mana using a mana spreader, and once it's ready, drop a livingrock on top to get your runes. You can use a comparator to detect when it's ready."
+				""
+				"When in doubt, consult the Lexica Botania!"
+			]
+			id: "26334597E62DC769"
+			tasks: [
+				{
+					id: "007E61AF1EFEC6F5"
+					item: "botania:runic_altar"
+					type: "item"
+				}
+				{
+					id: "4E614749D59B97EF"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"26334597E62DC769"
+				"697B032C57E61417"
+			]
+			description: ["As you probably realized, in this modpack, runes require the relevant essences from Ars Nouveau."]
+			id: "73AADFE349027C3C"
+			rewards: [
+				{
+					count: 2
+					id: "4F66497D7F17A2D1"
+					item: "botania:rune_water"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "20A9B65EC798F86D"
+					item: "botania:rune_earth"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "391DD41983C64E52"
+					item: "botania:rune_water"
+					type: "item"
+				}
+				{
+					id: "17CB837FA749D17E"
+					item: "botania:rune_earth"
+					type: "item"
+				}
+			]
+			title: "Basic Runes"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			description: ["Obtained from Ch. IV-B"]
+			id: "697B032C57E61417"
+			tasks: [
+				{
+					id: "0C071310B675F91E"
+					item: "ars_nouveau:water_essence"
+					type: "item"
+				}
+				{
+					id: "270F7480B67CF809"
+					item: "ars_nouveau:earth_essence"
+					type: "item"
+				}
+			]
+			title: "Basic Essences"
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["73AADFE349027C3C"]
+			description: ["How to get cake/wool/snow? Don't ask me, you're the boss. You can figure something out from JEI, I believe in you!"]
+			id: "4C20D01C16607BB2"
+			tasks: [{
+				id: "5B7654E7E16AAC8B"
+				item: "botania:rune_winter"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			description: ["Core ingredient for Extreme Reactors. Extreme reactors is a useful mod for not just power generation but for granting access to new materials."]
+			id: "269EF39FAF279CDB"
+			rewards: [{
+				id: "57372CD529B80277"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "bigreactors:erguide"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "3301C6567F14C49E"
+				item: "bigreactors:graphite_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["269EF39FAF279CDB"]
+			description: [
+				"(Extreme) Reactors run on uranium, which produces Cyanite as a waste output."
+				"There are many possible configurations for reactors, turbines, and other multiblocks. When in doubt, consult The Extreme Book!"
+				""
+				"Note: The regular Mekanism fission reactor is &ldisabled&r in this modpack! Luckily you can use extreme reactors to both generate mekanism steam gas and nuclear waste. The endgame fusion reactor is still enabled though."
+			]
+			id: "761DBA6F8B5289A3"
+			rewards: [{
+				count: 4
+				id: "08754F567CE7867A"
+				item: "bigreactors:cyanite_ingot"
+				type: "item"
+			}]
+			shape: "pentagon"
+			subtitle: "Better Reactors"
+			tasks: [
+				{
+					id: "4CC18724BAE89451"
+					item: "bigreactors:basic_reactorcontroller"
+					type: "item"
+				}
+				{
+					id: "0FD6257EC7D409F0"
+					item: "bigreactors:basic_reactorfuelrod"
+					type: "item"
+				}
+				{
+					id: "7A7B4F8707B5C72E"
+					item: "bigreactors:basic_reactorcasing"
+					type: "item"
+				}
+				{
+					id: "00F75625E8EC238E"
+					item: "bigreactors:basic_reactorglass"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "6FB3539F6A72271F"
+					item: "emendatusenigmatica:uranium_ingot"
+					type: "item"
+				}
+			]
+			title: "(Extreme) Reactor"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["761DBA6F8B5289A3"]
+			description: ["With the reprocessor, you can reprocess (no surprise there) reactor waste into new materials."]
+			id: "1818FBE543497068"
+			rewards: [{
+				count: 4
+				id: "4B2E12C006D64695"
+				item: "bigreactors:cyanite_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5AF2E836F6B5081D"
+				item: "bigreactors:reprocessorcontroller"
+				type: "item"
+			}]
+			title: "Reprocessor"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1818FBE543497068"]
+			description: ["Reprocessed cyanite."]
+			id: "574EF7B4CDE41C64"
+			rewards: [{
+				count: 8
+				id: "041B7D601F3C966C"
+				item: "bigreactors:blutonium_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "216C2590879B28C1"
+				item: "bigreactors:blutonium_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"574EF7B4CDE41C64"
+				"4C20D01C16607BB2"
+				"7B6F263685813507"
+				"6C6145F0A45A5638"
+			]
+			description: ["If you've gotten this far: congrats! It must've been quite the adventure so far."]
+			id: "23B55BDA8D657BAA"
+			rewards: [{
+				id: "226D661FD8E8ED42"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Liquid-Cooled"
+			tasks: [{
+				id: "38857DFA2914723D"
+				item: "kubejs:cryo_mainframe"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			description: ["Shouldn't be that hard to get. At least compared to the other ingredients..."]
+			id: "6C6145F0A45A5638"
+			tasks: [{
+				id: "52632D493912BC9B"
+				item: "extendedcrafting:ender_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+	]
+	title: "Ch,V: Industrial Age"
+}

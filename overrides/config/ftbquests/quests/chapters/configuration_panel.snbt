@@ -1,0 +1,417 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "configuration_panel"
+	group: "1A13CCEB71BED4A8"
+	icon: "mekanism:module_geiger_unit"
+	id: "5E9AF9B21768992C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			description: [""]
+			icon: "minecraft:clock"
+			id: "636230826A8FA58C"
+			optional: true
+			rewards: [
+				{
+					auto: "no_toast"
+					command: "/gamerule doDaylightCycle false"
+					id: "4BC42519E838E9B8"
+					player_command: true
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/time set noon"
+					id: "7A42B41EB3D0D3D5"
+					player_command: true
+					type: "command"
+				}
+			]
+			subtitle: "Set permanent daytime"
+			tasks: [{
+				id: "531D51B6F20FE9DA"
+				title: "Perma-Day"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			description: [""]
+			icon: "minecraft:lantern"
+			id: "5AC7C8E3CA929260"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/gamerule doDaylightCycle true"
+				id: "68F6D23922F0F227"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Reenable regular day/night cycles"
+			tasks: [{
+				id: "538F79FC8A5CB03D"
+				title: "Regular Day/Night Cycles"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			description: ["You need to have admin (/op) permissions to run these commands. That's it, have fun setting up your ideal gameplay style!"]
+			icon: "minecraft:command_block"
+			id: "47AF642CC615B05D"
+			shape: "rsquare"
+			tasks: [{
+				id: "0C70E90818025FA6"
+				title: "Notice!"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:rose_bush"
+			id: "704FAEDE58565426"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/difficulty peaceful"
+				id: "4DC00BE56CCB01EF"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Set Peaceful Difficulty"
+			tasks: [{
+				id: "1FBF0AEE4A06742F"
+				title: "Peaceful"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "minecraft:wooden_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "68D563F534200E14"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/difficulty easy"
+				id: "001EDB60A5CD0DD9"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Set Easy Difficulty"
+			tasks: [{
+				id: "4C668A6769833876"
+				title: "Easy"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "minecraft:iron_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0331D70D9D9A8C1A"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/difficulty normal"
+				id: "630FAAAE6ECAE569"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Set Normal Difficulty"
+			tasks: [{
+				id: "62C59CD910B3A3C9"
+				title: "Normal"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "minecraft:diamond_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7B0584AB37929F81"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/difficulty hard"
+				id: "5A9CFDF57639193D"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Set Hard Difficulty"
+			tasks: [{
+				id: "6B452B207432A70A"
+				title: "Hard"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:sunflower"
+			id: "3AEDC47667FF1AA7"
+			optional: true
+			rewards: [
+				{
+					auto: "no_toast"
+					command: "/gamerule doWeatherCycle false"
+					id: "0F75C6E84F92751C"
+					player_command: true
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/weather clear"
+					id: "05EC8C4273F7ABA3"
+					player_command: true
+					type: "command"
+				}
+			]
+			subtitle: "Disable rain and snowfall"
+			tasks: [{
+				id: "64BA67589DE0A482"
+				title: "No Rain Mode"
+				type: "checkmark"
+			}]
+			title: "No Raintime"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			icon: "ars_nouveau:ritual_cloudshaping"
+			id: "0A0ED30CE9987C62"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/gamerule doWeatherCycle true"
+				id: "0FF039D30C363A4D"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Reenable regular weather cycles"
+			tasks: [{
+				id: "1565A30D17CD800B"
+				title: "Regular Weather Cycles"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:player_head"
+			id: "6A9AF2CFBB90ABBD"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/gamerule keepInventory true"
+				id: "5FFE4DB21207C2F7"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Don't lose items when you die"
+			tasks: [{
+				id: "782F8A68D9B44926"
+				title: "Keep inventory after death"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:skeleton_skull"
+			id: "253814E5C2FA6C1F"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/gamerule keepInventory false"
+				id: "436B7C6E58D3D1BD"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Your items will get dropped if you die"
+			tasks: [{
+				id: "26BA4279CEBC7427"
+				title: "Regular death mechanics"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:red_bed"
+			id: "7E36801BAED234CC"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/gamerule doInsomnia false"
+				id: "4FE43F59DEAF26F1"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Phantoms won't spawn if you don't sleep"
+			tasks: [{
+				id: "1B4ECD559083FE02"
+				title: "No Insomnia"
+				type: "checkmark"
+			}]
+			title: "Insomniac"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:phantom_membrane"
+			id: "3BFA4BF7B8CC0654"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/gamerule doInsomnia true"
+				id: "0816A73D0AC30F81"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Phantoms spawn if you don't sleep"
+			tasks: [{
+				id: "30F352622C92E56B"
+				title: "Insomnia"
+				type: "checkmark"
+			}]
+			title: "Good night! ...or else..."
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1b
+				id: "minecraft:crossbow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "512527E518A0E771"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/gamerule doTraderSpawning false"
+				id: "3599086F1A9A197E"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Wandering traders won't spawn"
+			tasks: [{
+				id: "2C90F9E8ED26CC59"
+				title: "No soliciting"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:emerald"
+			id: "5FEF98355D65594D"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/gamerule doTraderSpawning true"
+				id: "3C343DED7CDE38D3"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Wandering traders spawn normally"
+			tasks: [{
+				id: "327C69C5CB26098B"
+				title: "Flea Market Frequenter"
+				type: "checkmark"
+			}]
+			title: "Master Barterer"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"By default, Applied Energistics can only transfer 8/32 channels per regular/dense cable, and each controller side can only have 32 channels."
+				"If you want a less restricted experience that's more similar to how Refined Storage does, you can enable this command. It may require a restart though."
+			]
+			icon: "ae2:controller"
+			id: "27F316FD1DC9FE5A"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/ae2 channelmode infinite"
+				id: "5AB6E17006B6E4AD"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "Limitless Potential"
+			tasks: [{
+				id: "14B4DCB27B5C823B"
+				title: "Turing Complete"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			can_repeat: true
+			description: ["Revert back to AE2's default 32 channels per face"]
+			icon: "ae2:crafting_unit"
+			id: "0EE968F73605DEB6"
+			optional: true
+			rewards: [{
+				auto: "no_toast"
+				command: "/ae2 channelmode default"
+				id: "69D0D476775F035B"
+				player_command: true
+				type: "command"
+			}]
+			subtitle: "\"It meets the minimum recommended specs, it'll work, trust me!\""
+			tasks: [{
+				id: "2B034C5DDB785310"
+				title: "Budget PC"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+	]
+	subtitle: ["Customize your game experience"]
+	title: "Configuration Panel"
+}

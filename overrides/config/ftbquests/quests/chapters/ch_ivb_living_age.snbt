@@ -1,0 +1,652 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch_ivb_living_age"
+	group: "07EF82DE5E014AA9"
+	id: "2C46FB208EF65976"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["440929DA9E591E2E"]
+			description: [
+				"Hidden from the naked eye, our world is full of a powerful energy called &eAura&r. "
+				""
+				"Aura is the manifestation of all life, be it plants, animals, even yourself. Normally Aura doesn't manifest itself directly, but a clever user can find ways to use it for their own gain."
+				""
+				"Thankfully, some clever people have already gone through the initial struggle, and you can buy gold fibers off the Shop. Place these in a tree's crown, and they will slowly spread, giving you a source of gold leaves."
+				""
+				"Be careful, however. Aura is the source of life. Don't grow too greedy."
+			]
+			id: "459F283BB2AD2A69"
+			rewards: [{
+				id: "45025287087D5337"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "naturesaura:book"
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Introduction to Nature's Aura"
+			tasks: [
+				{
+					id: "0A2F6639B1479554"
+					item: "naturesaura:gold_fiber"
+					type: "item"
+				}
+				{
+					id: "3795703D2E8D1A38"
+					item: "naturesaura:gold_leaf"
+					type: "item"
+				}
+			]
+			title: "Nature's Secrets"
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["440929DA9E591E2E"]
+			description: [
+				"While also being pretty, flowers also happen to be the key to another powerful energy known as &bMana&r. "
+				""
+				"Mana has a variety of useful applications, from getting new materials used for getting powerful gear, to advanced automation systems."
+				""
+				"However, before you can get into the fun functional flora and Mana production, we need some magical petals to get started."
+			]
+			id: "5D249E6ECF06A816"
+			rewards: [{
+				id: "69FBD2A13330E042"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Introduction to Botania"
+			tasks: [{
+				id: "6EDE1C42F98C259B"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			title: "Botanists' Secrets"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			description: ["If you've gotten this far, then congratulations, you have proven yourself as a very capable Engineer. However, mechanical machines aren't everything in this world. There's a whole other side of mystical forces and apparatuses you haven't discovered yet. Thankfully, it seems that the other Magicians out there aren't quite experts at crafting mechanical parts, and they will gladly trade some magical goods with you."]
+			id: "440929DA9E591E2E"
+			subtitle: "Mechanical Mastery isn't enough, the magic world is yet to be mastered!"
+			tasks: [{
+				id: "636E1731B81ACF43"
+				item: {
+					Count: 1b
+					id: "adminshop:permit"
+					tag: {
+						display: {
+							Lore: ["{\"text\":\"Buy: Gold Fiber, Floral Fertilizer, Archwood Saplings\"}"]
+							Name: "{\"text\":\"[T3] Novice Magician Contract\",\"italic\":false}"
+						}
+						key: 3
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5D249E6ECF06A816"]
+			description: ["The Petal Apothecary can be used to create many of the flora with special properties."]
+			id: "3A6C8336890ED7CD"
+			tasks: [{
+				id: "370B66E4CF2B5125"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3A6C8336890ED7CD"]
+			description: ["The pure daisy can convert nearby blocks around it into other forms. Currently, you should prioritize getting Livingwood and Livingrock, which comes from treated wood and reinforced stone, accordingly."]
+			id: "76362FD44C7AB720"
+			rewards: [
+				{
+					count: 16
+					id: "2F2DF92343CEAEAB"
+					item: "botania:livingrock"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "396CF9CA95819C57"
+					item: "botania:livingwood_log"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "220CFA2F61E5D4E0"
+					item: "botania:pure_daisy"
+					type: "item"
+				}
+				{
+					id: "008C2FF9A26C8607"
+					item: "immersiveengineering:treated_wood_horizontal"
+					type: "item"
+				}
+				{
+					id: "4AC607525679768F"
+					item: "pneumaticcraft:reinforced_stone"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["76362FD44C7AB720"]
+			description: ["With a Bottle and Cork, you can safely extract and store nearby Aura. The type of aura changes depending on the dimension you're in, but you can get bottled sunlight from the overworld."]
+			id: "0E56FA99F0847883"
+			tasks: [
+				{
+					id: "401796190DCC12DA"
+					item: "naturesaura:bottle_two_the_rebottling"
+					type: "item"
+				}
+				{
+					id: "4CA67847040EC2B1"
+					item: {
+						Count: 1b
+						id: "naturesaura:aura_bottle"
+						tag: {
+							stored_type: "naturesaura:overworld"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Bottled Sunlight"
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["459F283BB2AD2A69"]
+			description: [
+				"Construct a Ritual in honor of the the Forest Spirits, and they might grant you goods in return."
+				""
+				"Refer to the Book of Natural Aura for more information"
+			]
+			id: "7A7F03B40C2B4652"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3AD366E6378610C5"
+				table_id: 938763785248513997L
+				type: "random"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "68936ACEEAD15F84"
+					item: "naturesaura:wood_stand"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2C0DCAD61A187F71"
+					item: "naturesaura:gold_powder"
+					type: "item"
+				}
+			]
+			title: "Ritual of the Forest"
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0E56FA99F0847883"
+				"34421ADA502B9869"
+			]
+			description: ["Prepare an Offering to the Gods, then place it on the Offering Table, and if the Gods smile upon you, you will get something in return."]
+			id: "065295D8194B404E"
+			rewards: [{
+				count: 2
+				id: "0413CDA793A4B2A3"
+				item: "naturesaura:sky_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "04E54288D47E7B2C"
+					item: "naturesaura:offering_table"
+					type: "item"
+				}
+				{
+					id: "0D15DA6AC622143B"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Infused Ingot\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "naturesaura:infused_iron"
+								}
+								{
+									Count: 1b
+									id: "naturesaura:tainted_gold"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Offering to the Gods"
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7A7F03B40C2B4652"]
+			description: [
+				"Build a Natural Altar to extract Aura from your surroundings and infuse it into materials. "
+				"Make sure to maintain a healthy balance between generating and consuming Aura."
+			]
+			id: "34421ADA502B9869"
+			tasks: [{
+				id: "4F70EE41FECEB92C"
+				item: "naturesaura:nature_altar"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["459F283BB2AD2A69"]
+			description: ["There are many ways to generate Aura. For starters, you might want to look into Ancient Saplings, and then probably move to Canopy Diminishers. However, the choice is entirely yours. Refer to the Book of Natural Aura for more details."]
+			id: "0BBB0D3A40F9A387"
+			tasks: [{
+				id: "0BAC8A4277146980"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Aura Creating Devices\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "naturesaura:oak_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:animal_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:firework_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:flower_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:slime_split_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:chorus_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:potion_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:end_flower"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:projectile_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:moss_generator"
+							}
+							{
+								Count: 1b
+								id: "naturesaura:ancient_sapling"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["065295D8194B404E"]
+			description: ["The Altar of Birthing can be used to summon mobs by using Aura and many catalyst ingrediens. Just drop the items required on top of the altar, and nearby Aura will be drained to summon the mob."]
+			id: "2F6409D31123244C"
+			tasks: [{
+				id: "12AB66C0FC31888E"
+				item: "naturesaura:animal_spawner"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"76362FD44C7AB720"
+				"504BAEF48B018711"
+			]
+			description: [
+				"Another ingredient for summoning Thermal mobs."
+				"You can buy Amethyst Clusters off the Shop to get a quickstart, but you will eventually be able to automate it"
+			]
+			id: "65DFE5E530D9A643"
+			tasks: [{
+				id: "1106939A7E195F2E"
+				item: "kubejs:awakening_spirit"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["440929DA9E591E2E"]
+			description: [
+				"Finally, the third major Magical energy in our world is known as &dSource&r. "
+				""
+				"Source is arguably the easiest magical energy to manipulate, and with the help of Glyphs and Spell Books, mages can manipulate the source energy around them to cast useful spells, enchant items, and even recruit useful familiars."
+				""
+				"To get started, you can buy archwood saplings off the Shop, and obtain some archwood."
+			]
+			id: "72B227EF30BFE29B"
+			rewards: [{
+				id: "2B3941FC97941499"
+				item: "ars_nouveau:worn_notebook"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Introduction to Ars Nouveau"
+			tasks: [{
+				id: "6F7D459AD1207A9D"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any Archwood Log\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ars_nouveau:blue_archwood_log"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:purple_archwood_log"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:green_archwood_log"
+							}
+							{
+								Count: 1b
+								id: "ars_nouveau:red_archwood_log"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Spellcasters' Secrets"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["72B227EF30BFE29B"]
+			description: [
+				"The imbuement chamber can gather nearby Source to enchant certain items."
+				"There's always a tiny amount of Source existing everywhere, but to speed the process up, you can place Source jars nearby."
+				"You can buy Amethyst clusters off the shop, but later you can automate amethyst shards"
+			]
+			id: "504BAEF48B018711"
+			rewards: [{
+				count: 16
+				id: "15E09E09F7FA39D1"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "25DDD010392131DD"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+				{
+					id: "0C33D2F498D33AB9"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["504BAEF48B018711"]
+			description: ["The enchanting apparatus can both apply enchantments to gear and craft various materials. It may or may not require source from nearby source jars to function depending on the recipe."]
+			id: "27835CA754BBB53C"
+			tasks: [
+				{
+					id: "53BEF05A1AC2198A"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "28B50069B44EE0D3"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+				{
+					id: "5805A067C30AE53B"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["504BAEF48B018711"]
+			description: ["The ritual brazier can be used to conduct rituals by right clicking tablets on them. The tablets are consumed per use, and the brazier requires source from nearby source jars."]
+			id: "534C3C8491AE7BF5"
+			rewards: [{
+				id: "184B3F480FD181CE"
+				item: "ars_nouveau:ritual_sunrise"
+				type: "item"
+			}]
+			tasks: [{
+				id: "297FC0A17ADDE383"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["76362FD44C7AB720"]
+			description: ["One of the crucial ingredients for summoning Thermal mobs."]
+			id: "4DD8566019F64804"
+			tasks: [{
+				id: "51E95AAEBE3BE931"
+				item: "kubejs:livingrock_effigy"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"These materials are required as catalysts to summon Thermal mobs."
+				"You can get all of them renewably in one way or another:"
+				"- Magma blocks by spouting lava on netherrack"
+				"- Snow by surrounding pure daisies with water source blocks"
+				"- Glowstone dust by bulk haunting cinder flour, or smelting glimmercap spores"
+				"- Cobbled deepslate with an igneous extruder"
+			]
+			id: "14D8978AD4419A8E"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "6EED5CAAA050EDB3"
+					item: "minecraft:magma_block"
+					type: "item"
+				}
+				{
+					id: "0AB8835DE719455C"
+					item: "minecraft:snow_block"
+					type: "item"
+				}
+				{
+					id: "03827995EF3B7099"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+				{
+					id: "597E1DA3184013BF"
+					item: "minecraft:cobbled_deepslate"
+					type: "item"
+				}
+			]
+			title: "Summoning Materials"
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"65DFE5E530D9A643"
+				"2F6409D31123244C"
+				"4DD8566019F64804"
+				"14D8978AD4419A8E"
+			]
+			description: [
+				"You'll need to summon Thermal mobs for further progression into Chapter IV. These include the Blaze, the Basalz, the Blitz, and the Blizz. To view the specific ingredients required to summon these, search up their spawn eggs recipes on JEI, e.g. \"blizz spawn egg\". Or, the uses for effigies/spirit of awakening."
+				""
+				"NOTE: Thermal mobs have been blacklisted from Industrial Foregoing's mob duplicator and Ars Nouveau Drygmys! You have been warned!"
+			]
+			id: "799E58AD4CF491FC"
+			shape: "pentagon"
+			tasks: [
+				{
+					id: "04DB70A9889EE0CE"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "54C71473D13E7DCB"
+					item: "thermal:blizz_rod"
+					type: "item"
+				}
+				{
+					id: "2C791FD3D0B22F78"
+					item: "thermal:blitz_rod"
+					type: "item"
+				}
+				{
+					id: "2C8CD45358FE419B"
+					item: "thermal:basalz_rod"
+					type: "item"
+				}
+			]
+			title: "Thermal Mobs"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["534C3C8491AE7BF5"]
+			description: [
+				"There are multiple methods to automate Amethyst, so this is just one of them."
+				"Perform a ritual of awakening near an amethyst cluser and you will summon an amethyst golem."
+				""
+				"This golem, when set a target inventory with a Dominion Wand, will convert nearby amethyst blocks into budding amethyst, harvest nearby amethyst clusters, speed up budding amethyst growth, and pick up Amethyst shards to store them in the target inventory."
+			]
+			id: "37DC4C51222B9784"
+			optional: true
+			rewards: [{
+				count: 32
+				id: "0A933EEBB3FF2806"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [
+				{
+					id: "386CB61FA3D3574E"
+					item: "ars_nouveau:ritual_awakening"
+					type: "item"
+				}
+				{
+					id: "5BD2E920BCA8A235"
+					item: "ars_nouveau:amethyst_golem_charm"
+					type: "item"
+				}
+			]
+			title: "Automating Amethyst"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["504BAEF48B018711"]
+			description: [
+				"Obtained with imbuement chamber. Does NOT consume the secondary items!"
+				"Required for Ch. V progression."
+			]
+			id: "29A21E923B2622D8"
+			rewards: [
+				{
+					count: 8
+					id: "654FC785D019F2A7"
+					item: "ars_nouveau:water_essence"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "53702D4817B7C0A7"
+					item: "ars_nouveau:earth_essence"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "41E18BF7ED76C708"
+					item: "ars_nouveau:water_essence"
+					type: "item"
+				}
+				{
+					id: "305A727E821BCF0B"
+					item: "ars_nouveau:earth_essence"
+					type: "item"
+				}
+			]
+			title: "Basic Essences"
+			x: 3.0d
+			y: 2.5d
+		}
+	]
+	title: "Ch. IV-B: Living Age"
+}

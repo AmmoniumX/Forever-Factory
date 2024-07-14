@@ -1,0 +1,663 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chiii_immersive_engineering"
+	group: "07EF82DE5E014AA9"
+	id: "1F490EF55A776755"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["20B0D301D43950B4"]
+			description: [
+				"Using the engineer's workbench, you will be able to craft a lot of the crafting components for Immersive Engineering."
+				"You can check the engineer's manual for an introduction to IE."
+				"In the future, you will be able to create an Automated Engineer's Workbench."
+			]
+			id: "7612646AD2CF33B1"
+			rewards: [{
+				id: "6CC243F577D5869D"
+				item: "immersiveengineering:manual"
+				type: "item"
+			}]
+			subtitle: "Welcome to Immersive Engineering!"
+			tasks: [
+				{
+					id: "064A970F5E736C4D"
+					item: "immersiveengineering:workbench"
+					type: "item"
+				}
+				{
+					id: "645CBA1F3CDD5375"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:blueprint"
+						tag: {
+							blueprint: "components"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["20B0D301D43950B4"]
+			description: ["Pressure Chamber recipe"]
+			id: "285C82FF2AA46C59"
+			rewards: [{
+				count: 4
+				id: "3271999EF1FF2040"
+				item: "pneumaticcraft:capacitor"
+				type: "item"
+			}]
+			tasks: [{
+				id: "22F6B62090D9069C"
+				item: "pneumaticcraft:capacitor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6D6F5FC5AB3E7816"]
+			description: [
+				"Go out to the nether and find some soul sand."
+				"For a renewable source, you can bulk-haunt regular sand"
+			]
+			id: "433FDBD9B9BCD470"
+			tasks: [{
+				id: "01F0C0CD781C78F4"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["433FDBD9B9BCD470"]
+			description: ["Bulk-wash soul sand to get a chance at getting quartz"]
+			id: "2ADBB386D250945B"
+			tasks: [{
+				id: "3EFB06E478E76FF7"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2ADBB386D250945B"]
+			description: ["Smelt quartz into silicon"]
+			id: "0C313AB53BC8ACA8"
+			tasks: [{
+				id: "717B618AFCCF72C6"
+				item: "ae2:silicon"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0C313AB53BC8ACA8"
+				"20B0D301D43950B4"
+			]
+			description: ["Pressure Chamber recipe"]
+			id: "407312FC681D750C"
+			rewards: [{
+				count: 4
+				id: "2A6F5B17C33D6E86"
+				item: "pneumaticcraft:transistor"
+				type: "item"
+			}]
+			tasks: [{
+				id: "228303736CFB947F"
+				item: "pneumaticcraft:transistor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"407312FC681D750C"
+				"285C82FF2AA46C59"
+				"7612646AD2CF33B1"
+			]
+			description: ["Intermediate crafting component for Immersive Engineering"]
+			id: "29D80FBF87198A85"
+			rewards: [{
+				count: 8
+				id: "7288F38C515CD06A"
+				item: "immersiveengineering:component_electronic"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Sellable for Profit!"
+			tasks: [{
+				id: "3E7AF24F7C558092"
+				item: "immersiveengineering:component_electronic"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7612646AD2CF33B1"]
+			description: ["Basic crafting component for Immersive Engineering"]
+			id: "0E9DB52E43A5A4DA"
+			rewards: [{
+				count: 16
+				id: "426536BEFE51688C"
+				item: "immersiveengineering:component_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F54333CAE912250"
+				item: "immersiveengineering:component_iron"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["20B0D301D43950B4"]
+			description: ["Use all that coal coke you've collected to turn iron into steel!"]
+			id: "2168F2B737ACC974"
+			rewards: [{
+				count: 16
+				id: "75ED3C4D42437095"
+				item: "immersiveengineering:ingot_steel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 27L
+					id: "38F8B5F76B1D0269"
+					item: "immersiveengineering:blastbrick"
+					type: "item"
+				}
+				{
+					id: "48AB9BA3B5D6B830"
+					item: "immersiveengineering:ingot_steel"
+					type: "item"
+				}
+			]
+			title: "Blast Furnace \\& Steel!"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"7612646AD2CF33B1"
+				"2168F2B737ACC974"
+			]
+			description: ["Basic crafting component for Immersive Engineering"]
+			id: "4E05B357F0805381"
+			rewards: [{
+				count: 16
+				id: "4DBB776668454C18"
+				item: "immersiveengineering:component_steel"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68F1883E4CAECE22"
+				item: "immersiveengineering:component_steel"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"29D80FBF87198A85"
+				"4E05B357F0805381"
+				"0E9DB52E43A5A4DA"
+			]
+			description: ["Now we're reaching the part where you build multiblock machines that consume FE (Forge Energy) to operate. For information on possible methods to generate FE check the power generation chapter"]
+			id: "0587FFB5A9249081"
+			subtitle: "Part of IE Multiblocks"
+			tasks: [
+				{
+					id: "49465C986515D156"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					id: "17E5F5C20471BE41"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "0B5CBCBBEBDE4122"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+			]
+			title: "Engineering Blocks"
+			x: 5.0d
+			y: -5.5d
+		}
+		{
+			description: [
+				"Drop leather (from smelting tough fabric) and nitrate dust (from crushing Sandstone) into water to turn them into rotten flesh."
+				"The IE crusher gives better drop rates for nitrate than Create."
+			]
+			id: "4B210A294CD223BF"
+			rewards: [{
+				count: 8
+				id: "737752EF75029DFA"
+				item: "minecraft:rotten_flesh"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0B19DB120DDA15AD"
+					item: "minecraft:leather"
+					type: "item"
+				}
+				{
+					id: "1A8F3E217433161A"
+					item: "immersiveengineering:dust_saltpeter"
+					type: "item"
+				}
+				{
+					id: "151D8CB50081B9E4"
+					item: "minecraft:rotten_flesh"
+					type: "item"
+				}
+			]
+			title: "Rotten Flesh"
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0587FFB5A9249081"]
+			description: [
+				"Can crush stuff like the Create crusher, but faster and better (for some recipes)."
+				"This quest completes once you look at an assembled Crusher."
+			]
+			id: "1B2BC6797722B44F"
+			optional: true
+			tasks: [{
+				icon: "immersiveengineering:crusher"
+				id: "2955A5BFA4CC8EB1"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:crusher"
+				type: "observation"
+			}]
+			title: "Crusher"
+			x: 6.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0587FFB5A9249081"]
+			description: [
+				"Mixes items and fluids together."
+				"This quest completes once you look at an assembled Mixer"
+			]
+			id: "72AF1090A103A991"
+			tasks: [{
+				icon: "immersiveengineering:mixer"
+				id: "61AE3E4923CF1B75"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:mixer"
+				type: "observation"
+			}]
+			title: "Mixer"
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0587FFB5A9249081"]
+			description: [
+				"Refines fluids into other fluids. The \"catalyst\" item on some recipes is never consumed, only requires to be there."
+				"This quest completes once you look at an assembled Refinery."
+			]
+			id: "7F82F6CB47F4A0F0"
+			tasks: [{
+				icon: "immersiveengineering:refinery"
+				id: "7B2AD05713F2E021"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:refinery"
+				type: "observation"
+			}]
+			title: "Refinery"
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"0587FFB5A9249081"
+				"57EBD8E7A344BCCE"
+			]
+			description: [
+				"Melts stuff at very high temperatures. Requires graphite electrodes to run."
+				"This quest completes once you look at an assembled arc furnace."
+			]
+			id: "63608B8BBBC2F01B"
+			tasks: [
+				{
+					icon: "immersiveengineering:arc_furnace"
+					id: "00E68DF722917400"
+					observe_type: 0
+					timer: 0L
+					to_observe: "immersiveengineering:arc_furnace"
+					type: "observation"
+				}
+				{
+					id: "5C7102A8BE36DEEE"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:graphite_electrode"
+						tag: {
+							graphDmg: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Arc Furnace"
+			x: 6.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0587FFB5A9249081"]
+			description: [
+				"Squeezes items or liquids."
+				"This quest completes once you look at an assembled industrial squeezer."
+			]
+			id: "66D4FAB155CB217E"
+			tasks: [{
+				icon: "immersiveengineering:squeezer"
+				id: "1B4F0C5A0E4115A3"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:squeezer"
+				type: "observation"
+			}]
+			title: "Industrial Squeezer"
+			x: 5.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["66D4FAB155CB217E"]
+			description: ["Turn coke dust into HOP graphite dust on the squeezer."]
+			id: "57EBD8E7A344BCCE"
+			rewards: [{
+				count: 8
+				id: "75A6600042677C7F"
+				item: "immersiveengineering:dust_hop_graphite"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0BB06377DEEE69FC"
+					item: "immersiveengineering:ingot_hop_graphite"
+					type: "item"
+				}
+				{
+					id: "0419F56DB1114C26"
+					item: "immersiveengineering:dust_hop_graphite"
+					type: "item"
+				}
+			]
+			title: "HOP Graphite"
+			x: 6.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0587FFB5A9249081"]
+			description: [
+				"Can do engineer's workbench recipes automatically."
+				"This quest completes once you look at an assembled auto workbench."
+			]
+			id: "0300CDC6901C8FD4"
+			tasks: [{
+				icon: "immersiveengineering:auto_workbench"
+				id: "56DF75A3DA504A56"
+				observe_type: 0
+				timer: 0L
+				to_observe: "immersiveengineering:auto_workbench"
+				type: "observation"
+			}]
+			title: "Auto Engineer's Workbench"
+			x: 6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["7F82F6CB47F4A0F0"]
+			description: [
+				"Mix creosote and acetaldehyde (from IE/Pneumaticraft ethanol and a silver plate as a catalyst) to get phenolic resin, and pour it into a plate mold to get duroplast sheets."
+				"Hint: regardless of which ethanol you're gonna use, you can buy plants from the Shop and then set up garden cloches to automate production."
+			]
+			id: "663422859E3BF384"
+			rewards: [{
+				count: 8
+				id: "2116C1DEFEF18D44"
+				item: "immersiveengineering:plate_duroplast"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "409FAE4CB2DADC29"
+					item: "immersiveengineering:plate_duroplast"
+					type: "item"
+				}
+				{
+					id: "7E740845F400A748"
+					item: "immersiveengineering:phenolic_resin_bucket"
+					type: "item"
+				}
+			]
+			title: "Duroplast"
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["663422859E3BF384"]
+			id: "2C6F57E9DB7C9196"
+			tasks: [{
+				id: "53E172E95BB95816"
+				item: "immersiveengineering:circuit_board"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"4B210A294CD223BF"
+				"72AF1090A103A991"
+			]
+			description: ["Throw molten plastic and rotten flesh into a mixer to get etching acid."]
+			id: "63961C4747D75247"
+			tasks: [{
+				id: "1F18B535877E6E95"
+				item: "pneumaticcraft:etching_acid_bucket"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0E9DB52E43A5A4DA"]
+			description: ["Grow plants automatically!"]
+			id: "13AE03820E989178"
+			tasks: [{
+				id: "78D279859AD2FCBA"
+				item: "immersiveengineering:cloche"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["63608B8BBBC2F01B"]
+			description: ["Made from rutile dust and HOP graphite dust in an Arc Furnace."]
+			id: "3ACEB921C99126C6"
+			tasks: [{
+				id: "6F2018AF428EFBDF"
+				item: "emendatusenigmatica:titanium_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"3ACEB921C99126C6"
+				"2C6F57E9DB7C9196"
+			]
+			description: [
+				"The empty board for a PCB. First it needs to be etched then assembled."
+				""
+				"There are two different ways to assemble a PCB. The first one is first curing it in a UV light box, then etching in an etching tank, and then finally assemble it through regular crafting."
+				""
+				"The second, cheaper and faster method is with an assembly setup, but you need PCBs first to craft them."
+			]
+			id: "3604E2C919F4011C"
+			tasks: [{
+				id: "2A2906F8557451AC"
+				item: "pneumaticcraft:empty_pcb"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -6.0d
+		}
+		{
+			description: ["The Shop isn't enough, sure the open intergalactic market has a lot of useful products, but there are some things that you can only get from private markets. The Amadron market is a market made specifically for engineers, specializing in all kinds of pneumatics, and has a variety of useful products on sale."]
+			id: "0B90905332B5A226"
+			subtitle: "Because one marketplace isn't enough"
+			tasks: [{
+				id: "72C432C97974DC64"
+				item: "pneumaticcraft:amadron_tablet"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0B90905332B5A226"]
+			description: ["If I buy one from the Amadron market, I can use this inside a UV box to cure empty PCBs!"]
+			id: "61BB0619600FB98F"
+			tasks: [{
+				id: "5F516373B9EB4A54"
+				item: "pneumaticcraft:pcb_blueprint"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["61BB0619600FB98F"]
+			description: ["The UV light box exposes empty PCBs to ultraviolet light, readying them for etching"]
+			id: "7851BA91C465BDC7"
+			tasks: [{
+				id: "74FC7A4CB2206719"
+				item: "pneumaticcraft:uv_light_box"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"7851BA91C465BDC7"
+				"3604E2C919F4011C"
+				"63961C4747D75247"
+			]
+			description: ["The etching tank can etch our PCB blueprint design onto the empty boards. The longer I keep the empty PCBs inside the UV box, the higher the chances of a successful etching I'll have. I probably should aim for 90-100%."]
+			id: "2DC0ECB2FAE359C4"
+			tasks: [
+				{
+					id: "0740F807CF07797D"
+					item: "pneumaticcraft:etching_tank"
+					type: "item"
+				}
+				{
+					id: "10902898B0DDB1A8"
+					item: "pneumaticcraft:unassembled_pcb"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2DC0ECB2FAE359C4"]
+			description: [
+				"Finally, I can take the etched board and add the electronic components to get a finished PCB!"
+				"With this, I will be able to craft complicated digital machinery, as well as sell it for some substantial profit!"
+			]
+			id: "10BD2187768DBA70"
+			rewards: [{
+				count: 8
+				id: "31EDA46E22FADF3B"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Sellable for Profit!"
+			tasks: [{
+				id: "6D08496A2CE44F6D"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["10BD2187768DBA70"]
+			description: ["Now that I have some PCBs, I can craft an Assembly Platform. With it, I can completely skip the UV light and etching steps and get an unassembled PCB much faster. All I need is the right assembly program, which I can get through Amadron."]
+			id: "0F2DE3BA4B0565E4"
+			rewards: [{
+				count: 8
+				id: "154709685A21B558"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			subtitle: "Faster and Cheaper PCBs"
+			tasks: [
+				{
+					id: "33ED7442597B002E"
+					item: "pneumaticcraft:assembly_platform"
+					type: "item"
+				}
+				{
+					id: "06845DAB6BE4915B"
+					item: "pneumaticcraft:assembly_io_unit_import"
+					type: "item"
+				}
+				{
+					id: "405DAF3D1449F0CC"
+					item: "pneumaticcraft:assembly_io_unit_export"
+					type: "item"
+				}
+				{
+					id: "5BB656E679B4D1B5"
+					item: "pneumaticcraft:assembly_laser"
+					type: "item"
+				}
+				{
+					id: "45D977E40F0B1C2D"
+					item: "pneumaticcraft:assembly_controller"
+					type: "item"
+				}
+				{
+					id: "05033EF982857D90"
+					item: "pneumaticcraft:assembly_program_laser"
+					type: "item"
+				}
+			]
+			x: 13.5d
+			y: -6.5d
+		}
+	]
+	title: "Ch.III: Electrical Age"
+}

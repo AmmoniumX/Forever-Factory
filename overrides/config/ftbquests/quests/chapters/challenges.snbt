@@ -1,0 +1,171 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "challenges"
+	group: "1A13CCEB71BED4A8"
+	icon: "createdeco:gold_coin"
+	id: "7C2381633853FD7A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Challenges are &lentirely optional&r challenges for your playthrough, that make the game harder to play. Most challenges are \"beat the pack without using X\" so they aren't tracked by the quests they are on, but rather are just a checkmark quest, so it's entirely based on the honor system. It's up to you if you want to go for them or not"]
+			icon: "createdeco:brass_coin"
+			id: "257F165A12748DF2"
+			shape: "pentagon"
+			tasks: [{
+				id: "748FF51B8E5A6074"
+				title: "What are challenges?"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["257F165A12748DF2"]
+			description: [
+				"Are you tired of technology being everywhere you go? Go back to your simpler roots and abandon modern society."
+				""
+				"This challenge requires you to never make an Applied Energistics system. This means no digital storage, no crafting requests system, and no crafting patterns."
+				""
+				"Viable alternatives are: Pretty Pipes terminals, RFTools modular storage/storage scanners, Super Factory Manager, Integrated Terminals, Mekanism QIO, and Botania Corporea Networks."
+				""
+				"For hardcore computer science nerds, you can try making your own digital storage system with ComputerCraft. Don't expect it to be easy, though."
+			]
+			icon: "ae2:controller"
+			id: "721DC8E34D3DEDC8"
+			rewards: [{
+				id: "4E04A5D85AAA1844"
+				item: "kubejs:trophy_caffeinated"
+				type: "item"
+			}]
+			subtitle: "I have no idea what 'Tweeter' is and I don't want to know."
+			tasks: [{
+				id: "2138C882BEA711EC"
+				title: "Caffeinated Mode"
+				type: "checkmark"
+			}]
+			title: "Caffeinated"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["257F165A12748DF2"]
+			description: [
+				"FE is too OP. You can convert almost any unique power units to and from FE."
+				"In this channel, you must never use any power converter. This means no electric motors, alternators, flux compressors, mana fluxfields, or any block designed to convert one power unit to another. "
+				""
+				"All your Create power must come from Create generators, Pneumaticcraft power from Pneumaticcraft generators, and so on."
+			]
+			icon: "botania:pure_daisy"
+			id: "55389138D68EC507"
+			rewards: [{
+				id: "4876AE60ABAFFAFA"
+				item: "kubejs:trophy_purist"
+				type: "item"
+			}]
+			subtitle: "Anyone got a USB to USB-C cable?"
+			tasks: [{
+				id: "10D730A25F8A4B3C"
+				title: "Purist Mode"
+				type: "checkmark"
+			}]
+			title: "Purist"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["257F165A12748DF2"]
+			description: [
+				"The onmi challenge is the hardest challenge. It requires you to go for every other challenge and complete them in one playthrough."
+				"If you're up to the ultimate challenge, prepare yourself!"
+			]
+			icon: "extendedcrafting:ultimate_singularity"
+			id: "6924F72D7B7B8DF4"
+			rewards: [{
+				id: "67E3563CF4CC91CF"
+				item: "kubejs:trophy_omni"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "When regular challenges aren't enough"
+			tasks: [
+				{
+					id: "356A4DC39C09C23F"
+					item: "kubejs:trophy_caffeinated"
+					type: "item"
+				}
+				{
+					id: "3ED3FED182D5998E"
+					item: "kubejs:trophy_cheapskate"
+					type: "item"
+				}
+				{
+					id: "5BEFE1F4060882C1"
+					item: "kubejs:trophy_purist"
+					type: "item"
+				}
+				{
+					id: "1C03FEF3C8FC49D6"
+					item: "kubejs:trophy_lazy"
+					type: "item"
+				}
+			]
+			title: "The Omni Challenge"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["257F165A12748DF2"]
+			description: [
+				"The shop is very useful when you want to get resources quickly, but what about your precious profit margins? There's no way upper management would approve your wasteful spending!"
+				""
+				"This challenge requires you to avoid buying resources from the shop as much as possible. Some items may be obtainable for free via alternative methods. Others, such as ores, can be processed to double or further increase their output. "
+				""
+				"For math nerds, calculate the smallest possible cash spent per mechanism crafted and go for it."
+			]
+			icon: "createdeco:gold_coinstack"
+			id: "78D19C95FB19BADA"
+			rewards: [{
+				id: "7426DA5C7C7421A8"
+				item: "kubejs:trophy_cheapskate"
+				type: "item"
+			}]
+			subtitle: "Sir, your coupon is expired"
+			tasks: [{
+				id: "62193FAF1A0CBD15"
+				title: "Cheapskate Mode"
+				type: "checkmark"
+			}]
+			title: "Cheapskate"
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["257F165A12748DF2"]
+			description: [
+				"Manual crafts are for the weak, so easily tempted towards the quick way out. You, an enlightened individual, know much better than them. The true answer lies in absolute, complete automation!"
+				""
+				"This challenge requires you to set up automation for every mechanism. To complete this challenge, you need to be able to request as any mechanism you want from your system and have it be crafted &nfrom scratch&r without any manual intervention. If you are not using AE2 autocrafting, they must be passively crafted and accessible from a storage such as a drawer."
+			]
+			icon: "minecraft:red_bed"
+			id: "704C169B6733A165"
+			rewards: [{
+				id: "53F8E183571958A0"
+				item: "kubejs:trophy_lazy"
+				type: "item"
+			}]
+			subtitle: "Goal: Stop playing the game"
+			tasks: [{
+				id: "2C0623081A587EDE"
+				title: "Lazy Bastard"
+				type: "checkmark"
+			}]
+			title: "Lazy"
+			x: 1.0d
+			y: 1.5d
+		}
+	]
+	subtitle: ["Want to spice up your game? Challenge yourself!"]
+	title: "Challenges!"
+}

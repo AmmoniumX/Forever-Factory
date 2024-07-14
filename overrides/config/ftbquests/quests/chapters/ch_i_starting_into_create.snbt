@@ -1,0 +1,602 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch_i_starting_into_create"
+	group: "07EF82DE5E014AA9"
+	id: "23887F68608FBE0A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["11DDC2F84E22B04D"]
+			description: ["Get yourself some resources that you will need in order to craft basic Create machines. You will be able to get andesite renewably later, but for now, either buy it or find it in-world."]
+			id: "2E3D0EEE80493C3D"
+			tasks: [
+				{
+					id: "4D386FCC9548BEEC"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Iron Ingot\"}"
+							}
+							value: "forge:ingots/iron"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1BDBEAE7D010F7BB"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+				{
+					id: "593EAC9F6F3D3EF9"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Planks\"}"
+							}
+							value: "minecraft:planks"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Basic Resources"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			description: ["What's up with this world? Wherever this place is, there's absolutely no ores in the terrain! If I want to thrive here, I'm gonna need some help. If I can get a couple basic materials, I think I can connect to the galactic marketplace..."]
+			icon: "adminshop:shop"
+			id: "11DDC2F84E22B04D"
+			rewards: [
+				{
+					id: "38379F502A6BEFF8"
+					item: "adminshop:shop"
+					type: "item"
+				}
+				{
+					id: "182C2627A18AAFAB"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "adminshop:econ_handbook"
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5A8103E4AC0A38B4"
+				type: "checkmark"
+			}]
+			title: "Beginnings"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2E3D0EEE80493C3D"]
+			description: [
+				"These are the essence of Create, you will need LOTS of these going forwards."
+				"You can buy kelp from the shop. Moving on, if you're not sure how to get an item, make it a habit to check if it's on the shop"
+			]
+			id: "70AC5F9616DA0FDF"
+			tasks: [
+				{
+					id: "30C501E96DEA691F"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "176F51131C94C3BB"
+					item: "create:shaft"
+					type: "item"
+				}
+				{
+					id: "480BC732A60237CB"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "4FB9BEF336DAB9E6"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+				{
+					id: "661DCDA83A04F22F"
+					item: "minecraft:dried_kelp"
+					type: "item"
+				}
+			]
+			title: "Basic Create Components"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["70AC5F9616DA0FDF"]
+			description: ["This is the key component to most Create (and some other) machines you're able to craft currently. It might be smart to try and automate these early on."]
+			id: "30EEAD30A3988D6B"
+			shape: "gear"
+			subtitle: "Sellable for Profit!"
+			tasks: [
+				{
+					id: "669C8B6AB4210263"
+					item: "kubejs:andesite_hull"
+					type: "item"
+				}
+				{
+					id: "5F33DFB401236C68"
+					item: "kubejs:basic_mech"
+					type: "item"
+				}
+			]
+			title: "Basic Mechanisms"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["30EEAD30A3988D6B"]
+			description: ["Can push and pull entities around. More importantly, allows for bulk washing/blasting/smoking/haunting."]
+			id: "73A90F278477FBDC"
+			rewards: [{
+				id: "6C779E1482A490DD"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			tasks: [{
+				id: "76BDFE85756FF348"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["30EEAD30A3988D6B"]
+			description: ["Swirls stuff around, which somehow turns it into new things!"]
+			id: "44CAB3CF187C79D1"
+			rewards: [{
+				id: "2ABA767A28853390"
+				item: "create:basin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3B19469B2DCCD1EA"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["30EEAD30A3988D6B"]
+			description: ["Compresses stuff into flatter stuff!"]
+			id: "4AA872D0C8407CC3"
+			rewards: [{
+				id: "3C7329066A7F5FE4"
+				item: "create:depot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3548D340BD7BD043"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["30EEAD30A3988D6B"]
+			description: ["Rolls stuff!"]
+			id: "262181AA67979C78"
+			tasks: [{
+				id: "71D49A70DEA99150"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["30EEAD30A3988D6B"]
+			description: ["Mills stuff!"]
+			id: "2A38B01D0FFC09B8"
+			tasks: [{
+				id: "3FE96041D8F1B87F"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["70AC5F9616DA0FDF"]
+			description: [
+				"The coke oven allows you to burn regular coal into coke and creosote oil. Believe it or not, you are mostly going to make use of the oil for now, so make sure not to void it!"
+				""
+				"If you're not sure how to get the string for the engineer's hammer, you can buy industrial hemp seeds on the shop and craft hemp into string."
+			]
+			id: "0EBF71B7D8E66CEE"
+			tasks: [
+				{
+					count: 27L
+					id: "7F5EDD85272A320B"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+				{
+					id: "2EF487085144AAE8"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Coke Oven"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0EBF71B7D8E66CEE"]
+			description: ["Congratulations! With creosote oil, you can vastly increase the amount of basic mechanisms you can craft per recipe. Now all you need is some sort of fluid logistics to automate the creation of treated planks. Surely, it can't be &othat&r hard, right?"]
+			id: "6FFDF7C940F0759A"
+			tasks: [{
+				id: "79D72D5B142060B4"
+				item: "immersiveengineering:creosote_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"30EEAD30A3988D6B"
+				"6FFDF7C940F0759A"
+			]
+			description: [
+				"Okay I lied, getting fluid logistics may be a little difficult. In order to move fluids around you will begin with create pipes, but a lot of the components required need copper casing. Copper casing requires cured rubber, so we need rubber."
+				""
+				"Step one of getting rubber is resin. You can get resin with an arboreal extractor facing a tree. Depending on the tree you may get different amounts or even different fluids, but for now oak trees will work. If you can get your hands on some phyto-gro, that will speed extracting up"
+			]
+			id: "41C1F3E95CEF7660"
+			tasks: [{
+				id: "7F39E1E6DF0C0980"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["41C1F3E95CEF7660"]
+			description: ["Oof, getting a whole bucket without pipes might've taken a while. Don't worry, with this we're getting close."]
+			id: "507BAFFB7AE3B906"
+			tasks: [{
+				id: "680C772A93588A0B"
+				item: "thermal:resin_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["507BAFFB7AE3B906"]
+			description: ["Throw that resin into a basin, place a mechanical press above it, and you've got rubber. To cure it, you can just smelt it for now, but in the future, smelting it alongside sulfur will yield more cured rubber."]
+			id: "13A671147A69C0DC"
+			tasks: [
+				{
+					id: "147C83FFC34F4F8F"
+					item: "thermal:rubber"
+					type: "item"
+				}
+				{
+					id: "646CB83681FF2ACD"
+					item: "thermal:cured_rubber"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["13A671147A69C0DC"]
+			description: ["The core piece for all Create fluid things. Have fun!"]
+			id: "53CE3CAED6D44D01"
+			tasks: [{
+				id: "7344C35CDA238F31"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			title: "Create Fluid Logistics"
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["53CE3CAED6D44D01"]
+			description: ["Transfers fluids!"]
+			id: "411370B2A03DD8FC"
+			tasks: [{
+				id: "118AF936669423CB"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["53CE3CAED6D44D01"]
+			description: ["Extracts fluids!"]
+			id: "697D6AF56A45B1B3"
+			tasks: [{
+				id: "3137B8CDCA655C57"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["53CE3CAED6D44D01"]
+			description: ["Fills stuff!"]
+			id: "4CC2DDA8206FDA59"
+			tasks: [{
+				id: "720B37483CCDA1F0"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["53CE3CAED6D44D01"]
+			description: ["If you want to store fluids, you can either build a multiblock using create fluid tanks, or go the Thermal route and craft a fluid cell"]
+			id: "0DEC66E358FD6640"
+			tasks: [{
+				id: "0E3BFF05F579ADFD"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Early Fluid Tanks\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "thermal:fluid_cell"
+								tag: {
+									BlockEntityTag: {
+										TankInv: [{
+											Amount: 0
+											Capacity: 32000
+											FluidName: "minecraft:empty"
+											Tank: 0b
+										}]
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "create:fluid_tank"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4CC2DDA8206FDA59"]
+			description: ["Finally, you are able to coat regular planks with creosote oil to get treated planks, which will certainly aid you in crafting a lot of basic mechanisms. This marks the end of the quests from Chapter 1, so now you can either set up a good basic mechanism factory or jump into Chapter 2!"]
+			id: "588052217C27D945"
+			shape: "gear"
+			subtitle: "End of Chapter 1"
+			tasks: [{
+				id: "181E779009A457FA"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["70AC5F9616DA0FDF"]
+			id: "578F1DB7E4E6C262"
+			rewards: [
+				{
+					count: 8
+					id: "3C4BD2FA41DF073F"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "658806E417E7FAC6"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "447881239101E966"
+					item: "create:belt_connector"
+					type: "item"
+				}
+				{
+					id: "5B163810CB49A534"
+					item: "create:andesite_funnel"
+					type: "item"
+				}
+			]
+			title: "Create Item Logistics"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["53CE3CAED6D44D01"]
+			description: ["Drains stuff!"]
+			id: "6CD8520D82F0CB87"
+			tasks: [{
+				id: "04A249F9C8F8099E"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["70AC5F9616DA0FDF"]
+			description: ["Get any source of kinetic energy set up. You're free to choose whichever you prefer the most"]
+			id: "42B44090CD8C167C"
+			rewards: [{
+				count: 16
+				id: "6C67DF01839F1F0A"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			tasks: [{
+				id: "791F54D51F1DD12B"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Create Generators\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "create:hand_crank"
+							}
+							{
+								Count: 1b
+								id: "create:water_wheel"
+							}
+							{
+								Count: 1b
+								id: "create:large_water_wheel"
+							}
+							{
+								Count: 1b
+								id: "create:windmill_bearing"
+							}
+							{
+								Count: 1b
+								id: "create:steam_engine"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["11DDC2F84E22B04D"]
+			description: [
+				"Although this modpack is intended to be played on a vanilla-ish world, you can also play it on superflat or skyblock mode. However, you will need *some* resources to start. Specifically, you will need infinite water, a cobblestone generator, a bit of lava, and budding amethyst. Don't mess it up!"
+				""
+				"You can drain the magma for a temporary source of Lava, until you can go to the Nether. "
+				""
+				"If you're NOT on skyblock mode, don't use the budding amethyst! That's cheating >:("
+			]
+			icon: "minecraft:grass_block"
+			id: "26261CEE68EC73EB"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "6BAD67802B386FD9"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "25CDAF5DE09CCE45"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "09B060886044E91F"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "4B2D843CD22E9023"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "6DABB5C6F1029352"
+					item: "minecraft:magma_block"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5B9679220DE65CA2"
+					item: "minecraft:budding_amethyst"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "577869AC6F8012BD"
+				title: "Obtain Materials"
+				type: "checkmark"
+			}]
+			title: "Skyblock/Superflat Resources"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4AA872D0C8407CC3"]
+			description: [
+				"You can compact flint, lava and cobblestone for your own source of andesite, without having spent a single $. You will learn about an infinite source of lava on chapter II."
+				"You can either go for this or accept the cash loss from buying andesite, your choice."
+			]
+			id: "4B6D5D072F606FD9"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				count: 64L
+				id: "4FF5B4EB79EDDB13"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["11DDC2F84E22B04D"]
+			description: ["A personal, portable Shop."]
+			id: "007C33F66E5A65B1"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "79D4F19347214395"
+				item: "adminshop:tablet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+	]
+	title: "Ch.I: Mechanical Age"
+}

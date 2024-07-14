@@ -1,0 +1,469 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chiv_digital_age"
+	group: "07EF82DE5E014AA9"
+	id: "18DC135FD6C775CF"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["10BD2187768DBA70"]
+			id: "028A5C60BF182D8C"
+			shape: "gear"
+			tasks: [{
+				id: "707F030EA6C67A9D"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"10BD2187768DBA70"
+				"028A5C60BF182D8C"
+			]
+			description: ["Laser a PCB into a bundle of smaller integrated circuits, then unpack"]
+			id: "5C71B40D705F5F3B"
+			rewards: [{
+				count: 32
+				id: "1A4C02D0F64614C7"
+				item: "kubejs:integrated_circuit"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1612DFFE246398D8"
+				item: "kubejs:integrated_circuit"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5C71B40D705F5F3B"]
+			description: ["Basic machine frame for Thermal machines"]
+			id: "3995B0734CED1FEC"
+			rewards: [{
+				count: 4
+				id: "0E16D688A7CC6422"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "61B5AD389F534ACA"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			title: "Thermal Expansion"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["028A5C60BF182D8C"]
+			id: "47577AB3E61E8EBF"
+			tasks: [{
+				id: "47FB231FBE40593A"
+				item: "ae2:inscriber"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"47577AB3E61E8EBF"
+				"5C71B40D705F5F3B"
+				"425B10DAC7C8FFBC"
+			]
+			description: ["The building blocks for digital storage systems, as well as other advanced electronics"]
+			id: "416318DB2859CBAD"
+			rewards: [
+				{
+					count: 8
+					id: "4A43CC21F0D9DB15"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "193199BB3419E094"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "499251FA5FB2765A"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "67CC88AED4FFFB76"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "265D73456C7AC277"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "0F42081F0D4CF021"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			title: "Digital Storage!"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5C71B40D705F5F3B"]
+			description: ["Basic machine frame for Industrial Foregoing machines"]
+			id: "35B9085ACBC7D749"
+			shape: "square"
+			tasks: [{
+				id: "3983F14A0BAD62A9"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			title: "Industrial Foregoing"
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["416318DB2859CBAD"]
+			description: [
+				"Applied Energistics 2 is a highly powerful digital storage mod that lets you store mass amounts of items \"digitally\", and allow you to smartly define autocrafting patterns to craft items on-demand."
+				""
+				"Even though it will definitely make your playthrough easier, it is entirely optional."
+				"If you're doing the \"Caffeinated\" challenge, you don't have to complete this quest."
+			]
+			id: "15FDCBFB0D47E8F5"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "7BFBB06084E0A6C3"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "69A4D85A1172119F"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "44928BECC99B2523"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "26FFD94FCD96655B"
+					item: "kubejs:integrated_circuit"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "38777A3FB7DF945C"
+					item: "ae2:silicon"
+					type: "item"
+				}
+				{
+					id: "59F1E211DEB676D4"
+					item: "ae2:guide"
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Digital Storage"
+			tasks: [{
+				id: "1D69CD53B2D6FF31"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Digital Storage Mods\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "ae2:controller"
+							}
+							{
+								Count: 1b
+								id: "refinedstorage:controller"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "Applied Energistics"
+			x: 1.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"There are two ways to obtain your first quartz: either explore and look for a meteorite, or buy certus seedlings from the shop."
+				""
+				"You can craft a meteorite compass that will point to the nearest meteorite."
+				""
+				"Certus seedlings are expensive and can initially only be crushed for a few certus."
+				""
+				"Once you get some charged certus, you can grow seedlings into budding certus quartz that will passively grow certus buds."
+				""
+				"Once you get certus buds, you can upgrade their quality up to flawed by throwing them into water with charged certus."
+				""
+				"You can wash a flawed bud for a 1% chance to get a flawless bud, which will never decay."
+			]
+			id: "425B10DAC7C8FFBC"
+			rewards: [
+				{
+					id: "36146857125BF29A"
+					item: "ae2:damaged_budding_quartz"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "527CE05890B29443"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "38A6E2FEC7BBF8AE"
+					item: {
+						Count: 1b
+						id: "itemfilters:or"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Obtaining Certus\"}"
+							}
+							items: [
+								{
+									Count: 1b
+									id: "ae2:meteorite_compass"
+								}
+								{
+									Count: 1b
+									id: "kubejs:certus_seed"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "556EAD254064712B"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			title: "Obtaining Certus"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"You can get your first sky stone either by going meteorite hunting or buying one in the shop."
+				"Once you have at least one, you can infinitely duplicate them by crushing them into sky stone dust, and smelting the dust back into blocks."
+			]
+			id: "1D3BA7F6C93D4CAE"
+			rewards: [{
+				count: 16
+				id: "678C47F81E57BBD6"
+				item: "ae2:sky_stone_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "28FB7FC8C3E76609"
+				item: "ae2:sky_stone_block"
+				type: "item"
+			}]
+			title: "Obtaining Sky Stone"
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			description: ["There are tons of ways to obtain gunpowder, blasting cinder flour, sulphur into gunpowder, mob farms or even growing boomshroom spores. Have a good look in JEI and choose a path!"]
+			id: "53B5CDAF7F2289E1"
+			rewards: [{
+				count: 16
+				id: "79E6AF25FC425B0B"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "1078C5C3797F9151"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			title: "Obtaining Gunpowder"
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"416318DB2859CBAD"
+				"1D3BA7F6C93D4CAE"
+				"68973D2B57C7651F"
+			]
+			description: [
+				"Computing Cores are extremely delicate components, and therefore its manufacturing has to be extremely precise to get anything useful."
+				"For now, your starter assembly line only has a 60% success rate, so you will get all kinds of failed cores."
+				"Since computing cores are very expensive to manufacture, you might want to look into ways to reprocess these failed cores."
+			]
+			id: "271AED3BD9B0364D"
+			rewards: [{
+				count: 8
+				id: "40D211A1BFF3A4A4"
+				item: "kubejs:computing_core"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "Turing Complete"
+			tasks: [{
+				id: "024E9786A7E2D789"
+				item: "kubejs:computing_core"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["425B10DAC7C8FFBC"]
+			description: [
+				"Thermal's pulverizer can pulverize one certus crystal into more than one certus dust. Then, you can throw a certus dust and a charged certus crystal into water to obtain two certus crystals. Repeat this indefinitely for infinite certus."
+				""
+				"For even more certus, this can be boosted using pulverizer catalysts."
+			]
+			id: "23CCCEAB154D1201"
+			shape: "pentagon"
+			tasks: [{
+				id: "605A6B253F468A32"
+				item: "ae2:certus_quartz_dust"
+				type: "item"
+			}]
+			title: "Faster Certus"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["799E58AD4CF491FC"]
+			description: [
+				"To get thermal paste, you need to summon Thermal mobs, farm their loot, and mix it all together."
+				""
+				"To learn how to summon mobs such as Thermal mobs, check Chapter IV-B."
+				""
+				"(HINT: this quest requires you to complete the \"thermal mobs\" quest from said chapter. To quickly navigate to requirement quests, you can click the left arrow in this menu)"
+			]
+			id: "68973D2B57C7651F"
+			shape: "hexagon"
+			subtitle: "Haha! Get it? Thermal? ..."
+			tasks: [{
+				id: "6B1A5F69416ADAC1"
+				item: "kubejs:thermal_paste_bucket"
+				type: "item"
+			}]
+			title: "Thermal Paste"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["53B5CDAF7F2289E1"]
+			description: ["Mix gunpowder and redstone with energized glowstone in a heated mixer to get luminessence, a key ingredient in ExtendedCrafting recipes."]
+			id: "6368E334546B0426"
+			rewards: [{
+				count: 6
+				id: "42A0BC2FB02F1DA7"
+				item: "extendedcrafting:luminessence"
+				type: "item"
+			}]
+			tasks: [{
+				id: "698D03F332707D34"
+				item: "extendedcrafting:luminessence"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6368E334546B0426"]
+			description: ["The advanced crafting table has a larger crafting grid for more complex recipes."]
+			id: "5C830BD46F1F2C52"
+			shape: "square"
+			tasks: [
+				{
+					id: "793EA07201D7B534"
+					item: "extendedcrafting:black_iron_ingot"
+					type: "item"
+				}
+				{
+					id: "31613DCCA6FABE08"
+					item: "extendedcrafting:advanced_table"
+					type: "item"
+				}
+			]
+			title: "Advanced Crafting Table"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5C830BD46F1F2C52"
+				"271AED3BD9B0364D"
+			]
+			description: ["Calling this an upgraded form of a printed circuit board would be an understatement. These modular boards are applicable to tons of industrial applications, from single-block tiered machines to more advanced tech and magic applications. Not to mention their very high market price. Have fun!"]
+			id: "6472B37DE3727D2C"
+			rewards: [{
+				id: "53F76ACADD5D7375"
+				item: "kubejs:sbc"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "Modular and powerful"
+			tasks: [{
+				id: "18A7640FEFC15E76"
+				item: "kubejs:sbc"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5C830BD46F1F2C52"]
+			description: [
+				"The auto crafters can be set to a specific recipe, then will automatically extract ingredients from inventories &labove&r them. Then they will craft the result which can be extracted from any side."
+				""
+				"Note that you need to insert the ingredients to an inventory above them, not to the crafters themselves!"
+				""
+				"For on-demand automation, you can just make a pattern insert items into a chest above them. For passive automation, you can use LaserIO's counting filter, or even drawer controllers, so you don't overflow with one type of item!"
+			]
+			id: "6789B8CB5D3E76D5"
+			shape: "pentagon"
+			tasks: [{
+				id: "31B455BDF6D6B085"
+				item: "extendedcrafting:advanced_auto_table"
+				type: "item"
+			}]
+			title: "ExtendedCrafting Automation"
+			x: 7.0d
+			y: -4.5d
+		}
+	]
+	title: "Ch.IV-A: Digital Age"
+}

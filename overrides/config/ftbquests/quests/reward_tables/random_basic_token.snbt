@@ -1,0 +1,12 @@
+{
+	id: "0D0728B05BBD1FCD"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "naturesaura:token_joy" }
+		{ item: "naturesaura:token_fear" }
+		{ item: "naturesaura:token_anger" }
+		{ item: "naturesaura:token_sorrow" }
+	]
+	title: "Random Basic Token"
+}

@@ -1,0 +1,1013 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ch_vi"
+	group: "07EF82DE5E014AA9"
+	id: "3FE54DAB83622275"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["23B55BDA8D657BAA"]
+			description: [
+				"You've gotten this far: Congratulations."
+				"If you have some time to spare, let's reflect on your base a bit:"
+				""
+				"How much of your progression towards this point on the quest book was automated? How much that was manually done can you automate easily? How's your account balance looking like at the moment? In the green, I hope?"
+				"Have you decorated your base a little? Left enough space to expand?"
+				"What about power production? Are you just scraping by, or have some breathing room?"
+				""
+				"I hope you reflect on those questions, since for this final chapter, you will not only need to build more automation lines, they are generally larger,"
+				"slower, more expensive, and more power consuming. This will truly test your ability to automate stuff at a large scale, as trying to do all of this manually and hand crafting will be exhausing (you're welcome to try, though)."
+				""
+				"Have fun!"
+			]
+			id: "1E6DBC82C47E6B47"
+			rewards: [
+				{
+					count: 16
+					id: "41F2307F9563D77E"
+					item: "create:builders_tea"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "76A9997500DD305B"
+					item: "create:sweet_roll"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0A27D9FB4A860EC2"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "Are you ready?"
+			tasks: [{
+				id: "70495A7AADDD5709"
+				item: "kubejs:cryo_mainframe"
+				type: "item"
+			}]
+			title: "The End Approaches"
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1E6DBC82C47E6B47"]
+			description: [
+				"Normally, the creational catalyst just removes the upper limit of some aura generators."
+				""
+				"However, on this modpack, it is also a requirement for something else, the next quest will tell you more"
+			]
+			id: "0A721997E7985C3C"
+			subtitle: "A catalyst... of... creation..."
+			tasks: [{
+				id: "51530F3FE8A85744"
+				item: "naturesaura:generator_limit_remover"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0A721997E7985C3C"]
+			description: [
+				"For this part, you'll need to head down below to bedrock. Place an igneous extruder right on top of bedrock, place lava on the right and the creational catalyst on the left, and you'll get these... weirdly dense rocks."
+				""
+				"(You'll need a lot of them, and also a lot of space to process what they give you. So make sure you find a nice spot on the bedrock floor and leave enough space)"
+			]
+			id: "5550A8197B223F62"
+			subtitle: "Don't throw these around"
+			tasks: [
+				{
+					id: "7CF40BE20AB1BD4E"
+					item: "kubejs:dense_rock"
+					type: "item"
+				}
+				{
+					id: "313D42A16027134E"
+					item: "thermal:device_rock_gen"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5550A8197B223F62"]
+			description: ["It appears that imbuing these rocks with &bMana&r make them even denser, almost as if matter was being created inside them."]
+			id: "37251EDFCAFAB9A5"
+			tasks: [{
+				id: "53F1EC34E7D404ED"
+				item: "kubejs:dense_rock_mana"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["37251EDFCAFAB9A5"]
+			description: ["&aAura&r appears to have the same effect as mana, better than that, these effects seem to stack."]
+			id: "5B2DB78A6D283B01"
+			tasks: [{
+				id: "5A8669101EE967E4"
+				item: "kubejs:dense_rock_aura"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5B2DB78A6D283B01"]
+			description: [
+				"After enchanting the rock with &dSource&r, the rock has completely changed, turning into a Primordial Stone. This mythical, impossibly dense stone can create materials out of thin air, all it needs is a little \"push\" by industrial processes."
+				""
+				"Primordial stones can be turned into different \"flavors\", each giving different materials."
+			]
+			id: "0CA30FC8AA0F715A"
+			shape: "square"
+			subtitle: "REALLY Don't throw these around"
+			tasks: [{
+				id: "3AC9CCB663CA5A02"
+				item: "kubejs:primordial_stone"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0CA30FC8AA0F715A"
+				"4A564701EA6CB72A"
+				"311DAF8C44BD3DD2"
+			]
+			description: ["Source of heavy metallic elements"]
+			id: "4B9C17C5DC532C43"
+			rewards: [{
+				count: 8
+				id: "3548122B43C726FC"
+				item: "kubejs:heavy_primordial_stone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "426B1E5A041C3483"
+				item: "kubejs:heavy_primordial_stone"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0CA30FC8AA0F715A"
+				"4E9D2FF15FA96F13"
+			]
+			description: ["Source of gems and dusts"]
+			id: "1C27E279F7A85FAC"
+			rewards: [{
+				count: 8
+				id: "19A2C01717A4CB80"
+				item: "kubejs:prismatic_primordial_stone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D594834CDA14543"
+				item: "kubejs:prismatic_primordial_stone"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"0CA30FC8AA0F715A"
+				"1BE603104A726F2D"
+				"2DEC13975CBCC6A5"
+			]
+			description: ["Source of light metallic elements"]
+			id: "4776EFB12DC6F9D3"
+			rewards: [{
+				count: 8
+				id: "2D35BCA4BA32C597"
+				item: "kubejs:light_primordial_stone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7742245FB703221E"
+				item: "kubejs:light_primordial_stone"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"Gather aura from the overworld using a bottle and cork, and it will fill up with pure sunlight. You can automate this with vanilla dispensers."
+				""
+				"To drain this bottle of this liquid, use a Create drain."
+				""
+				"Make sure to keep the area's Aura at stable levels!"
+			]
+			id: "1BE603104A726F2D"
+			rewards: [{
+				count: 4
+				id: "6807019B96F83194"
+				item: {
+					Count: 1b
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:overworld"
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "2204445920898CE0"
+				item: {
+					Count: 1b
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:overworld"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			description: [
+				"Gather aura from the nether using a bottle and cork, and it will fill up with nearby ghosts. You can automate this with vanilla dispensers."
+				""
+				"To drain this bottle of this liquid, use a Create drain."
+				""
+				"Make sure to keep the area's Aura at stable levels!"
+			]
+			id: "4E9D2FF15FA96F13"
+			rewards: [{
+				count: 4
+				id: "3F463E6E670C1D42"
+				item: {
+					Count: 1b
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:nether"
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "155454BE2FEB5225"
+				item: {
+					Count: 1b
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:nether"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			description: [
+				"Gather aura from the end using a bottle and cork, and it will fill up with pure darkness. You can automate this with vanilla dispensers."
+				""
+				"To drain this bottle of this liquid, use a Create drain."
+				""
+				"Make sure to keep the area's Aura at stable levels!"
+			]
+			id: "4A564701EA6CB72A"
+			rewards: [{
+				count: 4
+				id: "101506E41E5049D9"
+				item: {
+					Count: 1b
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:end"
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "558F7BC9296A446A"
+				item: {
+					Count: 1b
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:end"
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1446E85B0C9B3143"]
+			description: ["To enrich Essence of Light, you'll need a small amount of Essence of Darkness."]
+			id: "2DEC13975CBCC6A5"
+			subtitle: "Where there is light, there is dark"
+			tasks: [{
+				id: "217FA6A3BBB82493"
+				item: "kubejs:enriched_light_essence"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"6257754061646D28"
+				"09E4219261E31D95"
+			]
+			id: "1446E85B0C9B3143"
+			tasks: [{
+				id: "56331A18A23BDA25"
+				item: "kubejs:light_essence"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5EE0B513456C5F26"]
+			description: ["To enrich Essence of Darkness, you'll need a small amount of Essence of Light."]
+			id: "311DAF8C44BD3DD2"
+			subtitle: "Where there is dark, there is light"
+			tasks: [{
+				id: "3DBAC6A9E8F90D8A"
+				item: "kubejs:enriched_dark_essence"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"6257754061646D28"
+				"6FECA9F237C0B504"
+			]
+			id: "5EE0B513456C5F26"
+			tasks: [{
+				id: "36E30955748DD7BF"
+				item: "kubejs:dark_essence"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0DDAA842BC674A94"]
+			description: ["Trade some mana pearls for pixie dust with the elven portal. Quite the bargain, if you ask me"]
+			id: "6257754061646D28"
+			rewards: [{
+				count: 2
+				id: "78FCF042CC283E9D"
+				item: "botania:pixie_dust"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3710DBDBF7444654"
+				item: "botania:pixie_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["2F669A3163CE4E04"]
+			description: [
+				"Build an elven portal. Although the portal is too unstable to send your fragile body through (yet), you can send items to this new dimension, and the locals will send some of &otheir&r unique resources back. Just make sure you have a steady mana supply to keep the portal stable!"
+				""
+				"Remember, when in doubt, the Lexica Botania is there for you."
+			]
+			id: "0DDAA842BC674A94"
+			tasks: [{
+				id: "7C4FEEFB0D2A42C7"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4FF31BB197CC62A9"]
+			description: [
+				"Build a terrestrial agglomeration plate, and use it to, uhh, \"agglomerate\" some terrasteel, I guess?"
+				"This mechanism requires Sparks to transfer mana instead of spreaders. Consult the Lexica Botania for more information."
+			]
+			id: "2F669A3163CE4E04"
+			rewards: [{
+				count: 4
+				id: "366CD2EA53474542"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "16BCF28A1F919002"
+					item: "botania:terrasteel_ingot"
+					type: "item"
+				}
+				{
+					id: "6FC22D598AE058AA"
+					item: "botania:terra_plate"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			description: ["If you saw these runes from the chapter overview and got scared, don't worry. For once, you'll only need to craft one of each rune to craft a terrestrial agglomeration plate, so no need to fully automate them if you don't feel like it."]
+			id: "4FF31BB197CC62A9"
+			tasks: [
+				{
+					id: "7D19137154BF1627"
+					item: "botania:rune_fire"
+					type: "item"
+				}
+				{
+					id: "221A6F7A5DB611E6"
+					item: "botania:rune_water"
+					type: "item"
+				}
+				{
+					id: "5545DB0825C8708A"
+					item: "botania:rune_earth"
+					type: "item"
+				}
+				{
+					id: "7ED01AE387FE9AB1"
+					item: "botania:rune_mana"
+					type: "item"
+				}
+				{
+					id: "3A5C1963B19B6558"
+					item: "botania:rune_air"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["10C87D49018B3E30"]
+			description: ["With shadow essence, you can craft both shadow steel, a material that unlocks many interesting tools, or Essence of Dark, required for further progression."]
+			id: "6FECA9F237C0B504"
+			tasks: [{
+				id: "71C89AD7BC56BC75"
+				item: "kubejs:shadow_essence_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["10C87D49018B3E30"]
+			description: ["With refined mixture, you can craft both refined radiance, a material that unlocks many interesting tools, or Essence of Light, required for further progression."]
+			id: "09E4219261E31D95"
+			tasks: [{
+				id: "7786F72EA8B9FCE3"
+				item: "kubejs:refined_mixture_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4776EFB12DC6F9D3"]
+			description: [
+				"What's that? These are not really the light metallic elements in real life? Good thing it's not real life, then."
+				""
+				"You can process hardened metals into their regular ingots, but it requires strong chemical reactions (basically, the full Mekanism ore processing route)."
+			]
+			id: "7133A96B0422A859"
+			rewards: [{
+				id: "4A9B473EF826D5C0"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Infinitely renewable!"
+			tasks: [{
+				id: "0EBE6F26B247C1F4"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any light metal\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:hardened_tin"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_aluminum"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_zinc"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_iron"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_nickel"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_copper"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4B9C17C5DC532C43"]
+			description: [
+				"What's that? These are not really the heavy metallic elements in real life? Good thing it's not real life, then."
+				""
+				"You can process hardened metals into their regular ingots, but it requires strong chemical reactions (basically, the full Mekanism ore processing route)."
+			]
+			id: "3D06A1A466992016"
+			rewards: [{
+				id: "500412312296D690"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Infinitely renewable!"
+			tasks: [{
+				id: "5303CF1E8B2CC9DF"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any heavy metal\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:hardened_osmium"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_rutile"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_uranium"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_gold"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_silver"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_lead"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1C27E279F7A85FAC"]
+			description: [
+				"Shiny! Well, except coal. And redstone... and netherite... nevermind."
+				""
+				"You can process hardened gems/dusts into their regular ingots, but it requires magical means."
+			]
+			id: "4D46679AE6942422"
+			rewards: [{
+				id: "432D6144A2AB6036"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "Infinitely renewable!"
+			tasks: [{
+				id: "25D0DE065E1E590A"
+				item: {
+					Count: 1b
+					id: "itemfilters:or"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any gem or dust\"}"
+						}
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:hardened_netherite"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_redstone"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_coal"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_lapis"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_emerald"
+							}
+							{
+								Count: 1b
+								id: "kubejs:hardened_diamond"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7133A96B0422A859"
+				"4D46679AE6942422"
+				"3D06A1A466992016"
+			]
+			description: ["Using the hardened metal as a catalyst of sorts, you can further infuse even more of the same metal into it, and end up with a metal cluster so extremely high in purity, it can be considered perfect."]
+			id: "21A836BD630B5D06"
+			rewards: [{
+				count: 4
+				id: "6D095E58D3791AFA"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "43F65604B1121282"
+					item: "kubejs:perfect_copper"
+					type: "item"
+				}
+				{
+					id: "7B5C3C71BC6A1384"
+					item: "kubejs:perfect_emerald"
+					type: "item"
+				}
+				{
+					id: "6C896B9FDCD9B3A5"
+					item: "kubejs:perfect_coal"
+					type: "item"
+				}
+				{
+					id: "64759772F0535F6E"
+					item: "kubejs:perfect_iron"
+					type: "item"
+				}
+				{
+					id: "7785FCD7F6579058"
+					item: "kubejs:perfect_silver"
+					type: "item"
+				}
+				{
+					id: "6C8F38B144044BAD"
+					item: "kubejs:perfect_lapis"
+					type: "item"
+				}
+				{
+					id: "0D30C1BBB0762F20"
+					item: "kubejs:perfect_redstone"
+					type: "item"
+				}
+				{
+					id: "11BB0DC80535470B"
+					item: "kubejs:perfect_gold"
+					type: "item"
+				}
+				{
+					id: "7063D130E46E06C1"
+					item: "kubejs:perfect_diamond"
+					type: "item"
+				}
+			]
+			title: "Perfect Metals"
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["21A836BD630B5D06"]
+			description: ["Expensive, but still worth it."]
+			id: "7E1C30B5BD015E8B"
+			rewards: [{
+				id: "1F40356B3E07F8D7"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "152127A89EAD9039"
+				item: "kubejs:infinity_catalyst"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7E1C30B5BD015E8B"
+				"06D46B846E58D4A2"
+				"1189B8460BDCBD01"
+				"208EC8FFE0DA6206"
+				"2D2B42E71CF32139"
+			]
+			description: ["Congratulations! You've crafted the final mechanical component of this modpack. Just one of these things can be sold for enough money to keep your base running indefinitely."]
+			id: "5D8045338D0741E3"
+			shape: "gear"
+			subtitle: "After all these years..."
+			tasks: [{
+				id: "02CB84EAB43A2D13"
+				item: "kubejs:sentient_mainframe"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7B717E8262A07941"]
+			description: [
+				"Besides quest progression, this material can be used to craft powerful accessories and swords."
+				""
+				"It can also make plutonium, polonium, and antimatter, which are crucial for crafting endgame Mekanism gear."
+			]
+			id: "06D46B846E58D4A2"
+			rewards: [{
+				id: "21240C20B3CD6CAB"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4923C078B8AF74EC"
+				item: "createchromaticreturn:multiplite_ingot"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["11F17C837FABF925"]
+			description: ["Besides quest progression, this material is also used to make powerful tools and weapons that are completely unbreakable."]
+			id: "1189B8460BDCBD01"
+			rewards: [{
+				id: "754E6B0122BB4155"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "31DD44C56A18CB66"
+				item: "createchromaticreturn:durasteel_ingot"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["57B34286A6AC5D74"]
+			description: ["Although expensive, this material can also be used for a more powerful form of silk touch, that even works on spawners."]
+			id: "208EC8FFE0DA6206"
+			rewards: [{
+				id: "2CF2B1255E2A9C26"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7DD53FAF0B19A26C"
+				item: "createchromaticreturn:silkstrum"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			description: ["To get a nether star, you will need to kill a wither. If you don't want to risk your life in battle till the end of time, you probably want to automate this, which can be done with a Wither Builder and Mob Crusher."]
+			id: "57B34286A6AC5D74"
+			tasks: [
+				{
+					id: "7211FFF01AE7A582"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "4813C31FFB140B7E"
+					item: "minecraft:wither_skeleton_skull"
+					type: "item"
+				}
+				{
+					id: "54750D69F28B353A"
+					item: "minecraft:soul_sand"
+					type: "item"
+				}
+				{
+					id: "008B24AD9852C420"
+					item: "industrialforegoing:wither_builder"
+					type: "item"
+				}
+				{
+					id: "07F46D4C9D81C6B0"
+					item: "industrialforegoing:mob_crusher"
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50963EC282146AA4"]
+			description: ["Use the refined mixture you crafted earlier to make refined radiance."]
+			id: "7B717E8262A07941"
+			tasks: [{
+				id: "700C0E3FDBF5FF8E"
+				item: "createchromaticreturn:refined_radiance"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50963EC282146AA4"]
+			description: ["Use that shadow essence you crafted earlier to make shadow steel."]
+			id: "11F17C837FABF925"
+			tasks: [{
+				id: "3883E1A32FC06B43"
+				item: "createchromaticreturn:shadow_steel"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["09BC38682387D17A"]
+			description: [
+				"Use the thermopneumatic processing plant to concentrate the fluid into a new form of matter: neutronium."
+				""
+				"Again, this process is pretty intense, and the machine is relatively slow for the amounts of this stuff you'll need. Bummer, huh?"
+			]
+			id: "2D2B42E71CF32139"
+			rewards: [{
+				id: "56B5439303B522C0"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5A8E8839AD78B57D"
+					item: "kubejs:gear_neutronium"
+					type: "item"
+				}
+				{
+					id: "0FC3767A4B9EF9F5"
+					item: "pneumaticcraft:thermopneumatic_processing_plant"
+					type: "item"
+				}
+				{
+					id: "75EF6484D9412050"
+					item: "thermal:machine_chiller"
+					type: "item"
+				}
+				{
+					id: "7E42A9CD952449FA"
+					item: "thermal:press_gear_die"
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"Combine liquid gold, lead, and osmium together to obtain dense matter solution."
+				""
+				"This process can be fairly slow, and you'll need this in large quantities. If only there was a way to accelerate machines..."
+			]
+			id: "09BC38682387D17A"
+			rewards: [{
+				id: "5E365D498A186C97"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "75AFDCA0334142D3"
+					item: "kubejs:dense_matter_solution_bucket"
+					type: "item"
+				}
+				{
+					id: "49AA9F8F5B199B0A"
+					item: {
+						Count: 1b
+						id: "custommachinery:custom_machine_item"
+						tag: {
+							machine: "custommachines:fluid_combiner"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Dense Matter Solution"
+			x: 14.0d
+			y: -6.0d
+		}
+		{
+			description: ["This basic compound is required for the more advanced materials. Make sure you are able to provide a constant supply of them."]
+			id: "50963EC282146AA4"
+			tasks: [{
+				id: "343FC1F87CB9DD4B"
+				item: "createchromaticreturn:chromatic_compound"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5D8045338D0741E3"]
+			description: [
+				"Now that you've reached the end of the quest line, you might be wondering: \"What now? Have I completed the pack? Why can't I craft creative tier items such as the creative vending upgrade?\""
+				""
+				"Well, that's the interesting part. While you may have beaten the main progression of the pack, you could also think of it as having unlocked \"freeplay\" mode. You can now look back at your factory and start optimizing places where production is lacking. Speed up machines, go for more efficient process lines, automate parts that were previously hand crafted, and such. You may also just want to make big number go up, and find out how much cash per second your base can achieved when stretched to its limits. With practically infinite money now, nothing can stop you from building the largest factory you want to make."
+				""
+				"Ultimately, it's up to you. You have &oofficially&r beaten the pack, so if you just want to move on to another modpack, have fun!"
+			]
+			icon: "minecraft:poppy"
+			id: "6FF75AB967CDD562"
+			rewards: [{
+				id: "250F4BED64E45859"
+				item: {
+					Count: 1b
+					id: "minecraft:poppy"
+					tag: {
+						display: {
+							Name: "[\"\",{\"text\":\"Thanks for Playing! -Ammonium\",\"italic\":false,\"color\":\"aqua\"}]"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "heart"
+			tasks: [{
+				id: "4078F6DA45827D0E"
+				title: "What now?"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: -3.0d
+		}
+		{
+			description: ["Use the source condenser to turn Source into a more malleable liquid state."]
+			id: "10C87D49018B3E30"
+			tasks: [
+				{
+					id: "117463D1B42AFF32"
+					item: "starbunclemania:source_condenser"
+					type: "item"
+				}
+				{
+					id: "4E3936F21C27C806"
+					item: "starbunclemania:source_fluid_bucket"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+	title: "Ch. VI: Endgame"
+}

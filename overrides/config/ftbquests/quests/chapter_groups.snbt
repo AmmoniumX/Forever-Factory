@@ -1,0 +1,6 @@
+{
+	chapter_groups: [
+		{ id: "1A13CCEB71BED4A8", title: "Fun Stuff" }
+		{ id: "07EF82DE5E014AA9", title: "Main Pack Progression" }
+	]
+}
