@@ -95,4 +95,7 @@ ServerEvents.recipes(e => {
     e.replaceInput({id: 'irongenerators:netherrack_rcp'}, 'minecraft:furnace', 'irongenerators:stone_generator')
 
     e.replaceInput({id: 'laserio:logic_chip_raw'}, '#c:quartz_blocks', 'kubejs:compressed_mech')
+    e.replaceInput({id: 'projectred_expansion:electric_screwdriver'}, '#forge:gems/sapphire', 'kubejs:compressed_mech')
+    e.replaceInput({id: 'projectred_fabrication:plotting_table'}, '#forge:gems/sapphire', 'kubejs:compressed_mech')
+
 })
