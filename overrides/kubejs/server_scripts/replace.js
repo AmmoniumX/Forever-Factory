@@ -97,5 +97,9 @@ ServerEvents.recipes(e => {
     e.replaceInput({id: 'laserio:logic_chip_raw'}, '#c:quartz_blocks', 'kubejs:compressed_mech')
     e.replaceInput({id: 'projectred_expansion:electric_screwdriver'}, '#forge:gems/sapphire', 'kubejs:compressed_mech')
     e.replaceInput({id: 'projectred_fabrication:plotting_table'}, '#forge:gems/sapphire', 'kubejs:compressed_mech')
+    e.replaceInput({id: 'adminshop:fluid_buyer'}, 'minecraft:ender_chest', '#forge:chests')
+    e.replaceInput({id: 'thermal:servo_attachment_2'}, 'minecraft:redstone', 'kubejs:compressed_mech')
+    e.replaceInput({id: 'thermal:fluid_duct_windowed_4'}, '#thermal:glass/hardened', '#forge:glass')
+    e.replaceInput({id: 'thermal:turbo_servo_attachment_2'}, 'thermal:redstone_servo', 'thermal:servo_attachment')
 
 })
