@@ -23,6 +23,8 @@ buy,item,minecraft:kelp,300,0
 buy,item,minecraft:sugar_cane,300,0
 buy,item,immersiveengineering:seed,300,0
 buy,item,minecraft:bamboo,300,0
+buy,item,minecraft:bread,100,0
+buy,fluid,minecraft:milk,1,0
 buy,item,minecraft:bone,100,0
 buy,item,minecraft:obsidian,250,0
 buy,item,minecraft:raw_copper,10,0
