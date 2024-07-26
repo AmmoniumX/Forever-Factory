@@ -396,5 +396,16 @@ ServerEvents.recipes(e => {
             C: 'mekanism:teleportation_core'
         }
     )
+    e.shaped(Item.of('adminshop:permit', 
+        "{display:{Lore:['[\"\",{\"text\":\"Buy: Graphite electrode blueprint, unbreakable graphite electrodes\",\"italic\":false}]'],Name:'[\"\",{\"text\":\"[T4] Senior Engineer\\'s Contract\",\"italic\":false}]'},key:4}"),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],{
+            A: '#forge:ingots/titanium',
+            B: 'immersiveengineering:component_electronic'
+        }
+    )
 
 })

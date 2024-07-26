@@ -91,6 +91,7 @@
 						key: 3
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -1.5d

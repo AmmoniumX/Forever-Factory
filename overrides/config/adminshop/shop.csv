@@ -49,7 +49,8 @@ buy,item,ae2:tiny_tnt,300,1
 buy,fluid,pneumaticcraft:oil,5,2
 buy,item,kubejs:oil_clump,500,2
 buy,item,minecraft:soul_campfire,500,0
-buy,item,"Item.of('immersiveengineering:blueprint', '{blueprint:""electrode""}')",100000,0
+buy,item,"Item.of('immersiveengineering:blueprint', ""{blueprint:""electrode"",display:{Name:'["""",{""text"":""Blueprint: Arc Furnace Electrodes"",""italic"":false}]'}}"")",1000000,4
+buy,item,"Item.of('immersiveengineering:graphite_electrode', ""{Unbreakable:1,display:{Name:'[\""\"",{\""text\"":\""Industrial-Grade Graphite Electrode\"",\""italic\"":false,\""color\"":\""yellow\""}]'},graphDmg:0}"")",1000000000,4
 sell,item,#minecraft:logs,50,0
 sell,item,kubejs:basic_mech,250,0
 sell,item,kubejs:compressed_mech,1250,0

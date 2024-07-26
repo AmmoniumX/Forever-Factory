@@ -531,7 +531,7 @@
 			y: -6.0d
 		}
 		{
-			description: ["The Shop isn't enough, sure the open intergalactic market has a lot of useful products, but there are some things that you can only get from private markets. The Amadron market is a market made specifically for engineers, specializing in all kinds of pneumatics, and has a variety of useful products on sale."]
+			description: ["The Shop isn't enough, sure the open intergalactic market has a lot of useful products, but there are some things that you can only get from private markets. The Amadron market is a market made by engineers, for engineers, specializing in all kinds of pneumatics, and has a variety of useful products on sale."]
 			id: "0B90905332B5A226"
 			subtitle: "Because one marketplace isn't enough"
 			tasks: [{
@@ -539,8 +539,8 @@
 				item: "pneumaticcraft:amadron_tablet"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -9.0d
+			x: 9.0d
+			y: -10.5d
 		}
 		{
 			dependencies: ["0B90905332B5A226"]
@@ -657,6 +657,66 @@
 			]
 			x: 13.5d
 			y: -6.5d
+		}
+		{
+			dependencies: ["3ACEB921C99126C6"]
+			description: [
+				"Looks like your efforts have earned you quite the reputation amongst other engineers. They've agreed to sell you their industrial-grade graphite electrodes! "
+				""
+				"However, they're not cheap... Thankfully, they've been nice enough to sell you an improved blueprint for still breakable, but improved electrodes, which can be made on the workbench."
+			]
+			id: "52C5105F6C2170F3"
+			optional: true
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "55BAC7D2D128A6A9"
+					item: {
+						Count: 1b
+						id: "adminshop:permit"
+						tag: {
+							display: {
+								Lore: ["[\"\",{\"text\":\"Buy: Graphite electrode blueprint, unbreakable graphite electrodes\",\"italic\":false}]"]
+								Name: "[\"\",{\"text\":\"[T4] Senior Engineer's Contract\",\"italic\":false}]"
+							}
+							key: 4
+						}
+					}
+					match_nbt: true
+					type: "item"
+				}
+				{
+					id: "6FD32328157E13D4"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:blueprint"
+						tag: {
+							blueprint: "electrode"
+							display: {
+								Name: "[\"\",{\"text\":\"Blueprint: Arc Furnace Electrodes\",\"italic\":false}]"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4EC05BADA6CF2B6F"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:graphite_electrode"
+						tag: {
+							Unbreakable: 1
+							display: {
+								Name: "[\"\",{\"text\":\"Industrial-Grade Graphite Electrode\",\"italic\":false,\"color\":\"yellow\"}]"
+							}
+							graphDmg: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: -9.0d
 		}
 	]
 	title: "Ch.III: Electrical Age"
