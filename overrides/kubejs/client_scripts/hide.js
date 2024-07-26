@@ -21,6 +21,8 @@ JEIEvents.hideItems(e => {
   e.hide('createdieselgenerators:gasoline_bucket')
   e.hide('createendertransmission:item_transmitter')
   e.hide('createendertransmission:fluid_transmitter')
+  e.hide('mob_grinding_utils:mob_swab')
+
 })
   
 JEIEvents.hideFluids(e => {

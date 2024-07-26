@@ -155,5 +155,6 @@ ServerEvents.recipes(e => {
     e.remove({id: 'createaddition:filling/treated_wood_planks'})
     e.remove({id: 'createdieselgenerators:basin_fermenting/fermentable'})
     e.remove({id: 'thermal:machines/pyrolyzer/pyrolyzer_logs'})
+    e.remove({id: 'mob_grinding_utils:recipe_mob_swab'})
     
 })
