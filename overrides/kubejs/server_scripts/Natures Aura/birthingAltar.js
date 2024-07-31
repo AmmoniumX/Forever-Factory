@@ -23,8 +23,8 @@ ServerEvents.recipes(e => {
             time: time
         });
     }
-    birthingAltar('minecraft:blaze', ['kubejs:awakening_spirit', 'kubejs:livingrock_effigy', 'minecraft:magma_block'], 15000, 50)
-    birthingAltar('thermal:blizz', ['kubejs:awakening_spirit', 'kubejs:livingrock_effigy', 'minecraft:snow_block'], 15000, 50)
-    birthingAltar('thermal:blitz', ['kubejs:awakening_spirit', 'kubejs:livingrock_effigy', 'minecraft:glowstone'], 15000, 50)
-    birthingAltar('thermal:basalz', ['kubejs:awakening_spirit', 'kubejs:livingrock_effigy', 'minecraft:cobbled_deepslate'], 15000, 50)
+    birthingAltar('minecraft:blaze', ['kubejs:awakening_spirit', 'kubejs:livingrock_effigy', 'minecraft:magma_block'], 10000, 50)
+    birthingAltar('thermal:blizz', ['kubejs:awakening_spirit', 'kubejs:livingrock_effigy', 'minecraft:snow_block'], 10000, 50)
+    birthingAltar('thermal:blitz', ['kubejs:awakening_spirit', 'kubejs:livingrock_effigy', 'minecraft:glowstone'], 10000, 50)
+    birthingAltar('thermal:basalz', ['kubejs:awakening_spirit', 'kubejs:livingrock_effigy', 'minecraft:cobbled_deepslate'], 10000, 50)
 })

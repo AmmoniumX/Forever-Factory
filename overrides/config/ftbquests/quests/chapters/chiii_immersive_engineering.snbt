@@ -663,10 +663,16 @@
 			description: [
 				"Looks like your efforts have earned you quite the reputation amongst other engineers. They've agreed to sell you their industrial-grade graphite electrodes! "
 				""
-				"However, they're not cheap... Thankfully, they've been nice enough to sell you an improved blueprint for still breakable, but improved electrodes, which can be made on the workbench."
+				"However, they're not cheap... Thankfully, they're also offering you a cheaper, improved blueprint for still breakable, but improved electrodes, which can be made on the workbench."
 			]
 			id: "52C5105F6C2170F3"
 			optional: true
+			rewards: [{
+				count: 8
+				id: "61419E37E9E57F06"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
 			shape: "rsquare"
 			tasks: [
 				{

@@ -480,8 +480,8 @@
 		{
 			dependencies: ["476F3884D256DE28"]
 			description: [
-				"Mekanism multiblock reactors that can produce extremely high amounts of FE per tick."
-				"Multiblocks must be assembled manually, look up a guide on how to"
+				"The Fusion Reactor can produce extremely high amounts of FE per tick."
+				"Multiblocks must be assembled manually, look up a guide on how to do it"
 			]
 			id: "5038BBFE68A808D7"
 			subtitle: "Endgame Power Gen"
@@ -490,7 +490,7 @@
 				item: "mekanismgenerators:fusion_reactor_controller"
 				type: "item"
 			}]
-			title: "Mekanism Reactors"
+			title: "Fusion Reactor"
 			x: -3.5d
 			y: -4.5d
 		}

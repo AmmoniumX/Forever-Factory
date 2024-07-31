@@ -33,11 +33,11 @@ ServerEvents.recipes(e => {
 
     // Crumbling gems and dusts
     vanilla_gems.forEach(gem => {
-        altarCrumbling({ item: Item.of(`#forge:hardened/${gem}`).getId() }, { item: Item.of(`#forge:gems/${gem}`).getId(), count:24 }, 4500, 150)
+        altarCrumbling({ item: Item.of(`#forge:hardened/${gem}`).getId() }, { item: Item.of(`#forge:gems/${gem}`).getId(), count:48 }, 4500, 150)
     })
 
     native_dusts.forEach(dust => {
-        altarCrumbling({ item: Item.of(`#forge:hardened/${dust}`).getId() }, { item: Item.of(`#forge:dusts/${dust}`).getId(), count:36 }, 4500, 150)
+        altarCrumbling({ item: Item.of(`#forge:hardened/${dust}`).getId() }, { item: Item.of(`#forge:dusts/${dust}`).getId(), count:48 }, 4500, 150)
     })
 
     altarCrumbling({ item: Item.of(`#forge:hardened/netherite`).getId() }, { item: 'minecraft:netherite_scrap', count:12 }, 4500, 150)

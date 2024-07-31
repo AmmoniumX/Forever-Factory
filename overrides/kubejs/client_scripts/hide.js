@@ -22,7 +22,13 @@ JEIEvents.hideItems(e => {
   e.hide('createendertransmission:item_transmitter')
   e.hide('createendertransmission:fluid_transmitter')
   e.hide('mob_grinding_utils:mob_swab')
-
+  e.hide('thermal_extra:upgrade_augment')
+  e.hide('create_sa:brass_jetpack_chestplate')
+  e.hide('create_sa:andesite_jetpack_chestplate')
+  e.hide('create_sa:copper_jetpack_chestplate')
+  e.hide('engineersdecor:small_solar_panel')
+  e.hide('createendertransmission:chunk_loader')
+  
 })
   
 JEIEvents.hideFluids(e => {

@@ -13,11 +13,11 @@
 				"You've gotten this far: Congratulations."
 				"If you have some time to spare, let's reflect on your base a bit:"
 				""
-				"How much of your progression towards this point on the quest book was automated? How much that was manually done can you automate easily? How's your account balance looking like at the moment? In the green, I hope?"
+				"How much of your progression towards this point on the quest book was automated? How much that was manually done can you automate easily? How's your account balance looking like at the moment?"
 				"Have you decorated your base a little? Left enough space to expand?"
 				"What about power production? Are you just scraping by, or have some breathing room?"
 				""
-				"I hope you reflect on those questions, since for this final chapter, you will not only need to build more automation lines, they are generally larger,"
+				"For this final chapter, you will not only need to build more automation lines, they are also generally larger,"
 				"slower, more expensive, and more power consuming. This will truly test your ability to automate stuff at a large scale, as trying to do all of this manually and hand crafting will be exhausing (you're welcome to try, though)."
 				""
 				"Have fun!"
@@ -37,7 +37,7 @@
 					type: "item"
 				}
 				{
-					count: 3
+					count: 16
 					id: "0A27D9FB4A860EC2"
 					item: "thermal:gold_coin"
 					type: "item"
@@ -879,7 +879,7 @@
 			description: [
 				"Use the thermopneumatic processing plant to concentrate the fluid into a new form of matter: neutronium."
 				""
-				"Again, this process is pretty intense, and the machine is relatively slow for the amounts of this stuff you'll need. Bummer, huh?"
+				"Again, this process is pretty intense, and the machine is relatively slow for the amounts of this stuff you'll need. Shame you can't do much about that..."
 			]
 			id: "2D2B42E71CF32139"
 			rewards: [{
@@ -968,6 +968,7 @@
 			]
 			icon: "minecraft:poppy"
 			id: "6FF75AB967CDD562"
+			optional: true
 			rewards: [{
 				id: "250F4BED64E45859"
 				item: {

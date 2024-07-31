@@ -27,6 +27,6 @@ ServerEvents.tags('fluid', e => {
 
 ServerEvents.tags("entity_type", e => {
     e.add('ars_nouveau:drygmy_blacklist', ['minecraft:blaze', 'thermal:blizz', 'thermal:blitz', 'thermal:basalz'])
-    e.add('industrialforegoing:mob_duplicator_blacklist', ['minecraft:blaze', 'thermal:blizz', 'thermal:blitz', 'thermal:basalz'])
+    // e.add('industrialforegoing:mob_duplicator_blacklist', ['minecraft:blaze', 'thermal:blizz', 'thermal:blitz', 'thermal:basalz'])
 
 })

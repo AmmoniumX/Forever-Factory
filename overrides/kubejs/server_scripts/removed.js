@@ -156,5 +156,11 @@ ServerEvents.recipes(e => {
     e.remove({id: 'createdieselgenerators:basin_fermenting/fermentable'})
     e.remove({id: 'thermal:machines/pyrolyzer/pyrolyzer_logs'})
     e.remove({id: 'mob_grinding_utils:recipe_mob_swab'})
+    e.remove({id: 'thermal_extra:augments/upgrade_augment'})
+    e.remove({id: 'create_sa:brass_jetpack_recipe'})
+    e.remove({id: 'create_sa:andesite_jetpack_recipe'})
+    e.remove({id: 'create_sa:copper_propeler_recipe'})
+    e.remove({id: 'engineersdecor:dependent/small_solar_panel_recipe'})
+    e.remove({id: 'createendertransmission:chunk_loader'})
     
 })

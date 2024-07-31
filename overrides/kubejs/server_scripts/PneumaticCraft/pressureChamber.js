@@ -33,16 +33,21 @@ ServerEvents.recipes(e => {
         })
     }
     
-    pressureChamber('pneumaticcraft:capacitor', 1.0, 
+    pressureChamber(Item.of('pneumaticcraft:capacitor', 2), 1.0, 
         ['#forge:wires/gold', 'minecraft:redstone', 'pneumaticcraft:plastic']
     )
-    pressureChamber('pneumaticcraft:transistor', 1.0, 
+    pressureChamber(Item.of('pneumaticcraft:transistor', 2), 1.0, 
         ['#forge:wires/gold', '#forge:silicon', 'pneumaticcraft:plastic']
     )
     pressureChamber([Item.of('kubejs:compressed_mech', 4), Item.of('minecraft:bucket')],
         2.0,
         [Item.of('kubejs:basic_mech', 4), 'emendatusenigmatica:compressed_iron_gear',
             'kubejs:invar_rod', 'minecraft:lava_bucket']
+    )
+    pressureChamber(Item.of('kubejs:compressed_mech', 4),
+        2.0,
+        [Item.of('kubejs:basic_mech', 4), 'emendatusenigmatica:compressed_iron_gear',
+            'kubejs:invar_rod', 'powah:crystal_blazing']
     )
     pressureChamber(Item.of('pneumaticcraft:empty_pcb', 3), 3.0,
         ['immersiveengineering:circuit_board', 'emendatusenigmatica:titanium_plate', Item.of('#forge:wires/electrum', 6)]

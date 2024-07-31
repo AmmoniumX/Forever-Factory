@@ -73,27 +73,21 @@ ServerEvents.recipes(e => {
     e.replaceInput({id: 'createdieselgenerators:crafting/pumpjack_bearing'}, '#forge:ingots/zinc', 'kubejs:compressed_mech')
     e.replaceInput({id: 'prettypipes:low_retrieval_module'}, 'minecraft:ender_pearl', 'kubejs:basic_mech')
     e.replaceInput({id: 'thermal:fluid_cell'}, '#thermal:glass/hardened', '#forge:glass')
-
     e.replaceInput({id: 'functionalstorage:fluid_1'}, 'minecraft:bucket', 'thermal:fluid_cell')
     e.replaceInput({id: 'functionalstorage:fluid_2'}, 'minecraft:bucket', 'thermal:fluid_cell')
     e.replaceInput({id: 'functionalstorage:fluid_4'}, 'minecraft:bucket', 'thermal:fluid_cell')
-    
     // e.replaceInput({input: 'createchromaticreturn:refined_mixture'}, 'createchromaticreturn:refined_mixture', 'kubejs:refined_mixture')
     // e.replaceInput({input: 'createchromaticreturn:shadow_essence'}, 'createchromaticreturn:shadow_essence', 'kubejs:shadow_essence')
     // e.replaceOutput({output: 'createchromaticreturn:refined_mixture'}, 'createchromaticreturn:refined_mixture', 'kubejs:refined_mixture')
     // e.replaceOutput({output: 'createchromaticreturn:shadow_essence'}, 'createchromaticreturn:shadow_essence', 'kubejs:shadow_essence')
-
     // e.replaceInput({id: 'ironjetpacks:wood_jetpack'}, 'ironjetpacks:strap', 'create_jetpack:netherite_jetpack')
     // e.replaceInput({id: 'create_jetpack:jetpack'}, 'minecraft:elytra', 'immersiveengineering:glider')
-
     e.replaceInput({id: 'entangled:block'}, '#forge:chests/wooden', 'mekanism:teleportation_core')
     e.replaceInput({id: 'functionalstorage:ender_drawer'}, 'minecraft:ender_chest', 'mekanism:teleportation_core')
     // e.replaceInput({id: 'integrateddynamics:special/part_connector_omni_directional'}, 'integrateddynamics:cable', 'mekanism:teleportation_core')
-
     e.replaceInput({id: 'irongenerators:certus_generator_rcp'}, 'minecraft:furnace', 'irongenerators:stone_generator')
     e.replaceInput({id: 'irongenerators:skystone_generator_rcp'}, 'minecraft:furnace', 'irongenerators:stone_generator')
     e.replaceInput({id: 'irongenerators:netherrack_rcp'}, 'minecraft:furnace', 'irongenerators:stone_generator')
-
     e.replaceInput({id: 'laserio:logic_chip_raw'}, '#c:quartz_blocks', 'kubejs:compressed_mech')
     e.replaceInput({id: 'projectred_expansion:electric_screwdriver'}, '#forge:gems/sapphire', 'kubejs:compressed_mech')
     e.replaceInput({id: 'projectred_fabrication:plotting_table'}, '#forge:gems/sapphire', 'kubejs:compressed_mech')
@@ -101,5 +95,6 @@ ServerEvents.recipes(e => {
     e.replaceInput({id: 'thermal:servo_attachment_2'}, 'minecraft:redstone', 'kubejs:compressed_mech')
     e.replaceInput({id: 'thermal:fluid_duct_windowed_4'}, '#thermal:glass/hardened', '#forge:glass')
     e.replaceInput({id: 'thermal:turbo_servo_attachment_2'}, 'thermal:redstone_servo', 'thermal:servo_attachment')
+    e.replaceInput({id: 'industrialforegoing:dissolution_chamber/advanced_machine_frame'}, '#forge:gears/diamond', 'kubejs:cryo_mainframe')
 
 })

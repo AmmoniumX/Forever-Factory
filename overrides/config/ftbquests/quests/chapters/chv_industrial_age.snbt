@@ -105,9 +105,23 @@
 				""
 				"However, base infuse types such as redstone/coal need to be enriched first before they can be converted into infuse types. For this, you need elemental powders as a catalyst."
 				""
-				"Tip: Since infuse types are more expensive, having dedicated infusers and filling them up completely for each of them may be too wasteful for you. For this, did you know you can encode infuse type in AE2 patterns? This way, you will only craft and use as much infuse as you need!"
+				"Tip: Since infuse types are more expensive, having dedicated infusers and filling them up completely for each of them may be too wasteful for you. For this, did you know you can encode infuse types in AE2 patterns? This way, you will only craft and use as much infuses as you need!"
 			]
 			id: "22D3F1AAB42D49FE"
+			rewards: [
+				{
+					count: 2
+					id: "6C1337E73A05DCF2"
+					item: "mekanism:enriched_carbon"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4ED6354393EDB339"
+					item: "mekanism:enriched_redstone"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "6EF724FBB35115FB"
@@ -301,7 +315,7 @@
 		}
 		{
 			dependencies: ["5336A824B9223461"]
-			description: ["Extremely potent coolant"]
+			description: ["Extremely potent coolant. Doesn't work inside reactors, though."]
 			id: "6BD28B5699712263"
 			tasks: [{
 				id: "3FE581484E78E803"
@@ -700,6 +714,20 @@
 			}]
 			x: 7.5d
 			y: 3.0d
+		}
+		{
+			dependencies: ["23B55BDA8D657BAA"]
+			description: ["With the Mob Duplicator, you can now dupe blazes and thermal mobs with power and Essence, skipping birthing altars."]
+			id: "5FEBD34D676D9B9F"
+			optional: true
+			shape: "rsquare"
+			tasks: [{
+				id: "14D99F20F920F78B"
+				item: "industrialforegoing:mob_duplicator"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
 		}
 	]
 	title: "Ch,V: Industrial Age"

@@ -548,7 +548,7 @@
 			description: [
 				"You'll need to summon Thermal mobs for further progression into Chapter IV. These include the Blaze, the Basalz, the Blitz, and the Blizz. To view the specific ingredients required to summon these, search up their spawn eggs recipes on JEI, e.g. \"blizz spawn egg\". Or, the uses for effigies/spirit of awakening."
 				""
-				"NOTE: Thermal mobs have been blacklisted from Industrial Foregoing's mob duplicator and Ars Nouveau Drygmys! You have been warned!"
+				"NOTE: Thermal mobs have been blacklisted from Ars Nouveau Drygmys! You have been warned!"
 			]
 			id: "799E58AD4CF491FC"
 			shape: "pentagon"
