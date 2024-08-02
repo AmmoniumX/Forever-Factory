@@ -29,12 +29,20 @@
 				"Additionally, Mekanism machines can be heavily upgraded to allow for more speed and even parallel processing."
 			]
 			id: "32D2CFE67C81C1F4"
-			rewards: [{
-				count: 4
-				id: "3B262F7542B8D725"
-				item: "mekanism:steel_casing"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "3B262F7542B8D725"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "546143BF1C82FED8"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				id: "50F9BF2ECF71E83F"
@@ -240,12 +248,20 @@
 				"Notice the mixing recipe for it, as it is much more efficient than the crafting one! You can't use it quite yet, though."
 			]
 			id: "54712545A4E0BDBE"
-			rewards: [{
-				count: 32
-				id: "208C974A92794DD3"
-				item: "powah:dielectric_paste"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 32
+					id: "208C974A92794DD3"
+					item: "powah:dielectric_paste"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "68E5EDFDC625C133"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
 			shape: "square"
 			tasks: [{
 				count: 16L
@@ -356,6 +372,12 @@
 				"19BFAF1D818A32A2"
 			]
 			id: "7B6F263685813507"
+			rewards: [{
+				count: 8
+				id: "1FAC2FA31D30D99F"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "174B31678D4D0418"
 				item: "kubejs:cryotheum_cell"
@@ -396,6 +418,12 @@
 			]
 			description: ["The mana pool can both work as a mana storage device and as a device to infuse items with mana."]
 			id: "3EA1316EE78F6CC9"
+			rewards: [{
+				count: 2
+				id: "04BF44B37CF1CBFA"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "78ABE584A5669CD3"
 				item: "botania:mana_pool"
@@ -463,6 +491,12 @@
 					item: "botania:mana_diamond"
 					type: "item"
 				}
+				{
+					count: 4
+					id: "2D1DB29B902394B0"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
 			]
 			tasks: [
 				{
@@ -521,6 +555,12 @@
 					count: 2
 					id: "20A9B65EC798F86D"
 					item: "botania:rune_earth"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "67E83708592194C6"
+					item: "thermal:gold_coin"
 					type: "item"
 				}
 			]
@@ -591,7 +631,7 @@
 				item: "bigreactors:graphite_ingot"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: 2.5d
 		}
 		{
@@ -603,12 +643,20 @@
 				"Note: The regular Mekanism fission reactor is &ldisabled&r in this modpack! Luckily you can use extreme reactors to both generate mekanism steam gas and nuclear waste. The endgame fusion reactor is still enabled though."
 			]
 			id: "761DBA6F8B5289A3"
-			rewards: [{
-				count: 4
-				id: "08754F567CE7867A"
-				item: "bigreactors:cyanite_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "08754F567CE7867A"
+					item: "bigreactors:cyanite_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5FD136597EC32F66"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
 			shape: "pentagon"
 			subtitle: "Better Reactors"
 			tasks: [
@@ -640,7 +688,7 @@
 				}
 			]
 			title: "(Extreme) Reactor"
-			x: 0.0d
+			x: -1.5d
 			y: 2.5d
 		}
 		{
@@ -659,7 +707,7 @@
 				type: "item"
 			}]
 			title: "Reprocessor"
-			x: 1.5d
+			x: 0.0d
 			y: 2.5d
 		}
 		{
@@ -677,8 +725,8 @@
 				item: "bigreactors:blutonium_ingot"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 2.0d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -690,6 +738,7 @@
 			description: ["If you've gotten this far: congrats! It must've been quite the adventure so far."]
 			id: "23B55BDA8D657BAA"
 			rewards: [{
+				count: 32
 				id: "226D661FD8E8ED42"
 				item: "thermal:gold_coin"
 				type: "item"

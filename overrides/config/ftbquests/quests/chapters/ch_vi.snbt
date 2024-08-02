@@ -127,6 +127,12 @@
 				"Primordial stones can be turned into different \"flavors\", each giving different materials."
 			]
 			id: "0CA30FC8AA0F715A"
+			rewards: [{
+				count: 16
+				id: "660D464B280781FD"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "REALLY Don't throw these around"
 			tasks: [{
@@ -145,12 +151,20 @@
 			]
 			description: ["Source of heavy metallic elements"]
 			id: "4B9C17C5DC532C43"
-			rewards: [{
-				count: 8
-				id: "3548122B43C726FC"
-				item: "kubejs:heavy_primordial_stone"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "3548122B43C726FC"
+					item: "kubejs:heavy_primordial_stone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "4AB772B38F87217C"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "426B1E5A041C3483"
 				item: "kubejs:heavy_primordial_stone"
@@ -166,12 +180,20 @@
 			]
 			description: ["Source of gems and dusts"]
 			id: "1C27E279F7A85FAC"
-			rewards: [{
-				count: 8
-				id: "19A2C01717A4CB80"
-				item: "kubejs:prismatic_primordial_stone"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "19A2C01717A4CB80"
+					item: "kubejs:prismatic_primordial_stone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "7415E6DFD653FD80"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "6D594834CDA14543"
 				item: "kubejs:prismatic_primordial_stone"
@@ -188,12 +210,20 @@
 			]
 			description: ["Source of light metallic elements"]
 			id: "4776EFB12DC6F9D3"
-			rewards: [{
-				count: 8
-				id: "2D35BCA4BA32C597"
-				item: "kubejs:light_primordial_stone"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "2D35BCA4BA32C597"
+					item: "kubejs:light_primordial_stone"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "3BE4F5A01BCF7EBD"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "7742245FB703221E"
 				item: "kubejs:light_primordial_stone"
@@ -332,6 +362,12 @@
 				"09E4219261E31D95"
 			]
 			id: "1446E85B0C9B3143"
+			rewards: [{
+				count: 6
+				id: "35377C62ACC85208"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "56331A18A23BDA25"
 				item: "kubejs:light_essence"
@@ -359,6 +395,12 @@
 				"6FECA9F237C0B504"
 			]
 			id: "5EE0B513456C5F26"
+			rewards: [{
+				count: 6
+				id: "41F66FCD6A6A1D3C"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "36E30955748DD7BF"
 				item: "kubejs:dark_essence"
@@ -408,12 +450,20 @@
 				"This mechanism requires Sparks to transfer mana instead of spreaders. Consult the Lexica Botania for more information."
 			]
 			id: "2F669A3163CE4E04"
-			rewards: [{
-				count: 4
-				id: "366CD2EA53474542"
-				item: "botania:terrasteel_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "366CD2EA53474542"
+					item: "botania:terrasteel_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "10B4ABC45D53B6B7"
+					item: "thermal:gold_coin"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "16BCF28A1F919002"
@@ -432,6 +482,12 @@
 		{
 			description: ["If you saw these runes from the chapter overview and got scared, don't worry. For once, you'll only need to craft one of each rune to craft a terrestrial agglomeration plate, so no need to fully automate them if you don't feel like it."]
 			id: "4FF31BB197CC62A9"
+			rewards: [{
+				count: 8
+				id: "06A34E6D2186AA2A"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "7D19137154BF1627"
@@ -459,6 +515,7 @@
 					type: "item"
 				}
 			]
+			title: "Elemental Runes"
 			x: -3.0d
 			y: -3.5d
 		}
@@ -730,6 +787,7 @@
 			description: ["Expensive, but still worth it."]
 			id: "7E1C30B5BD015E8B"
 			rewards: [{
+				count: 24
 				id: "1F40356B3E07F8D7"
 				item: "thermal:gold_coin"
 				type: "item"
@@ -752,6 +810,12 @@
 			]
 			description: ["Congratulations! You've crafted the final mechanical component of this modpack. Just one of these things can be sold for enough money to keep your base running indefinitely."]
 			id: "5D8045338D0741E3"
+			rewards: [{
+				count: 48
+				id: "1977D44BD5D8500B"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "After all these years..."
 			tasks: [{
@@ -994,6 +1058,12 @@
 		{
 			description: ["Use the source condenser to turn Source into a more malleable liquid state."]
 			id: "10C87D49018B3E30"
+			rewards: [{
+				count: 2
+				id: "33AB958FF43535D8"
+				item: "thermal:gold_coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "117463D1B42AFF32"

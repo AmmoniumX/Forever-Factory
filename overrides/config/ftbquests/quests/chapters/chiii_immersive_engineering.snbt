@@ -46,12 +46,20 @@
 			dependencies: ["20B0D301D43950B4"]
 			description: ["Pressure Chamber recipe"]
 			id: "285C82FF2AA46C59"
-			rewards: [{
-				count: 4
-				id: "3271999EF1FF2040"
-				item: "pneumaticcraft:capacitor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "3271999EF1FF2040"
+					item: "pneumaticcraft:capacitor"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3F37A75B08BCAB2D"
+					item: "thermal:lead_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "22F6B62090D9069C"
 				item: "pneumaticcraft:capacitor"
@@ -72,8 +80,8 @@
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["433FDBD9B9BCD470"]
@@ -84,8 +92,8 @@
 				item: "minecraft:quartz"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2ADBB386D250945B"]
@@ -96,8 +104,8 @@
 				item: "ae2:silicon"
 				type: "item"
 			}]
-			x: 3.0d
-			y: -2.0d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -106,12 +114,20 @@
 			]
 			description: ["Pressure Chamber recipe"]
 			id: "407312FC681D750C"
-			rewards: [{
-				count: 4
-				id: "2A6F5B17C33D6E86"
-				item: "pneumaticcraft:transistor"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "2A6F5B17C33D6E86"
+					item: "pneumaticcraft:transistor"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "18C9F5BCC3E89EA0"
+					item: "thermal:lead_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "228303736CFB947F"
 				item: "pneumaticcraft:transistor"
@@ -128,12 +144,20 @@
 			]
 			description: ["Intermediate crafting component for Immersive Engineering"]
 			id: "29D80FBF87198A85"
-			rewards: [{
-				count: 8
-				id: "7288F38C515CD06A"
-				item: "immersiveengineering:component_electronic"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "7288F38C515CD06A"
+					item: "immersiveengineering:component_electronic"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "53E98CB16BA48B45"
+					item: "thermal:lead_coin"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			subtitle: "Sellable for Profit!"
 			tasks: [{
@@ -196,12 +220,20 @@
 			]
 			description: ["Basic crafting component for Immersive Engineering"]
 			id: "4E05B357F0805381"
-			rewards: [{
-				count: 16
-				id: "4DBB776668454C18"
-				item: "immersiveengineering:component_steel"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "4DBB776668454C18"
+					item: "immersiveengineering:component_steel"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3CBFBEB931524B9B"
+					item: "thermal:lead_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "68F1883E4CAECE22"
 				item: "immersiveengineering:component_steel"
@@ -218,6 +250,12 @@
 			]
 			description: ["Now we're reaching the part where you build multiblock machines that consume FE (Forge Energy) to operate. For information on possible methods to generate FE check the power generation chapter"]
 			id: "0587FFB5A9249081"
+			rewards: [{
+				count: 4
+				id: "2770C84DA8CD9853"
+				item: "thermal:lead_coin"
+				type: "item"
+			}]
 			subtitle: "Part of IE Multiblocks"
 			tasks: [
 				{
@@ -489,6 +527,8 @@
 			dependencies: ["0E9DB52E43A5A4DA"]
 			description: ["Grow plants automatically!"]
 			id: "13AE03820E989178"
+			optional: true
+			shape: "rsquare"
 			tasks: [{
 				id: "78D279859AD2FCBA"
 				item: "immersiveengineering:cloche"
@@ -501,6 +541,12 @@
 			dependencies: ["63608B8BBBC2F01B"]
 			description: ["Made from rutile dust and HOP graphite dust in an Arc Furnace."]
 			id: "3ACEB921C99126C6"
+			rewards: [{
+				count: 4
+				id: "413F9F96FD1A3E49"
+				item: "thermal:lead_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6F2018AF428EFBDF"
 				item: "emendatusenigmatica:titanium_ingot"
@@ -596,12 +642,20 @@
 				"With this, I will be able to craft complicated digital machinery, as well as sell it for some substantial profit!"
 			]
 			id: "10BD2187768DBA70"
-			rewards: [{
-				count: 8
-				id: "31EDA46E22FADF3B"
-				item: "pneumaticcraft:printed_circuit_board"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "31EDA46E22FADF3B"
+					item: "pneumaticcraft:printed_circuit_board"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2B504085AEC8E79D"
+					item: "thermal:lead_coin"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			subtitle: "Sellable for Profit!"
 			tasks: [{

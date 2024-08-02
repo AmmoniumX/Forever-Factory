@@ -69,6 +69,12 @@
 			dependencies: ["30EEAD30A3988D6B"]
 			description: ["Now that you've got functional item and fluid logistics available, you can get started on the next step of your journey. Let's hope you have enough basic mechanisms for it, as you will need quite a few"]
 			id: "12EE8381F4E5D054"
+			rewards: [{
+				count: 8
+				id: "715A9819EC2ED5D1"
+				item: "thermal:iron_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1365D78046FC62B5"
 				item: "kubejs:basic_mech"
@@ -122,6 +128,20 @@
 			]
 			description: ["Get your old basic mechanisms, add some extra parts, and finally fill it with lava, now you have a much sturdier mechanism!"]
 			id: "362EBC86C94B16E5"
+			rewards: [
+				{
+					count: 4
+					id: "16E3AD9E31451B25"
+					item: "kubejs:compressed_mech"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "15ABD7479875D8F4"
+					item: "thermal:iron_coin"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			subtitle: "Sellable for Profit!"
 			tasks: [{
@@ -447,6 +467,12 @@
 			dependencies: ["152D02F6E11E11E2"]
 			description: ["Finally, plastic sheets! An important crafting component"]
 			id: "20B0D301D43950B4"
+			rewards: [{
+				count: 16
+				id: "2A290ACD6EE6B4AD"
+				item: "thermal:iron_coin"
+				type: "item"
+			}]
 			shape: "gear"
 			tasks: [{
 				id: "4F92176E1E4DF584"

@@ -19,17 +19,25 @@
 				"Be careful, however. Aura is the source of life. Don't grow too greedy."
 			]
 			id: "459F283BB2AD2A69"
-			rewards: [{
-				id: "45025287087D5337"
-				item: {
-					Count: 1b
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "naturesaura:book"
+			rewards: [
+				{
+					id: "45025287087D5337"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "naturesaura:book"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 2
+					id: "48644545A736DED2"
+					item: "thermal:silver_coin"
+					type: "item"
+				}
+			]
 			shape: "square"
 			subtitle: "Introduction to Nature's Aura"
 			tasks: [
@@ -58,11 +66,19 @@
 				"However, before you can get into the fun functional flora and Mana production, we need some magical petals to get started."
 			]
 			id: "5D249E6ECF06A816"
-			rewards: [{
-				id: "69FBD2A13330E042"
-				item: "botania:lexicon"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "69FBD2A13330E042"
+					item: "botania:lexicon"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4B3503F722FDE04E"
+					item: "thermal:silver_coin"
+					type: "item"
+				}
+			]
 			shape: "square"
 			subtitle: "Introduction to Botania"
 			tasks: [{
@@ -124,6 +140,12 @@
 					count: 16
 					id: "396CF9CA95819C57"
 					item: "botania:livingwood_log"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "476EC52B23CB4133"
+					item: "thermal:silver_coin"
 					type: "item"
 				}
 			]
@@ -212,12 +234,20 @@
 			]
 			description: ["Prepare an Offering to the Gods, then place it on the Offering Table, and if the Gods smile upon you, you will get something in return."]
 			id: "065295D8194B404E"
-			rewards: [{
-				count: 2
-				id: "0413CDA793A4B2A3"
-				item: "naturesaura:sky_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "0413CDA793A4B2A3"
+					item: "naturesaura:sky_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5AE09BDEA739E1EA"
+					item: "thermal:silver_coin"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "04E54288D47E7B2C"
@@ -339,12 +369,18 @@
 			dependencies: ["065295D8194B404E"]
 			description: ["The Altar of Birthing can be used to summon mobs by using Aura and many catalyst ingrediens. Just drop the items required on top of the altar, and nearby Aura will be drained to summon the mob."]
 			id: "2F6409D31123244C"
+			rewards: [{
+				count: 8
+				id: "2DC6D3191C7E534A"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "12AB66C0FC31888E"
 				item: "naturesaura:animal_spawner"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -3.5d
 			y: 2.5d
 		}
 		{
@@ -357,12 +393,18 @@
 				"You can buy Amethyst Clusters off the Shop to get a quickstart, but you will eventually be able to automate it"
 			]
 			id: "65DFE5E530D9A643"
+			rewards: [{
+				count: 8
+				id: "5050D03E8DACF9F3"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1106939A7E195F2E"
 				item: "kubejs:awakening_spirit"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.5d
 			y: 2.5d
 		}
 		{
@@ -375,11 +417,19 @@
 				"To get started, you can buy archwood saplings off the Shop, and obtain some archwood."
 			]
 			id: "72B227EF30BFE29B"
-			rewards: [{
-				id: "2B3941FC97941499"
-				item: "ars_nouveau:worn_notebook"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2B3941FC97941499"
+					item: "ars_nouveau:worn_notebook"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4A98E213AE102C8C"
+					item: "thermal:silver_coin"
+					type: "item"
+				}
+			]
 			shape: "square"
 			subtitle: "Introduction to Ars Nouveau"
 			tasks: [{
@@ -415,7 +465,7 @@
 				type: "item"
 			}]
 			title: "Spellcasters' Secrets"
-			x: 3.0d
+			x: 2.5d
 			y: -4.0d
 		}
 		{
@@ -426,12 +476,20 @@
 				"You can buy Amethyst clusters off the shop, but later you can automate amethyst shards"
 			]
 			id: "504BAEF48B018711"
-			rewards: [{
-				count: 16
-				id: "15E09E09F7FA39D1"
-				item: "ars_nouveau:source_gem"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 16
+					id: "15E09E09F7FA39D1"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6393B018F9D8F86B"
+					item: "thermal:silver_coin"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "25DDD010392131DD"
@@ -444,7 +502,7 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
+			x: 2.5d
 			y: 0.5d
 		}
 		{
@@ -493,12 +551,18 @@
 			dependencies: ["76362FD44C7AB720"]
 			description: ["One of the crucial ingredients for summoning Thermal mobs."]
 			id: "4DD8566019F64804"
+			rewards: [{
+				count: 8
+				id: "34A2DA1BFCB92F4C"
+				item: "thermal:silver_coin"
+				type: "item"
+			}]
 			tasks: [{
 				id: "51E95AAEBE3BE931"
 				item: "kubejs:livingrock_effigy"
 				type: "item"
 			}]
-			x: -2.5d
+			x: -1.5d
 			y: 2.5d
 		}
 		{
@@ -535,8 +599,8 @@
 				}
 			]
 			title: "Summoning Materials"
-			x: -0.5d
-			y: 4.5d
+			x: -1.5d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -551,6 +615,38 @@
 				"NOTE: Thermal mobs have been blacklisted from Ars Nouveau Drygmys! You have been warned!"
 			]
 			id: "799E58AD4CF491FC"
+			rewards: [
+				{
+					count: 16
+					id: "006969CC718D8D32"
+					item: "thermal:silver_coin"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "35E875117D206B6B"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "072BBCCE828986B2"
+					item: "thermal:blizz_rod"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "5A1D6745D46C6F75"
+					item: "thermal:blitz_rod"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "67DA061E07BABFBE"
+					item: "thermal:basalz_rod"
+					type: "item"
+				}
+			]
 			shape: "pentagon"
 			tasks: [
 				{
@@ -575,7 +671,7 @@
 				}
 			]
 			title: "Thermal Mobs"
-			x: -2.5d
+			x: -1.5d
 			y: 4.5d
 		}
 		{
@@ -645,7 +741,7 @@
 				}
 			]
 			title: "Basic Essences"
-			x: 3.0d
+			x: 2.5d
 			y: 2.5d
 		}
 	]

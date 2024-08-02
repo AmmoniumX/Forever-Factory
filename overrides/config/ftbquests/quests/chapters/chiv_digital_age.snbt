@@ -26,12 +26,20 @@
 			]
 			description: ["Laser a PCB into a bundle of smaller integrated circuits, then unpack"]
 			id: "5C71B40D705F5F3B"
-			rewards: [{
-				count: 32
-				id: "1A4C02D0F64614C7"
-				item: "kubejs:integrated_circuit"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 32
+					id: "1A4C02D0F64614C7"
+					item: "kubejs:integrated_circuit"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "56960F65977AFB28"
+					item: "thermal:nickel_coin"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1612DFFE246398D8"
 				item: "kubejs:integrated_circuit"
@@ -96,6 +104,12 @@
 					count: 8
 					id: "499251FA5FB2765A"
 					item: "ae2:engineering_processor"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "030B72828B9AE422"
+					item: "thermal:nickel_coin"
 					type: "item"
 				}
 			]
@@ -328,12 +342,20 @@
 				"Since computing cores are very expensive to manufacture, you might want to look into ways to reprocess these failed cores."
 			]
 			id: "271AED3BD9B0364D"
-			rewards: [{
-				count: 8
-				id: "40D211A1BFF3A4A4"
-				item: "kubejs:computing_core"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "40D211A1BFF3A4A4"
+					item: "kubejs:computing_core"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "00D064305A973BC8"
+					item: "thermal:nickel_coin"
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			subtitle: "Turing Complete"
 			tasks: [{
@@ -372,6 +394,12 @@
 				"(HINT: this quest requires you to complete the \"thermal mobs\" quest from said chapter. To quickly navigate to requirement quests, you can click the left arrow in this menu)"
 			]
 			id: "68973D2B57C7651F"
+			rewards: [{
+				count: 8
+				id: "23404F75D1C3D2F7"
+				item: "thermal:nickel_coin"
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "Haha! Get it? Thermal? ..."
 			tasks: [{
@@ -429,11 +457,19 @@
 			]
 			description: ["Calling this an upgraded form of a printed circuit board would be an understatement. These modular boards are applicable to tons of industrial applications, from single-block tiered machines to more advanced tech and magic applications. Not to mention their very high market price. Have fun!"]
 			id: "6472B37DE3727D2C"
-			rewards: [{
-				id: "53F76ACADD5D7375"
-				item: "kubejs:sbc"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "53F76ACADD5D7375"
+					item: "kubejs:sbc"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "42E0F19F88475C0B"
+					item: "thermal:nickel_coin"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			subtitle: "Modular and powerful"
 			tasks: [{

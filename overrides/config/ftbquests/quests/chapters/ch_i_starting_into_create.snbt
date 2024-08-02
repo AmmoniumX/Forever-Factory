@@ -11,6 +11,12 @@
 			dependencies: ["11DDC2F84E22B04D"]
 			description: ["Get yourself some resources that you will need in order to craft basic Create machines. You will be able to get andesite renewably later, but for now, either buy it or find it in-world."]
 			id: "2E3D0EEE80493C3D"
+			rewards: [{
+				count: 4
+				id: "6A74C55B884D08E2"
+				item: "thermal:iron_coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "4D386FCC9548BEEC"
@@ -74,6 +80,7 @@
 					type: "item"
 				}
 			]
+			shape: "gear"
 			tasks: [{
 				id: "5A8103E4AC0A38B4"
 				type: "checkmark"
@@ -89,6 +96,12 @@
 				"You can buy kelp from the shop. Moving on, if you're not sure how to get an item, make it a habit to check if it's on the shop"
 			]
 			id: "70AC5F9616DA0FDF"
+			rewards: [{
+				count: 4
+				id: "6B9A8244418EAE78"
+				item: "thermal:iron_coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "30C501E96DEA691F"
@@ -124,6 +137,12 @@
 			dependencies: ["70AC5F9616DA0FDF"]
 			description: ["This is the key component to most Create (and some other) machines you're able to craft currently. It might be smart to try and automate these early on."]
 			id: "30EEAD30A3988D6B"
+			rewards: [{
+				count: 8
+				id: "52D05B802AC5B0FE"
+				item: "thermal:iron_coin"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "Sellable for Profit!"
 			tasks: [
@@ -225,6 +244,12 @@
 				"If you're not sure how to get the string for the engineer's hammer, you can buy industrial hemp seeds on the shop and craft hemp into string."
 			]
 			id: "0EBF71B7D8E66CEE"
+			rewards: [{
+				count: 4
+				id: "0610E1A7CBEC8024"
+				item: "thermal:iron_coin"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 27L
@@ -404,6 +429,12 @@
 			dependencies: ["4CC2DDA8206FDA59"]
 			description: ["Finally, you are able to coat regular planks with creosote oil to get treated planks, which will certainly aid you in crafting a lot of basic mechanisms. This marks the end of the quests from Chapter 1, so now you can either set up a good basic mechanism factory or jump into Chapter 2!"]
 			id: "588052217C27D945"
+			rewards: [{
+				count: 12
+				id: "1F156AEF4B51C100"
+				item: "thermal:iron_coin"
+				type: "item"
+			}]
 			shape: "gear"
 			subtitle: "End of Chapter 1"
 			tasks: [{
