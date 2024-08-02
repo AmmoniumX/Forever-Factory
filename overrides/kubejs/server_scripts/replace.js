@@ -96,5 +96,7 @@ ServerEvents.recipes(e => {
     e.replaceInput({id: 'thermal:fluid_duct_windowed_4'}, '#thermal:glass/hardened', '#forge:glass')
     e.replaceInput({id: 'thermal:turbo_servo_attachment_2'}, 'thermal:redstone_servo', 'thermal:servo_attachment')
     e.replaceInput({id: 'industrialforegoing:dissolution_chamber/advanced_machine_frame'}, '#forge:gears/diamond', 'kubejs:cryo_mainframe')
+    e.replaceInput({id: 'createchromaticreturn:motor_recipe'}, 'create:rotation_speed_controller', 'kubejs:sentient_mainframe')
+    e.replaceInput({id: 'createchromaticreturn:generator_recipe'}, 'createaddition:alternator', 'kubejs:sentient_mainframe')
 
 })
