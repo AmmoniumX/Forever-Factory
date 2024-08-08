@@ -162,5 +162,6 @@ ServerEvents.recipes(e => {
     e.remove({id: 'create_sa:copper_propeler_recipe'})
     e.remove({id: 'engineersdecor:dependent/small_solar_panel_recipe'})
     e.remove({id: 'createendertransmission:chunk_loader'})
-    
+    e.remove({id: 'create:milling/gravel'})
+	
 })
