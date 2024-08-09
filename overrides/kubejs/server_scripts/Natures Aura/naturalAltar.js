@@ -32,4 +32,8 @@ ServerEvents.recipes(e => {
         });
     }
     naturalAltar('kubejs:dense_rock_aura', 'kubejs:dense_rock_mana', 15000, 80)
+    naturalAltarCatalyst('minecraft:beef', 'minecraft:rotten_flesh', 10000, 50, 'naturesaura:conversion_catalyst')
+    naturalAltarCatalyst('minecraft:mutton', 'minecraft:beef', 10000, 50, 'naturesaura:conversion_catalyst')
+    naturalAltarCatalyst('minecraft:porkchop', 'minecraft:mutton', 10000, 50, 'naturesaura:conversion_catalyst')
+    naturalAltarCatalyst('minecraft:chicken', 'minecraft:porkchop', 10000, 50, 'naturesaura:conversion_catalyst')
 })

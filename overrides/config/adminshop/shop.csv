@@ -24,7 +24,14 @@ buy,item,minecraft:kelp,300,0
 buy,item,minecraft:sugar_cane,300,0
 buy,item,immersiveengineering:seed,300,0
 buy,item,minecraft:bamboo,300,0
-buy,item,minecraft:bread,100,0
+buy,item,minecraft:carrot,150,0
+buy,item,minecraft:potato,150,0
+buy,item,minecraft:wheat_seeds,150,0
+buy,item,minecraft:beetroot_seeds,150,0
+buy,item,minecraft:melon_seeds,150,0
+buy,item,minecraft:pumpkin_seeds,150,0
+buy,item,minecraft:sweet_berries,150,0
+buy,item,minecraft:bread,200,0
 buy,fluid,minecraft:milk,1,0
 buy,item,minecraft:bone,100,0
 buy,item,minecraft:obsidian,250,0
