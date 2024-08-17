@@ -35,4 +35,14 @@ StartupEvents.registry('block', e => {
             }
         }
     }
+
+    e.create('oilsand')
+    .displayName('Oil Sand')
+    .soundType('sand')
+    .requiresTool(false)
+    .tagBlock('minecraft:mineable/shovel')
+    .tagBlock('createdieselgenerators:oil_deposit')
+    .item(i => {
+        i.tooltip('Works as a base for pumpjacks')
+    })
 })

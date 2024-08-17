@@ -628,6 +628,27 @@
 			x: 0.0d
 			y: 1.5d
 		}
+		{
+			dependencies: ["26261CEE68EC73EB"]
+			description: ["If you hold a hoe in your main or off hand and shift repeatedly, crops such as seeds and saplings will grow faster!"]
+			id: "75252C16B422C08F"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "6F169793EE17AB4D"
+				item: {
+					Count: 1b
+					id: "minecraft:wooden_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Faster Crop Growth!"
+			x: -4.5d
+			y: 1.5d
+		}
 	]
 	title: "Ch.I: Mechanical Age"
 }

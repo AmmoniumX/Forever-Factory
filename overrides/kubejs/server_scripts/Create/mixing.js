@@ -27,5 +27,6 @@ ServerEvents.recipes(e => {
     e.recipes.create.mixing('createchromaticreturn:shadow_steel', [Fluid.of('kubejs:shadow_essence', 250), '16x createchromaticreturn:chromatic_compound']).superheated()
     e.recipes.create.mixing('createchromaticreturn:refined_radiance', [Fluid.of('kubejs:refined_mixture', 250), '16x createchromaticreturn:chromatic_compound']).superheated()
     e.recipes.create.mixing('kubejs:juiced_log', ['#minecraft:logs', Fluid.of('thermal:resin', 125)]).heated()
+    e.recipes.create.mixing('kubejs:oilsand', ['minecraft:soul_sand', Fluid.of('thermal:crude_oil', 250)]).heated()
 
 })

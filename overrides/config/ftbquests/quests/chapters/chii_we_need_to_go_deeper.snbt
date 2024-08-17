@@ -58,10 +58,21 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "765BC5825F7660AC"
-				item: "emendatusenigmatica:compressed_iron_ingot"
+				id: "1D6BCCA05935AC06"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Any compressed iron\"}"
+						}
+						value: "forge:ingots/compressed_iron"
+					}
+				}
 				type: "item"
 			}]
+			title: "Compressed Iron"
 			x: -0.5d
 			y: 1.0d
 		}
@@ -634,14 +645,23 @@
 				"Build a Create pumpjack on an \"oil chunk\" to extract a steady yet unlimited supply of oil."
 				""
 				"Use the oil detector to locate an oil chunk."
+				""
+				"Tip: For skyblock, since you don't have a bedrock layer, you can place the pumpjack hole on top of oilsand instead. You still need to find an oil chunk tho"
 			]
 			id: "5BE7616F738E22B6"
 			optional: true
-			rewards: [{
-				id: "5EEAE7F7C51A2EDD"
-				item: "createdieselgenerators:oil_scanner"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5EEAE7F7C51A2EDD"
+					item: "createdieselgenerators:oil_scanner"
+					type: "item"
+				}
+				{
+					id: "60D4FF937AF5EACB"
+					item: "kubejs:oilsand"
+					type: "item"
+				}
+			]
 			subtitle: "Infinite, renewable Oil!"
 			tasks: [{
 				id: "1C05C09E9096046E"

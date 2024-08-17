@@ -99,5 +99,7 @@ ServerEvents.recipes(e => {
     e.replaceInput({id: 'createchromaticreturn:motor_recipe'}, 'create:rotation_speed_controller', 'kubejs:sentient_mainframe')
     e.replaceInput({id: 'createchromaticreturn:generator_recipe'}, 'createaddition:alternator', 'kubejs:sentient_mainframe')
     e.replaceInput({id: 'endportalrecipe:craftable_end_portal'}, 'minecraft:dragon_egg', 'pneumaticcraft:printed_circuit_board')
+    // e.replaceInput({id: 'pneumaticcraft:patchouli_book_crafting'}, 'pneumaticcraft:ingot_iron_compressed', '#forge:ingots/compressed_iron')
+    e.replaceInput({id: 'integrateddynamics:crafting/coal_generator'}, 'minecraft:furnace', 'irongenerators:stone_generator')
     
 })

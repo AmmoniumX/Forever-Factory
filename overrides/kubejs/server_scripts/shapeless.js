@@ -26,5 +26,6 @@ ServerEvents.recipes(e => {
     e.shapeless(Item.of('powah:dielectric_paste', 8), ['2x #minecraft:coals', 'minecraft:clay_ball', 'minecraft:blaze_powder'])
     e.shapeless('ironjetpacks:strap', ['create_jetpack:netherite_jetpack'])
     e.shapeless('4x modularrouters:sender_module_3', ['4x modularrouters:sender_module_2', 'mekanism:teleportation_core'])
+    e.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"pneumaticcraft:book"}'), ['minecraft:book', '#forge:ingots/compressed_iron'])
 
 })
