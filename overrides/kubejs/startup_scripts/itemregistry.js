@@ -73,4 +73,6 @@ StartupEvents.registry('item', e => {
         .tooltip('Infinite potential.').rarity(3)
     e.create('sentient_mainframe')//.displayName('Sentient Mainframe')
         .tooltip('Capable of advanced reasonal thinking. Treat with care, and respect.').rarity(3)
+
+    e.create("rotten_nitrate"); //custom item used on ae2 transformation recipe
 })
