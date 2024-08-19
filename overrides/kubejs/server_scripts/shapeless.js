@@ -28,4 +28,6 @@ ServerEvents.recipes(e => {
     e.shapeless('4x modularrouters:sender_module_3', ['4x modularrouters:sender_module_2', 'mekanism:teleportation_core'])
     e.shapeless(Item.of('patchouli:guide_book', '{"patchouli:book":"pneumaticcraft:book"}'), ['minecraft:book', '#forge:ingots/compressed_iron'])
 
+    e.shapeless('2x minecraft:rotten_flesh',['kubejs:rotten_nitrate'])
+
 })
