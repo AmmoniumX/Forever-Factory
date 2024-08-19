@@ -56,9 +56,10 @@ ServerEvents.recipes((e) => {
    * @param {string} type define what type of transformation --> `fluid` | `explosion`
    * @param {item[]} ingredients items on input recipe
    * @param {item} output item result
+   * @param {number} count item count
    * @param {fluid} fluid_tag (optional : return `water`) define fluid tag when type == `fluid`
    */
-  let ae2_transform = (type, ingredients, output, fluid_tag) => {
+  let ae2_transform = (type, ingredients, output,count, fluid_tag) => {
     let circumstance = { type: type };
     if (type == "fluid") {
       circumstance.tag =
@@ -75,7 +76,7 @@ ServerEvents.recipes((e) => {
       circumstance: circumstance,
       ingredients: item_input,
       result: {
-        //"count": count,   //dont work , probably caused by ae2 issue nomore supported 
+        count: count,
         item: output,
       },
     });
@@ -85,13 +86,16 @@ ServerEvents.recipes((e) => {
     "fluid",
     ["ae2:charged_certus_quartz_crystal", "kubejs:certus_seed"],
     "ae2:damaged_budding_quartz",
+    1,
     "minecraft:water"
   );
 
+  //recipes without charged_certus_quartz_crystal require to reload COMPLETLY the game to work properly
   ae2_transform(
     "fluid",
     ["minecraft:leather", "immersiveengineering:dust_saltpeter"],
-    "kubejs:rotten_nitrate",
+    "minecraft:rotten_flesh",
+    2,
     "minecraft:water"
   );
 
