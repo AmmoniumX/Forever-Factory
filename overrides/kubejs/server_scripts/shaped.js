@@ -407,5 +407,36 @@ ServerEvents.recipes(e => {
             B: 'immersiveengineering:component_electronic'
         }
     )
+    e.shaped('4x everycomp:q/integrateddynamics/menril_chest',
+        [
+            'AAA',
+            'A A',
+            'AAA'
+        ],{
+            A: 'integrateddynamics:menril_log'
+        }
+    )
+    e.shaped('8x integrateddynamics:variable_transformer_input',
+        [
+            ' A ',
+            'BCB',
+            ' A '
+        ],{
+            A: 'integrateddynamics:variable',
+            B: 'integrateddynamics:crystalized_menril_chunk',
+            C: 'kubejs:compressed_mech'
+        }
+    )
+    e.shaped('8x integrateddynamics:variable_transformer_output',
+        [
+            ' B ',
+            'ACA',
+            ' B '
+        ],{
+            A: 'integrateddynamics:variable',
+            B: 'integrateddynamics:crystalized_menril_chunk',
+            C: 'kubejs:compressed_mech'
+        }
+    )
 
 })

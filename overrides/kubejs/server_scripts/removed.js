@@ -163,5 +163,7 @@ ServerEvents.recipes(e => {
     e.remove({id: 'engineersdecor:dependent/small_solar_panel_recipe'})
     e.remove({id: 'createendertransmission:chunk_loader'})
     e.remove({id: 'create:milling/gravel'})
-	
+	e.remove({id: 'quark:building/crafting/chests/chest_revert'})
+    e.remove({id: 'integrateddynamics:crafting/variable_transformer_input'})
+    e.remove({id: 'integrateddynamics:crafting/variable_transformer_output'})
 })
