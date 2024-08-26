@@ -208,6 +208,21 @@
 					item: "immersiveengineering:ingot_steel"
 					type: "item"
 				}
+				{
+					id: "056EFCC3BD8B5686"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Steel Ingot\"}"
+							}
+							value: "forge:ingots/steel"
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "Blast Furnace \\& Steel!"
 			x: 2.0d
