@@ -87,6 +87,12 @@ ServerEvents.recipes(e => {
       "creosote":375,
       "input":{"item":"kubejs:juiced_log"},
       "result":{"item":"mekanism:dust_charcoal"},
-      "time":450}
+      "time":300}
     )
+
+    e.custom({
+      type:"immersiveengineering:generator_fuel",
+      burnTime:375,
+      fluidTag:"forge:diesel"
+    })
 })
