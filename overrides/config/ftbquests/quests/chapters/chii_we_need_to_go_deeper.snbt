@@ -234,13 +234,23 @@
 					type: "item"
 				}
 				{
-					id: "7D7914F95A94B2CE"
-					item: "create:track"
+					id: "33DC97669E44DB74"
+					item: "create:fluid_tank"
 					type: "item"
 				}
 				{
-					id: "33DC97669E44DB74"
-					item: "create:fluid_tank"
+					id: "5A35DAEFCAF80FEB"
+					item: {
+						Count: 1b
+						id: "itemfilters:id_regex"
+						tag: {
+							RepairCost: 0
+							display: {
+								Name: "{\"text\":\"Any Track\"}"
+							}
+							value: "(create:track$)|(^railways:track_)(?!mono)(?!coupler)(?!switch)"
+						}
+					}
 					type: "item"
 				}
 			]
