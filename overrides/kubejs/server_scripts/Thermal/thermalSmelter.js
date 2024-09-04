@@ -11,7 +11,7 @@ ServerEvents.recipes(e => {
     e.recipes.thermal.smelter('mekanism:enriched_redstone', ['minecraft:redstone_block', 'thermal:basalz_powder']).energy(1000)
     e.recipes.thermal.smelter('mekanism:enriched_refined_obsidian', ['mekanism:dust_refined_obsidian', 'thermal:blitz_powder']).energy(1000)
     e.recipes.thermal.smelter('mekanism:enriched_gold', ['minecraft:gold_block', 'thermal:blitz_powder']).energy(1000)
-    e.recipes.thermal.smelter('extendedcrafting:ender_ingot', ['thermal:ender_pearl_dust', 'immersiveengineering:ingot_steel', 'ae2:fluix_dust']).energy(1200)
+    e.recipes.thermal.smelter('extendedcrafting:ender_ingot', ['thermal:ender_pearl_dust', '#forge:ingots/steel', 'ae2:fluix_dust']).energy(1200)
     const materials = ['copper', 'zinc', 'iron', 'aluminum', 'tin', 'lead', 'nickel', 
         'silver', 'gold', 'osmium', 'uranium', 'diamond', 'emerald', 'lapis', 
         'coal', 'redstone'] // Excluding rutile
