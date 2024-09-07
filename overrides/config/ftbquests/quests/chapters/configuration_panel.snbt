@@ -77,6 +77,10 @@
 		}
 		{
 			can_repeat: true
+			description: [
+				"NOTE: Peaceful difficulty isn't supported for fully beating the modpack! "
+				"You can still toggle it temporarily if you with though."
+			]
 			icon: "minecraft:rose_bush"
 			id: "704FAEDE58565426"
 			optional: true
