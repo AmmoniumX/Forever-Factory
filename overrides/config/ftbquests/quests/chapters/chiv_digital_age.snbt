@@ -16,7 +16,7 @@
 				item: "pneumaticcraft:printed_circuit_board"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.5d
 			y: -2.5d
 		}
 		{
@@ -45,8 +45,8 @@
 				item: "kubejs:integrated_circuit"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -3.5d
+			x: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["5C71B40D705F5F3B"]
@@ -65,11 +65,11 @@
 				type: "item"
 			}]
 			title: "Thermal Expansion"
-			x: 0.0d
-			y: -4.5d
+			x: -1.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["028A5C60BF182D8C"]
+			dependencies: ["5C71B40D705F5F3B"]
 			id: "47577AB3E61E8EBF"
 			tasks: [{
 				id: "47FB231FBE40593A"
@@ -77,12 +77,11 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: [
 				"47577AB3E61E8EBF"
-				"5C71B40D705F5F3B"
 				"425B10DAC7C8FFBC"
 			]
 			description: ["The building blocks for digital storage systems, as well as other advanced electronics"]
@@ -145,8 +144,8 @@
 				type: "item"
 			}]
 			title: "Industrial Foregoing"
-			x: -1.0d
-			y: -4.5d
+			x: -2.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["416318DB2859CBAD"]

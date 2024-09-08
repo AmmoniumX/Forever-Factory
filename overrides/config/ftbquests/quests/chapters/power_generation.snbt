@@ -552,7 +552,7 @@
 				}
 			]
 			x: -2.5d
-			y: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["476F3884D256DE28"]
@@ -842,6 +842,28 @@
 			title: "Create Diesel Engines"
 			x: -9.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["476F3884D256DE28"]
+			description: ["The Powah mod provides multiple powerful ways to generate FE. Take a look through the multiple generators they offer and pick one you like."]
+			id: "2FF4E21E25FC7442"
+			tasks: [{
+				id: "49E1C840F964FA92"
+				item: {
+					Count: 1b
+					id: "itemfilters:mod"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Powah Items\"}"
+						}
+						value: "powah"
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Generators for Forge Energy as well as other Tech and Magic mods"]
