@@ -107,5 +107,6 @@ ServerEvents.recipes(e => {
     e.replaceInput({id: 'sfm:printing_press'}, 'minecraft:piston', 'kubejs:compressed_mech')
     e.replaceInput({id: 'cccbridge:source_block'}, 'create:cut_asurine', 'minecraft:polished_andesite')
     e.replaceInput({id: 'cccbridge:scroller_block'}, 'create:cut_asurine', 'minecraft:polished_andesite')
+    e.replaceOutput({output: 'thermal:coal_coke'}, 'thermal:coal_coke', 'immersiveengineering:coal_coke')
     
 })

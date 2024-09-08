@@ -166,4 +166,5 @@ ServerEvents.recipes(e => {
 	e.remove({id: 'quark:building/crafting/chests/chest_revert'})
     e.remove({id: 'integrateddynamics:crafting/variable_transformer_input'})
     e.remove({id: 'integrateddynamics:crafting/variable_transformer_output'})
+    e.remove({id: 'thermal:machines/pyrolyzer/pyrolyzer_coal'})
 })
