@@ -303,9 +303,19 @@ ServerEvents.recipes(e => {
         ],{
             A: '#forge:ingots/electrum',
             B: '#forge:gems/quartz',
-            C: '#forge:gears/signalum',
+            C: '#forge:gears/redstone',
             D: 'thermal:upgrade_augment_1',
             E: 'pneumaticcraft:printed_circuit_board'
+        }
+    )
+    e.shaped('kubejs:gear_redstone',
+        [
+            ' A ',
+            'ABA',
+            ' A '
+        ],{
+            A: '#forge:ingots/redstone_ingot',
+            B: '#forge:nuggets/iron'
         }
     )
     e.shaped('thermal:upgrade_augment_3',

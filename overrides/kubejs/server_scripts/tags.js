@@ -10,6 +10,7 @@ ServerEvents.tags('item', e => {
     e.add('forge:slimeballs', 'kubejs:oil_clump')
     e.add('thermal:crafting/casts', 'kubejs:chiller_plate_cast')
     e.add('thermal:crafting/casts', 'thermal:press_gear_die')
+    e.add('forge:gears/redstone', 'kubejs:gear_redstone')
 
     const materials = ['copper', 'zinc', 'iron', 'aluminum', 'tin', 'lead', 'nickel', 
         'silver', 'gold', 'osmium', 'uranium', 'rutile', 'diamond', 'emerald', 'lapis', 
