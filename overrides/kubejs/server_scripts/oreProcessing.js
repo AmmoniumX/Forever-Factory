@@ -33,7 +33,11 @@ ServerEvents.recipes(e => {
 
     // Crumbling gems and dusts
     vanilla_gems.forEach(gem => {
-        altarCrumbling({ item: Item.of(`#forge:hardened/${gem}`).getId() }, { item: Item.of(`#forge:gems/${gem}`).getId(), count:48 }, 4500, 150)
+        if (gem == 'coal') {
+            altarCrumbling({ item: Item.of(`#forge:hardened/${gem}`).getId() }, { item: Item.of(`#forge:storage_blocks/${gem}`).getId(), count:12 }, 4500, 150)
+        } else{
+            altarCrumbling({ item: Item.of(`#forge:hardened/${gem}`).getId() }, { item: Item.of(`#forge:gems/${gem}`).getId(), count:48 }, 4500, 150)
+        }
     })
 
     native_dusts.forEach(dust => {

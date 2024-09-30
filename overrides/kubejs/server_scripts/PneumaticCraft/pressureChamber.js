@@ -52,4 +52,5 @@ ServerEvents.recipes(e => {
     pressureChamber(Item.of('pneumaticcraft:empty_pcb', 3), 3.0,
         ['immersiveengineering:circuit_board', 'emendatusenigmatica:titanium_plate', Item.of('#forge:wires/electrum', 6)]
     )
+    pressureChamber('minecraft:diamond', 3.5, 'minecraft:coal_block')
 })
