@@ -7,5 +7,9 @@ ClientEvents.lang('en_us', e => {
     e.renameItem('mekanism:steel_casing', 'Modular Casing')
     e.add('infuse_type.kubejs.dark_essence', 'Dark Essence')
     e.add('infuse_type.kubejs.light_essence', 'Light Essence')
+    e.add('adminshop.permit.explosives', 'Explosives')
+    e.add('adminshop.permit.oil', 'Oil')
+    e.add('adminshop.permit.magic', 'Magic')
+    e.add('adminshop.permit.engineering', 'Enginneer')
   })
 
