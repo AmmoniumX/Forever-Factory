@@ -31,7 +31,7 @@
 								Lore: ["{\"text\":\"Buy: Tiny TNT\"}"]
 								Name: "{\"text\":\"[T1] Explosives Permit\",\"italic\":false}"
 							}
-							key: 1
+							key: "explosives"
 						}
 					}
 					match_nbt: true
@@ -376,7 +376,7 @@
 							Lore: ["{\"text\":\"Buy: Crude Oil, Oil Clump\"}"]
 							Name: "{\"text\":\"[T2] Oil Contract\",\"italic\":false}"
 						}
-						key: 2
+						key: "oil"
 					}
 				}
 				match_nbt: true

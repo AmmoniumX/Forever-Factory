@@ -104,7 +104,7 @@
 							Lore: ["{\"text\":\"Buy: Gold Fiber, Floral Fertilizer, Archwood Saplings\"}"]
 							Name: "{\"text\":\"[T3] Novice Magician Contract\",\"italic\":false}"
 						}
-						key: 3
+						key: "magic"
 					}
 				}
 				match_nbt: true

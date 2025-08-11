@@ -37,7 +37,7 @@ ServerEvents.recipes(e => {
         }
     )
     e.shaped(Item.of('adminshop:permit', 
-    "{display:{Lore:['{\"text\":\"Buy: Tiny TNT\"}'],Name:'{\"text\":\"[T1] Explosives Permit\",\"italic\":false}'},key:1}"),
+    "{display:{Lore:['{\"text\":\"Buy: Tiny TNT\"}'],Name:'{\"text\":\"[T1] Explosives Permit\",\"italic\":false}'},key:\"explosives\"}"),
         [
             'AAA',
             'ABA',
@@ -48,7 +48,7 @@ ServerEvents.recipes(e => {
         }
     )
     e.shaped(Item.of('adminshop:permit', 
-    "{display:{Lore:['{\"text\":\"Buy: Crude Oil, Oil Clump\"}'],Name:'{\"text\":\"[T2] Oil Contract\",\"italic\":false}'},key:2}"),
+    "{display:{Lore:['{\"text\":\"Buy: Crude Oil, Oil Clump\"}'],Name:'{\"text\":\"[T2] Oil Contract\",\"italic\":false}'},key:\"oil\"}"),
         [
             'AAA',
             'ABA',
@@ -59,7 +59,7 @@ ServerEvents.recipes(e => {
         }
     )
     e.shaped(Item.of('adminshop:permit', 
-    "{display:{Lore:['{\"text\":\"Buy: Gold Fiber, Floral Fertilizer, Archwood Saplings\"}'],Name:'{\"text\":\"[T3] Novice Magician Contract\",\"italic\":false}'},key:3}"),
+    "{display:{Lore:['{\"text\":\"Buy: Gold Fiber, Floral Fertilizer, Archwood Saplings\"}'],Name:'{\"text\":\"[T3] Novice Magician Contract\",\"italic\":false}'},key:\"magic\"}"),
         [
             'AAA',
             'ABA',
@@ -407,7 +407,7 @@ ServerEvents.recipes(e => {
         }
     )
     e.shaped(Item.of('adminshop:permit', 
-        "{display:{Lore:['[\"\",{\"text\":\"Buy: Graphite electrode blueprint, unbreakable graphite electrodes\",\"italic\":false}]'],Name:'[\"\",{\"text\":\"[T4] Senior Engineer\\'s Contract\",\"italic\":false}]'},key:4}"),
+        "{display:{Lore:['[\"\",{\"text\":\"Buy: Graphite electrode blueprint, unbreakable graphite electrodes\",\"italic\":false}]'],Name:'[\"\",{\"text\":\"[T4] Senior Engineer\\'s Contract\",\"italic\":false}]'},key:\"engineering\"}"),
         [
             'AAA',
             'ABA',

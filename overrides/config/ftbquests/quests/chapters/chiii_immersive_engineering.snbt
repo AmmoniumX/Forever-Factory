@@ -749,7 +749,7 @@
 								Lore: ["[\"\",{\"text\":\"Buy: Graphite electrode blueprint, unbreakable graphite electrodes\",\"italic\":false}]"]
 								Name: "[\"\",{\"text\":\"[T4] Senior Engineer's Contract\",\"italic\":false}]"
 							}
-							key: 4
+							key: "engineering"
 						}
 					}
 					match_nbt: true
