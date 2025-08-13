@@ -12,7 +12,7 @@
   "manifestType": "minecraftModpack",
   "manifestVersion": 1,
   "name": "Forever Factory",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "",
   "files": [
     {
@@ -43,11 +43,6 @@
     {
       "projectID": 328085,
       "fileID": 5797604,
-      "required": true
-    },
-    {
-      "projectID": 876270,
-      "fileID": 6609228,
       "required": true
     },
     {
@@ -1313,6 +1308,11 @@
     {
       "projectID": 890485,
       "fileID": 4651656,
+      "required": true
+    },
+    {
+      "projectID": 876270,
+      "fileID": 6883299,
       "required": true
     },
     {
